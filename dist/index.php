@@ -10,6 +10,14 @@
 <body>
     <section class="hero main-page">
         <div class="hero__slider">
+            <div class="hero__slide hero__slide_1"></div>
+            <div class="hero__slide hero__slide_2"></div>
+            <div class="hero__slide hero__slide_3"></div>
+            <div class="hero__slide hero__slide_4"></div>
+            <div class="hero__slide hero__slide_5"></div>
+            <div class="hero__slide hero__slide_6"></div>
+            <div class="hero__slide hero__slide_7"></div>
+            <div class="hero__slide hero__slide_8"></div>
         </div>
         <div class="wrapper hero__wrapper">
             <header class="header">
@@ -58,10 +66,14 @@
 
                 <div class="hero__svg-navigation">
                 <!-- SVG Navigation Start -->
-                <svg  viewBox="0 0 437.81979 207.655" height="207.655" width="437.81979">
+                <svg  viewBox="0 0 437.81979 207.655">
                 <defs>
                     <g id="circle">
                         <circle r="5"/>
+                    </g>
+                    <g id="svg-nav__marker">
+                        <path class="svg-nav__marker-template"
+                        d="M 35.166809,66.25 C 34.669852,65.2875 33.942186,62.724853 33.549773,60.555228 32.702719,55.871925 29.934312,50.316282 23.108692,39.602058 17.186849,30.3065 15.255584,23.448169 16.883353,17.494565 19.489101,7.96398 26.324248,1.9693673 35.448126,1.2127443 48.998896,0.08900905 59.333333,9.0628077 59.333333,21.95321 c 0,6.118231 -1.085176,8.568284 -10.650795,24.04679 -2.666266,4.314389 -5.331395,10.260863 -6.274612,14 -0.901812,3.575 -2.150019,6.830609 -2.773792,7.234687 C 37.749147,68.455774 36.12032,68.096748 35.166809,66.25 Z M 43.930544,35.535917 C 49.322355,32.747703 52,28.422064 52,22.5 52,18.191127 51.491673,16.549339 49.380884,14.040808 45.587077,9.5321245 41.458058,7.6882654 36.425624,8.2554936 30.789539,8.8907621 26.601652,12.039058 24.540557,17.190241 19.69729,29.294757 32.526616,41.433118 43.930544,35.535917 Z M 33.775141,30.441198 C 26.915883,26.718815 27.333777,17.429793 34.495109,14.437597 40.301706,12.011446 47,16.330103 47,22.5 c 0,3.19352 -2.996606,7.303166 -6.118839,8.391583 -3.89098,1.356403 -3.761521,1.364608 -7.10602,-0.450385 z"/>
                     </g>
                 </defs>
                 <g id="grid">
@@ -80,76 +92,81 @@
 
                 <path id="move_path" class="motion__line" d="m 143.64026,205.5739 107.90845,-42.70386 81.9217,12.67647 -19.25239,-31.21581 55.77647,-48.962869 -136.04405,18.298489 -31.44382,-17.347754 -92.81434,45.471114 73.78178,48.0674"/>
                 
-                <g id="eco_farm">
+                <g class="svg-nav__item" data-slide="1">
                     <text x="239.56863" y="10.045623" class="svg__text">
                         <tspan x="239.56863" y="10.045623">Власна</tspan>
                         <tspan x="239.56863" y="25.045624">кео-ферма</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,112.56029 0,-109.0176454"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(196.45036,38.387466)"/>
                     <use class="svg-nav__circle svg-nav__circle-eco-farm" xlink:href="#circle" transform="translate(234.2417,112.77328)" />
                 </g>
 
-                <g id="infrastructure" transform="translate(98.307792,131.24747)">
+                <g class="svg-nav__item" data-slide="2" transform="translate(98.307792,131.24747)">
                     <text x="239.56863" y="10.045623" class="svg__text">
                         <tspan x="239.56863" y="10.045623">Розвинута</tspan>
                         <tspan x="239.56863" y="25.045624">інфраструктура</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,43.790436 0,-40.2477914"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(196.26513,-31.189975)"/>
                     <use class="svg-nav__circle svg-nav__circle-infrastructure" xlink:href="#circle" transform="translate(233.95044,42.577187)"/>
                 </g>
 
-                <g id="children" transform="translate(131.9689,31.178119)">
+                <g class="svg-nav__item" data-slide="3" transform="translate(131.9689,31.178119)">
                     <text x="239.56863" y="10.045623" class="svg__text">
                         <tspan x="239.56863" y="10.045623">Усе для</tspan>
                         <tspan x="239.56863" y="25.045624">дітей</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,64.630849 0,-61.0882044"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(198.84054,-9.1885173)"/>
                     <use class="svg-nav__circle svg-nav__circle-children" xlink:href="#circle" transform="translate(236.84439,64.692526)"/>
                 </g>
 
-                <g id="clean_air" transform="translate(78.521797,60.197834)">
+                <g class="svg-nav__item" data-slide="4" transform="translate(78.521797,60.197834)">
                     <text x="239.56863" y="10.045623" class="svg__text">
                         <tspan x="239.56863" y="10.045623">Чисте</tspan>
                         <tspan x="239.56863" y="25.045624">повітря</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,84.79899 0,-81.2563454"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(197.24708,11.18493)"/>
                     <use class="svg-nav__circle svg-nav__circle-clean-air" xlink:href="#circle" transform="translate(235.12691,84.818239)"/>
                 </g>
 
-                <g id="magical_lake" transform="translate(16.221779,46.528316)">
+                <g class="svg-nav__item" data-slide="5" transform="translate(16.221779,46.528316)">
                     <text x="239.56863" y="10.045623" class="svg__text">
                         <tspan x="239.56863" y="10.045623">Казкове</tspan>
                         <tspan x="239.56863" y="25.045624">озеро</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,116.39574 0,-112.8530954"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(197.8357,40.550011)"/>
                     <use class="svg-nav__circle svg-nav__circle-magical-lake" xlink:href="#circle" transform="translate(235.85521,115.51863)"/>
                 </g>
 
-                <g id="nature_harmony" transform="translate(-32.785126,-17.324507)">
+                <g class="svg-nav__item" data-slide="6" transform="translate(-32.785126,-17.324507)">
                     <text x="154.86244" y="60.690067" class="svg__text">
-                    <tspan x="154.86244" y="60.690067">Гармонія</tspan>
-                    <tspan x="154.86244" y="75.690063">з природою</tspan>
+                        <tspan x="154.86244" y="60.690067">Гармонія</tspan>
+                        <tspan x="154.86244" y="75.690063">з природою</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,112.56029 0,-58.821382"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(197.8357,40.550011)"/>
                     <use class="svg-nav__circle svg-nav__circle-nature-harmony" xlink:href="#circle" transform="translate(235.5383,114.25098)"/>
                 </g>
 
-                <g id="bright_conception" transform="translate(-124.33999,21.303267)">
+                <g class="svg-nav__item" data-slide="7" transform="translate(-124.33999,21.303267)">
                     <text x="165.63744" y="58.471684" class="svg__text">
-                    <tspan x="165.63744" y="58.471684">Яскрава</tspan>
-                    <tspan x="165.63744" y="73.47168">концепція</tspan>
+                        <tspan x="165.63744" y="58.471684">Яскрава</tspan>
+                        <tspan x="165.63744" y="73.47168">концепція</tspan>
                     </text>
                     <path class="svg__text-line" d="m 235.14853,120.48308 0,-66.744172"/>
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(196.26749,46.898579)"/>
                     <use class="svg-nav__circle svg-nav__circle-bright-conception" xlink:href="#circle" transform="translate(233.8384,120.33657)"/>
                 </g>
-
-                <use class="svg-nav__circle svg-nav__circle-first" xlink:href="#circle" id="first_circle" transform="translate(183.2519,188.69377)" />
-
-                <path 
-                class="svg-nav__marker"
-                id="svg-nav__marker"
-                transform="translate(145.73224,115.04231)"
-                d="M 35.166809,66.25 C 34.669852,65.2875 33.942186,62.724853 33.549773,60.555228 32.702719,55.871925 29.934312,50.316282 23.108692,39.602058 17.186849,30.3065 15.255584,23.448169 16.883353,17.494565 19.489101,7.96398 26.324248,1.9693673 35.448126,1.2127443 48.998896,0.08900905 59.333333,9.0628077 59.333333,21.95321 c 0,6.118231 -1.085176,8.568284 -10.650795,24.04679 -2.666266,4.314389 -5.331395,10.260863 -6.274612,14 -0.901812,3.575 -2.150019,6.830609 -2.773792,7.234687 C 37.749147,68.455774 36.12032,68.096748 35.166809,66.25 Z M 43.930544,35.535917 C 49.322355,32.747703 52,28.422064 52,22.5 52,18.191127 51.491673,16.549339 49.380884,14.040808 45.587077,9.5321245 41.458058,7.6882654 36.425624,8.2554936 30.789539,8.8907621 26.601652,12.039058 24.540557,17.190241 19.69729,29.294757 32.526616,41.433118 43.930544,35.535917 Z M 33.775141,30.441198 C 26.915883,26.718815 27.333777,17.429793 34.495109,14.437597 40.301706,12.011446 47,16.330103 47,22.5 c 0,3.19352 -2.996606,7.303166 -6.118839,8.391583 -3.89098,1.356403 -3.761521,1.364608 -7.10602,-0.450385 z"/>
+                
+                <g class="svg-nav__item svg-nav__selected" data-slide="0">
+                    <use class="svg-nav__circle svg-nav__circle-first" xlink:href="#circle" id="first_circle" transform="translate(183.2519,188.69377)" />
+                    <use class="svg-nav__marker" xlink:href="#svg-nav__marker" transform="translate(145.73224,115.04231)" />
+                </g>
+                
 
                 </svg>
 
@@ -159,7 +176,8 @@
             </div>
         </div>
     </section>
-    <section class="ThreeDtour main-page">
+
+    <section class="ThreeDtour main-page animate-me">
         <div class="wrapper ThreeDtour__wrapper">
             <div class="ThreeDtour__main">
                 <h2 class="heading ThreeDtour__heading">
@@ -172,8 +190,9 @@
             </div>
         </div>
     </section>
+
     <section class="construction-end main-page">
-        <div class="wrapper constructin-end__wrapper">
+        <div class="wrapper constructin-end__wrapper animate-me">
             <h2 class="construction-end__heading">
                 Завершення будівництва: II квартал 2018 року
             </h2>
@@ -211,12 +230,12 @@
         </div>
     </section>
 
-    <section class="info info_1 main-page">
+    <section class="info info_1 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Резиденція</h4>
+                    <h4 class="info__item-heading heading">Резиденція</h4>
                     <p class="info__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
                     <p class="info__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
                         перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
@@ -227,7 +246,7 @@
             <div class="info__item info__item_2">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Розташування</h4>
+                    <h4 class="info__item-heading heading">Розташування</h4>
                     <p class="info__item-paragraph">Житловий комплекс О2 residence розташований серед мальовничого лісу, що всього у 20 кілометрах від межі Києва.</p>
                     <p class="info__item-paragraph">Величний сосновий ліс, казкове озеро, птахи та звірята – ось ваші нові сусіди! Досягнувши максимальної 
                         близькості до природи, ми зуміли сповнити резиденцію усіма зручностями сучасного житлового комплексу.</p>
@@ -237,10 +256,9 @@
         </div>
     </section>
 
-    <section class="advantages main-page">
+    <section class="advantages main-page animate-me">
         <div class="wrapper advantages__wrapper">
             <h2 class="heading adantages__heading">Переваги</h2>
-
             <div class="advantages__slider">
                 <div class="advantages__slide advantages__slide_1">
                     <div class="advantages__slide-caption">
@@ -337,12 +355,12 @@
         </div>
     </section>
 
-    <section class="info info_2 main-page">
+    <section class="info info_2 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Квартири</h4>
+                    <h4 class="info__item-heading heading">Квартири</h4>
                     <p class="info__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир.</p>
                     <p class="info__item-paragraph">Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії.</p>
                     <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
@@ -352,7 +370,7 @@
             <div class="info__item info__item_2">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Еко-ферма</h4>
+                    <h4 class="info__item-heading heading">Еко-ферма</h4>
                     <p class="info__item-paragraph">Кожен з нас все частіше замислюється про те, наскільки корисні та безпечні продукти, які ми вживаємо щодня.</p>
                     <p class="info__item-paragraph">Саме тому ми першими в Україні створюємо житловий комплекс із власною еко-фермою. Ця ферма, яка складається з 
                         системи супер-сучасних теплиць, буде працювати цілий рік.
@@ -363,23 +381,24 @@
         </div>
     </section>
 
-    <section class="infrastructure main-page">
+    <section class="infrastructure main-page animate-me">
         <div class="wrapper infrastructure__wrapper">
-            <h2 class="heading infrastructure__heading">Інфраструктура</h2>
             <div class="infrastructure__items">
                 <div class="infrastructure__item infrastructure__item_1"></div>
-                <div class="infrastructure__item infrastructure__item_2"></div>
+                <div class="infrastructure__item infrastructure__item_2">
+                    <h2 class="heading infrastructure__heading">Інфраструктура</h2>
+                </div>
                 <div class="infrastructure__item infrastructure__item_3"></div>
             </div>
         </div>
     </section>
 
-    <section class="info info_3 main-page">
+    <section class="info info_3 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Комерційна нерухомість</h4>
+                    <h4 class="info__item-heading heading">Комерційна нерухомість</h4>
                     <p class="info__item-paragraph">Щоб сповнити O2 Residence життям і зробити його зручним для усіх мешканців, ми намагаємось залучити найцікавіші бізнес-проекти у різних галузях.</p>
                     <p class="info__item-paragraph">Комерційна нерухомість буде представлена: кафе та ресторани, шопінг, здоров’я та краса, освіта, сфера послуг.</p>
                     <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
@@ -389,7 +408,7 @@
             <div class="info__item info__item_2">
                 <div class="info__item-image"></div>
                 <div class="info__item-text">
-                    <h4 class="info__item-heading">Забудовник</h4>
+                    <h4 class="info__item-heading heading">Забудовник</h4>
                     <p class="info__item-paragraph">Будівництво ЖК «SAN FRANCISCO city house» здійснюється 
                         з дотриманням усіх норм та вимог чинного законодавства України у галузі будівництва та на 
                         підставі всієї необхідної дозвільної документації
@@ -399,7 +418,7 @@
         </div>
     </section>
 
-    <section class="dayInO2 main-page">
+    <section class="dayInO2 main-page animate-me">
         <div class="wrapper dayInO2__wrapper">
             <div class="dayInO2__main">
                 <h2 class="heading dayInO2__heading">
@@ -612,31 +631,9 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/BezierPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
-    <script src="js/MorphSVGPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        $('.advantages__slider').slick({
-            prevArrow: $('.advantages-slider_arrows .slider_arrow-left'),
-            nextArrow: $('.advantages-slider_arrows .slider_arrow-right'),
-            dots: true,
-            customPaging : function(slider, i) {
-                return '<span class="advantages__slider-dot"><span>';
-            }
-        });
-        $('.values__slider').slick({
-            prevArrow: $('.values-slider_arrows .slider_arrow-left'),
-            nextArrow: $('.values-slider_arrows .slider_arrow-right')
-        });
-        $('.projects__slider').slick({
-            slidesToShow: 5,
-            prevArrow: $('.projects-slider_arrows .slider_arrow-left'),
-            nextArrow: $('.projects-slider_arrows .slider_arrow-right')
-        });
-    </script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+@include font-face("OpenSans", "../fonts/OpenSans/OpenSans-Light", 300);
+@include font-face("OpenSans", "../fonts/OpenSans/OpenSans-Regular");
+@include font-face("OpenSans", "../fonts/OpenSans/OpenSans-SemiBold", 600);
+@include font-face("OpenSans", "../fonts/OpenSans/OpenSans-Bold", 700);
 
 * {
     margin:0;
@@ -11,6 +15,7 @@ html {
 
 body {
     font-size: 1rem;
+    font-family: "OpenSans", sans-serif;
     color: #fff;
     font-weight: 400;
     line-height: 24px;
@@ -26,6 +31,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 10px;
+    overflow: hidden;
 }
 
 .btn {
@@ -35,9 +41,17 @@ a {
     border-radius: 5px;
     &.btn_green {
         background-color: $green;
+        transition: all $transitionTime;
+        &:hover {
+            background-color: $lightgreen;
+        }
     }
     &.btn_lightgreen {
         background-color: $lightgreen;
+        transition: all $transitionTime;
+        &:hover {
+            background-color: $green;
+        }
     }
 }
 
