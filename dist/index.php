@@ -8,7 +8,11 @@
     <title>O2</title>
 </head>
 <body>
+    
     <section class="hero main-page">
+
+    <?php /* include_once('includes/preloader.php'); */?> 
+
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
             <div class="hero__slide hero__slide_2"></div>
@@ -19,35 +23,11 @@
             <div class="hero__slide hero__slide_7"></div>
             <div class="hero__slide hero__slide_8"></div>
         </div>
+        <?php include_once('includes/header.php'); ?>
+
         <div class="wrapper hero__wrapper">
-            <header class="header">
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/common/o2_logo.png" alt="O2 Logo">
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul>
-                        <li class="nav__item nav__item_camera">
-                            <a href="#">Камера</a>
-                        </li>
-                        <li class="nav__item nav__item_3d">
-                            <a href="#"><span class="nav__item_3d-tour">Тур</span>3D</a>
-                        </li>
-                        <li class="nav__item lang nav_item_lang">
-                            <a href="#">Ukr</a>
-                        </li>
-                        <li class="nav__item menu nav_item_menu">
-                            <a href="#">Menu</a>
-                            <div class="menu__lines">
-                                <div class="menu__line menu__line_1"></div>
-                                <div class="menu__line menu__line_2"></div>
-                                <div class="menu__line menu__line_3"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+
+
             <div class="hero__main">
                 <h1 class="heading hero__heading">
                     Ближче до природи
@@ -178,24 +158,35 @@
     </section>
 
     <section class="ThreeDtour main-page animate-me">
-        <div class="wrapper ThreeDtour__wrapper">
-            <div class="ThreeDtour__main">
-                <h2 class="heading ThreeDtour__heading">
-                    3D тур
-                </h2>
-                <p class="ThreeDtour__message">
-                Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
-                </p>
-                <a class="btn btn_green btn__watch_3d-tour" href="#">Дивитися 3D тур</a>
+        <a href="#" class="wrapper main-page-hover-link">
+            <div class="ThreeDtour__wrapper">
+                <div class="ThreeDtour__main">
+                    <h2 class="heading ThreeDtour__heading">
+                        3D тур
+                    </h2>
+                    <p class="ThreeDtour__message">
+                    Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
+                    </p>
+                    <span class="btn btn_green btn__watch_3d-tour" href="#">Дивитися 3D тур</span>
+                </div>
             </div>
-        </div>
+            <div class="green-hover">
+                <div class="green-hover__outer-border">
+                    <div class="green-hover__message"> 
+                        <div class="green-hover__eye">
+                            <img src="img/main/eye.png" alt="Eye">
+                        </div>
+                        <div class="green-hover__text">
+                            Переглянути 3D тур
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
     </section>
 
     <section class="construction-end main-page">
         <div class="wrapper constructin-end__wrapper animate-me">
-            <h2 class="construction-end__heading">
-                Завершення будівництва: II квартал 2018 року
-            </h2>
             <div>
                 <ul class="construction-end__list">
                     <li class="construction-end_list-item construction-end_list-item-1">
@@ -227,31 +218,65 @@
                     </li>
                 </ul>
             </div>
+            <h2 class="construction-end__heading">
+                Завершення будівництва: II квартал 2018 року
+            </h2>
         </div>
     </section>
 
     <section class="info info_1 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
-                <div class="info__item-image"></div>
-                <div class="info__item-text">
-                    <h4 class="info__item-heading heading">Резиденція</h4>
-                    <p class="info__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                    <p class="info__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                        перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                    <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
-                </div>
+                <a href="#" class="main-page-hover-link">
+                    <div class="info__item-image info__item-image_residency"></div>
+                    <div class="info__item-text">
+                        <h4 class="info__item-heading heading">Резиденція</h4>
+                        <p class="info__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
+                        <p class="info__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
+                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
+                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                    </div>
+                    <div class="green-hover">
+                        <div class="green-hover__outer-border">
+                            <div class="green-hover__message"> 
+                                <div class="green-hover__eye">
+                                    <img src="img/main/eye.png" alt="Eye">
+                                </div>
+                                <div class="green-hover__text">
+                                    Переглянути резиденцію
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-
+                
+        
             <div class="info__item info__item_2">
-                <div class="info__item-image"></div>
-                <div class="info__item-text">
-                    <h4 class="info__item-heading heading">Розташування</h4>
-                    <p class="info__item-paragraph">Житловий комплекс О2 residence розташований серед мальовничого лісу, що всього у 20 кілометрах від межі Києва.</p>
-                    <p class="info__item-paragraph">Величний сосновий ліс, казкове озеро, птахи та звірята – ось ваші нові сусіди! Досягнувши максимальної 
-                        близькості до природи, ми зуміли сповнити резиденцію усіма зручностями сучасного житлового комплексу.</p>
-                    <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
-                </div>
+
+                <a href="#" class="main-page-hover-link">
+                    <div class="info__item-image info__item-image_location"></div>
+                    <div class="info__item-text">
+                        <h4 class="info__item-heading heading">Розташування</h4>
+                        <p class="info__item-paragraph">Житловий комплекс О2 residence розташований серед мальовничого лісу, що всього у 20 кілометрах від межі Києва.</p>
+                        <p class="info__item-paragraph">Величний сосновий ліс, казкове озеро, птахи та звірята – ось ваші нові сусіди! Досягнувши максимальної 
+                            близькості до природи, ми зуміли сповнити резиденцію усіма зручностями сучасного житлового комплексу.</p>
+                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                    </div>
+                    <div class="green-hover">
+                        <div class="green-hover__outer-border">
+                            <div class="green-hover__message"> 
+                                <div class="green-hover__eye">
+                                    <img src="img/main/eye.png" alt="Eye">
+                                </div>
+                                <div class="green-hover__text">
+                                    Переглянути розташування
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -358,55 +383,113 @@
     <section class="info info_2 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
-                <div class="info__item-image"></div>
+
+            <a href="#" class="main-page-hover-link">
+
+                <div class="info__item-image info__item-image_apartments"></div>
                 <div class="info__item-text">
                     <h4 class="info__item-heading heading">Квартири</h4>
                     <p class="info__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир.</p>
                     <p class="info__item-paragraph">Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії.</p>
-                    <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
+                    <span class="btn btn_lightgreen btn_info">Читати далі</span>
                 </div>
+                <div class="green-hover">
+                    <div class="green-hover__outer-border">
+                        <div class="green-hover__message"> 
+                            <div class="green-hover__eye">
+                                <img src="img/main/eye.png" alt="Eye">
+                            </div>
+                            <div class="green-hover__text">
+                                Переглянути квартири
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
             </div>
 
             <div class="info__item info__item_2">
-                <div class="info__item-image"></div>
-                <div class="info__item-text">
-                    <h4 class="info__item-heading heading">Еко-ферма</h4>
-                    <p class="info__item-paragraph">Кожен з нас все частіше замислюється про те, наскільки корисні та безпечні продукти, які ми вживаємо щодня.</p>
-                    <p class="info__item-paragraph">Саме тому ми першими в Україні створюємо житловий комплекс із власною еко-фермою. Ця ферма, яка складається з 
-                        системи супер-сучасних теплиць, буде працювати цілий рік.
-                    </p>
-                    <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
-                </div>
+                <a href="#" class="main-page-hover-link">
+                    <div class="info__item-image info__item-image_eco-farm"></div>
+                    <div class="info__item-text">
+                        <h4 class="info__item-heading heading">Еко-ферма</h4>
+                        <p class="info__item-paragraph">Кожен з нас все частіше замислюється про те, наскільки корисні та безпечні продукти, які ми вживаємо щодня.</p>
+                        <p class="info__item-paragraph">Саме тому ми першими в Україні створюємо житловий комплекс із власною еко-фермою. Ця ферма, яка складається з 
+                            системи супер-сучасних теплиць, буде працювати цілий рік.
+                        </p>
+                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                    </div>
+                    <div class="green-hover">
+                        <div class="green-hover__outer-border">
+                            <div class="green-hover__message"> 
+                                <div class="green-hover__eye">
+                                    <img src="img/main/eye.png" alt="Eye">
+                                </div>
+                                <div class="green-hover__text">
+                                    Переглянути еко-ферму
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="infrastructure main-page animate-me">
-        <div class="wrapper infrastructure__wrapper">
-            <div class="infrastructure__items">
-                <div class="infrastructure__item infrastructure__item_1"></div>
-                <div class="infrastructure__item infrastructure__item_2">
-                    <h2 class="heading infrastructure__heading">Інфраструктура</h2>
+        <a href="#" class="wrapper main-page-hover-link">
+            <div class="infrastructure__wrapper">
+                <div class="infrastructure__items">
+                    <div class="infrastructure__item infrastructure__item_1"></div>
+                    <div class="infrastructure__item infrastructure__item_2">
+                        <h2 class="heading infrastructure__heading">Інфраструктура</h2>
+                    </div>
+                    <div class="infrastructure__item infrastructure__item_3"></div>
                 </div>
-                <div class="infrastructure__item infrastructure__item_3"></div>
             </div>
-        </div>
+            <div class="green-hover">
+                <div class="green-hover__outer-border">
+                    <div class="green-hover__message"> 
+                        <div class="green-hover__eye">
+                            <img src="img/main/eye.png" alt="Eye">
+                        </div>
+                        <div class="green-hover__text">
+                            Переглянути інфраструктуру
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
     </section>
 
     <section class="info info_3 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
-                <div class="info__item-image"></div>
-                <div class="info__item-text">
-                    <h4 class="info__item-heading heading">Комерційна нерухомість</h4>
-                    <p class="info__item-paragraph">Щоб сповнити O2 Residence життям і зробити його зручним для усіх мешканців, ми намагаємось залучити найцікавіші бізнес-проекти у різних галузях.</p>
-                    <p class="info__item-paragraph">Комерційна нерухомість буде представлена: кафе та ресторани, шопінг, здоров’я та краса, освіта, сфера послуг.</p>
-                    <a class="btn btn_lightgreen btn_info" href="#">Читати далі</a>
-                </div>
+                <a href="#" class="main-page-hover-link">
+                    <div class="info__item-image info__item-image_commercial"></div>
+                    <div class="info__item-text">
+                        <h4 class="info__item-heading heading">Комерційна нерухомість</h4>
+                        <p class="info__item-paragraph">Щоб сповнити O2 Residence життям і зробити його зручним для усіх мешканців, ми намагаємось залучити найцікавіші бізнес-проекти у різних галузях.</p>
+                        <p class="info__item-paragraph">Комерційна нерухомість буде представлена: кафе та ресторани, шопінг, здоров’я та краса, освіта, сфера послуг.</p>
+                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                    </div>
+                    <div class="green-hover">
+                        <div class="green-hover__outer-border">
+                            <div class="green-hover__message"> 
+                                <div class="green-hover__eye">
+                                    <img src="img/main/eye.png" alt="Eye">
+                                </div>
+                                <div class="green-hover__text">
+                                    Переглянути комерційну нерухомість
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <div class="info__item info__item_2">
-                <div class="info__item-image"></div>
+                <div class="info__item-image info__item-image_developer"></div>
                 <div class="info__item-text">
                     <h4 class="info__item-heading heading">Забудовник</h4>
                     <p class="info__item-paragraph">Будівництво ЖК «SAN FRANCISCO city house» здійснюється 
@@ -419,17 +502,31 @@
     </section>
 
     <section class="dayInO2 main-page animate-me">
-        <div class="wrapper dayInO2__wrapper">
-            <div class="dayInO2__main">
-                <h2 class="heading dayInO2__heading">
-                    День в О2
-                </h2>
-                <p class="dayInO2__message">
-                    O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
-                </p>
-                <a class="btn btn_lightgreen btn__dayInO2" href="#">Читати далі</a>
+        <a href="#" class="wrapper main-page-hover-link">
+            <div class="dayInO2__wrapper">
+                <div class="dayInO2__main">
+                    <h2 class="heading dayInO2__heading">
+                        День в О2
+                    </h2>
+                    <p class="dayInO2__message">
+                        O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
+                    </p>
+                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі</span>
+                </div>
             </div>
-        </div>
+            <div class="green-hover">
+                <div class="green-hover__outer-border">
+                    <div class="green-hover__message"> 
+                        <div class="green-hover__eye">
+                            <img src="img/main/eye.png" alt="Eye">
+                        </div>
+                        <div class="green-hover__text">
+                            Дізнатися про день в О2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
     </section>
 
     <section class="projects main-page">
@@ -439,28 +536,28 @@
             </h2>
             <div class="projects__slider-container">
                 <div class="projects__slider">
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/bristol_logo.svg" alt="BRISTOL Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/chicago_logo.svg" alt="Chicago Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/einstein_logo.svg" alt="EINSTEIN Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/kandinsky_logo.svg" alt="Kandinsky Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/new_york_logo.svg" alt="New York Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/resident_logo.svg" alt="Resident House Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/rybalsky_logo.svg" alt="Rybalsky Logo">
                     </a>
-                    <a class="projects__slider-item" href="">
+                    <a class="projects__slider-item" href="" target="_blank">
                         <img src="img/main/logos/san_francisco_logo.svg" alt="San Francisco Logo">
                     </a>
                 </div>
@@ -519,121 +616,9 @@
         </div>
     </section>
 
-    <section class="b-nav">
-        <div class="wrapper b-nav__wrapper">
-            <div class="b-nav__item">
-                <h4 class="b-nav__heading">
-                    Про проект:
-                </h4>
-                <ul>
-                    <li>
-                        <a href="#">Інфрастуктура</a>
-                    </li>
-                    <li>
-                        <a href="#">Будинки</a>
-                    </li>
-                    <li>
-                        <a href="#">Розташування</a>
-                    </li>
-                    <li>
-                        <a href="#">Новини</a>
-                    </li>
-                    <li>
-                        <a href="#">Цінності</a>
-                    </li>
-                    <li>
-                        <a href="#">Еко-ферма</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакти</a>
-                    </li>
-                </ul>
-            </div>
+    <? include_once('includes/footer.php'); ?>
 
-            <div class="b-nav__item">
-                <h4 class="b-nav__heading">
-                    Обрати квартиру:
-                </h4>
-                <ul>
-                    <li>
-                        <a href="#">Всі квартири</a>
-                    </li>
-                    <li>
-                        <a href="#">1-кімнатні</a>
-                    </li>
-                    <li>
-                        <a href="#">2-кімнатні</a>
-                    </li>
-                    <li>
-                        <a href="#">3-кімнатні</a>
-                    </li>
-                    <li>
-                        <a href="#">4-кімнатні</a>
-                    </li>
-                    <li>
-                        <a href="#">Розстрочка</a>
-                    </li>
-                    <li>
-                        <a href="#">Комерційна нерухомість</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="b-nav__item">
-                <h4 class="b-nav__heading">
-                    Хід проекту:
-                </h4>
-                <ul>
-                    <li>
-                        <a href="#">Забудовник</a>
-                    </li>
-                    <li>
-                        <a href="#">Хід будвництва</a>
-                    </li>
-                    <li>
-                        <a href="#">Веб-камера</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="b-nav__item">
-                <h4 class="b-nav__heading">
-                        Відділ продажу:
-                </h4>
-                <ul>
-                    <li>
-                        Київ, Бориспільська траса 252 А 
-                    </li>
-                    <li>
-                        (метро Бориспільська)
-                    </li>
-                    <li>
-                        <span class="b-nav__phone">(093) 82-33-115</span>
-                    </li>
-                    <li>
-                        <a class="btn btn_lightgreen btn_b-nav" href="#">Замовити дзвінок</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="wrapper footer__wrapper">
-            <div class="copyright">
-                &#169; 2018 О2 Residence усі права захищено.
-            </div>
-            <div class="SmartOrage">
-                <a href="#" target="_blank">
-                    <img src="img/main/logo-smart-orange.png" alt="Smart Orange Logo">
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

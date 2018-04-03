@@ -1,0 +1,102 @@
+.header-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 15px;
+}
+
+.nav {
+    min-width: 460px;
+    >ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.nav__item_camera {
+    background-image: url('../img/main/camera.png');
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    a {
+        display: block;
+        padding: 0px 26px;
+        width: 120px;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        font-size: 0.75rem;
+    }
+}
+.nav__item_3d {
+    a {
+        font-size: 2.25rem;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+    }
+    .nav__item_3d-tour {
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        left: 30px;
+        border-radius: 50%;
+        font-size: 0.625rem;
+        text-align: center;
+        line-height: 29px;
+        width: 29px;
+        height: 29px;
+        background-color: $lightgreen;
+    }
+}
+.nav_item_lang {
+    width: 78px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.lang {
+    height: 34px;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: height $transitionTime;
+    position: absolute;
+    top: 41px;
+    a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 32px;
+        font-size: 0.75rem;
+    }
+    &__opened {
+        height: 100px;
+    }
+}
+.lang__icon {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    background-image: url('../img/main/arrow.png');
+    position: relative;
+    left: 60px;
+}
+.menu {
+    width: 60px;
+    font-size: 0.75rem;
+    .menu__line {
+        height: 2px;
+        background-color: #fff;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .menu__line_2 {
+        width: 60%;
+    }
+}

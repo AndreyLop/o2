@@ -26,25 +26,112 @@ function hideScrollBar() {
 function showScrollBar() {
     document.getElementsByTagName('body')[0].style.overflow = 'visible';
 }
+// var preloader = (function() {
 
+//     var NODES = {
+//       preloader: document.querySelector('.preloader'),
+//       loadOuterCircle: document.querySelector('.preloader__loading-circlce'),
+//       loadInnerCircle: document.querySelector('.preloader__inner-circle'),
+//       percents: document.querySelector('.preloader__loading-percents')
+//     };
+  
+//     var offset = NODES.loadOuterCircle.getTotalLength();
+//     var startingRadius = parseInt(NODES.loadInnerCircle.getAttribute('r'));
+//     NODES.loadOuterCircle.style.strokeDasharray = offset;
+//     NODES.loadOuterCircle.style.strokeDashoffset = offset;
+//     var currentDashOffset;
+//     var outerStep = 6;
+//     var innerStep = 15;
+  
+//     function hidePreloader() {
+//       NODES.preloader.style.display = 'none';
+//     };
+  
+//     // Hide outer circle and percents
+//     function _hideOuterCircle() {
+//       NODES.loadOuterCircle.style.display = 'none';
+//       NODES.percents.style.display = 'none';
+//     };
+  
+//     function _calculatePerncets() {
+//       var perc = 100 - ((currentDashOffset / offset) * 100).toFixed();
+//       NODES.percents.innerHTML = perc + '%';
+//     };
+  
+//     function _animatePreloaderOuterCircle() {
+//       currentDashOffset = NODES.loadOuterCircle.style.strokeDashoffset
+//       if( currentDashOffset >= 0) {
+//         requestAnimationFrame(_animatePreloaderOuterCircle);
+//         NODES.loadOuterCircle.style.strokeDashoffset-=outerStep;
+//         _calculatePerncets();
+//       } else {
+//         // hide outer circle and percents and start frowing inner
+//         _hideOuterCircle();
+//         _animatePreloaderInnerCircle();
+//       }
+//     };
+  
+//     function _animatePreloaderInnerCircle() {
+//       if(startingRadius <= 1900) {
+//         startingRadius+=innerStep;
+//         requestAnimationFrame(_animatePreloaderInnerCircle);
+//         NODES.loadInnerCircle.setAttribute('r','' + startingRadius);
+//       } else {
+//         // remove preloader here
+//         hidePreloader();
+//         showScrollBar();
+//       }
+//     };
+  
+//     function init() {
+//         hideScrollBar();
+//         sessionStorage.setItem('preloaderActivated', true);
+//         _animatePreloaderOuterCircle();
+//     };
+  
+//     return {
+//       init: init,
+//       hidePreloader: hidePreloader
+
+//     };
+  
+//   })();
+  // preloader.init();
+
+  // if(!sessionStorage.getItem('preloaderActivated')) {
+  //   preloader.init();
+  // } else {
+  //   preloader.hidePreloader();
+  // }
+  
+  var langMenu = (function() {
+
+    var langMenu = document.querySelector('.nav_item_lang');
+    var lang = document.querySelector('.lang');
+    langMenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      if(lang.classList.contains('lang__opened')) {
+        lang.classList.remove('lang__opened');
+      } else {
+        lang.classList.add('lang__opened');
+      }
+    });
+
+  })();
 // Main page scroll listener and frames add animation start
 var animateHTMLCtrl = (function() {
-    var elems, 
-    windowHeight,
-    aniamteClass = 'animate-me',
+    var aniamteClass = 'animate-me',
+    elems = document.querySelectorAll('.animate-me'),
+    windowHeight = window.innerHeight,
     animatedElements;
   
     var init = function() {
-      elems = document.getElementsByClassName(aniamteClass)
-      windowHeight = window.innerHeight;
-      _addEventHandlers();
-      _checkPosition();
+        _addEventHandlers();
     }
 
     // if to more elements to animate remove event listener from scroll
     function _checkForAnimatedElements() {
-        animatedElements = document.getElementsByClassName(aniamteClass);
-        if(animatedElements.length === 0 ) {
+        if(elems.length === 0 ) {
             window.removeEventListener('scroll', _checkPosition);
         }
     }
@@ -55,25 +142,27 @@ var animateHTMLCtrl = (function() {
     }
   
     function _checkPosition() {
+    windowHeight = window.innerHeight;
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
-        if (posFromTop - windowHeight <= -100) {
-          elems[i].className = elems[i].className.replace(aniamteClass, '')
+        if (posFromTop - windowHeight <= 0) {
+          elems[i].classList.remove(aniamteClass);
         }
       }
       _checkForAnimatedElements();
     }
-  
+    _checkPosition();
     return {
       init: init
     }
   
   })();
+
 animateHTMLCtrl.init();
 // end animateHTMLCtrl
 
 
-// main oage svg navigation start
+// main page svg navigation start
 (function() {
 
     var NODES = {
@@ -161,8 +250,7 @@ animateHTMLCtrl.init();
     // TweenLite.to("#svg-nav__marker", 2, {bezier:{values:copyBezier}});
 
 })();
-
-// main oage svg navigation end
+// main page svg navigation end
 
 
 // main page tabs start

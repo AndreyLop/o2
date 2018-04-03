@@ -30,7 +30,6 @@ a {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px 10px;
     overflow: hidden;
 }
 
@@ -58,7 +57,7 @@ a {
 .heading {
     font-size: 1.5rem;
     letter-spacing: 0.6px;
-    line-height: 72px;
+    line-height: 55px;
     &:after {
         content: '';
         display: block;
@@ -69,3 +68,46 @@ a {
     }
 }
 
+.preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500%;
+    height: 500%;
+    z-index: 2;
+  }
+  .preloader_percents {
+    font-size: 50px;
+  }
+  .preloader__white-cover {
+      fill: #ffffff;
+    }
+  .preloader__loading-circlce{
+      fill:none;
+      stroke:$green;
+    }
+  .preloader__inner-circle{
+      fill:#000;
+    }
+  .preloader__loading-percents{
+      font-size:30px;
+      fill: $green;
+    }
+
+.preloader__logo {
+    fill: #ffffff;
+}
+.page-hero {
+    background-color: #898989;
+        
+    .page-hero__heading {
+        position: absolute;
+        left: 0;
+        bottom: 55px;
+    }
+}
+.page-hero__wrapper {
+    height: 500px;
+    position: relative;
+}

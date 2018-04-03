@@ -1,48 +1,17 @@
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-function debounce(func, wait, immediate) {
-	var timeout;
-	return function() {
-		var context = this, args = arguments;
-		var later = function() {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		};
-		var callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
-	};
-};
-// debouncing function stop
-
-function hideScrollBar() {
-    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-  }
-function showScrollBar() {
-    document.getElementsByTagName('body')[0].style.overflow = 'visible';
-}
-
 // Main page scroll listener and frames add animation start
 var animateHTMLCtrl = (function() {
-    var elems, 
-    windowHeight,
-    aniamteClass = 'animate-me',
+    var aniamteClass = 'animate-me',
+    elems = document.querySelectorAll('.animate-me'),
+    windowHeight = window.innerHeight,
     animatedElements;
   
     var init = function() {
-      elems = document.getElementsByClassName(aniamteClass)
-      windowHeight = window.innerHeight;
-      _addEventHandlers();
-      _checkPosition();
+        _addEventHandlers();
     }
 
     // if to more elements to animate remove event listener from scroll
     function _checkForAnimatedElements() {
-        animatedElements = document.getElementsByClassName(aniamteClass);
-        if(animatedElements.length === 0 ) {
+        if(elems.length === 0 ) {
             window.removeEventListener('scroll', _checkPosition);
         }
     }
@@ -53,25 +22,27 @@ var animateHTMLCtrl = (function() {
     }
   
     function _checkPosition() {
+    windowHeight = window.innerHeight;
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
-        if (posFromTop - windowHeight <= -100) {
-          elems[i].className = elems[i].className.replace(aniamteClass, '')
+        if (posFromTop - windowHeight <= 0) {
+          elems[i].classList.remove(aniamteClass);
         }
       }
       _checkForAnimatedElements();
     }
-  
+    _checkPosition();
     return {
       init: init
     }
   
   })();
+
 animateHTMLCtrl.init();
 // end animateHTMLCtrl
 
 
-// main oage svg navigation start
+// main page svg navigation start
 (function() {
 
     var NODES = {
@@ -159,8 +130,7 @@ animateHTMLCtrl.init();
     // TweenLite.to("#svg-nav__marker", 2, {bezier:{values:copyBezier}});
 
 })();
-
-// main oage svg navigation end
+// main page svg navigation end
 
 
 // main page tabs start

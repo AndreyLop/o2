@@ -5,12 +5,6 @@
     .hero__phone {
         font-size: 1rem;
     }
-    .b-nav__wrapper {
-        padding: 30px 5px 80px 5px;
-    }
-    .b-nav__phone {
-        font-size: 1.125rem;
-    }
 }
 @media only screen and(max-width: 1000px) {
     .hero__main {
@@ -51,34 +45,13 @@
         margin: 0 auto;
         margin-top: 10px;
     }
-    .b-nav__wrapper {
-        justify-content: space-around;
-    }
-    .b-nav__item {
-        width: 50%;
-        flex: auto;
-        ul {
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-    .b-nav__phone {
-        &:before {
-            margin: 0;
-        }
+    .values__slide-caption {
+        width: 100%;
     }
 }
 
 
 @media only screen and(max-width: 640px) {
-    .nav {
-        min-width: auto;
-    }
-    .nav__item_camera, 
-    .nav__item_3d,
-    .nav_item_lang {
-        display: none;
-    }
     .hero__heading {
         font-size: 2rem;
         text-align: center;
@@ -128,6 +101,16 @@
         position: static;
         margin: 5px auto;
     }
+    .values__slide-caption-heading {
+        font-size: 1.5rem;
+    }
+    .values__slide-caption-text {
+        padding: 75px 35px 0px;
+    }
+    .values__slide-caption-paragraph {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
     .infrastructure__items {
         flex-direction: column;
     }
@@ -147,5 +130,11 @@
         display: block;
         margin: 45px auto 0 auto;
     }
-
-}
+    .contacts__tab {
+        font-size: 0.75rem;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+} //end 640px

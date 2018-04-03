@@ -17,24 +17,73 @@ var gulp           = require('gulp'),
 
 gulp.task('common-js', function() {
 	return gulp.src([
+		'src/js/useful_functions.js',
 		'src/js/common.js',
 		])
-	.pipe(concat('common.js'))
-	/*.pipe(uglify())*/
-	.pipe(gulp.dest('src/js'));
+	.pipe(concat('common.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('js', ['common-js'], function() {
+// All scripts task start
+gulp.task('all-js', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/commercial.js',
 		'src/js/main.js',
-		'src/js/common.js'
+		'src/js/news.js'
 		])
-	.pipe(concat('scripts.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(concat('scripts.min.js'))
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
+// All scripts task end
+
+// commercial page task
+gulp.task('js-commercial', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/commercial.js'
+	])
+	.pipe(concat('commercial.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// commercial page task end
+
+// news page task
+gulp.task('js-news', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/news.js'
+	])
+	.pipe(concat('news.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// news page task end
+
+// main page start
+gulp.task('js', ['common-js', 'js-commercial', 'js-news'], function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/main.js'
+		])
+	.pipe(concat('main.min.js'))
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// main page end
 
 gulp.task('browser-sync', function() {
 	browserSync({

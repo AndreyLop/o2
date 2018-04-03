@@ -1,0 +1,10 @@
+@media only screen and(max-width: 640px) {
+    .nav {
+        min-width: auto;
+    }
+    .nav__item_camera, 
+    .nav__item_3d,
+    .nav_item_lang {
+        display: none;
+    }
+} //end 640px
