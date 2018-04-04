@@ -32,6 +32,10 @@ gulp.task('all-js', function() {
 		'src/js/useful_functions.js',
 		'src/js/common.js',
 		'src/js/commercial.js',
+		'src/js/day-in-o2.js',
+		'src/js/advantages.js',
+		'src/js/residence.js',
+		'src/js/values.js',
 		'src/js/main.js',
 		'src/js/news.js'
 		])
@@ -56,6 +60,63 @@ gulp.task('js-commercial', function() {
 });
 // commercial page task end
 
+// residence page task
+gulp.task('js-residence', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/residence.js'
+	])
+	.pipe(concat('residence.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// residence page task end
+
+// day-in-o2 start
+gulp.task('js-day-in-o2', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/libs/slick.min.js',
+		'src/js/common.js',
+		'src/js/day-in-o2.js'
+	])
+	.pipe(concat('day-in-o2.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// day-in-o2 end
+
+// eco-farm page task
+gulp.task('js-eco-farm', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/eco-farm.js'
+	])
+	.pipe(concat('eco-farm.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// eco-farm page task end
+
+// advantages page task
+gulp.task('js-advantages', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/advantages.js'
+	])
+	.pipe(concat('advantages.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// advantages page task end
+
 // news page task
 gulp.task('js-news', function() {
 	return gulp.src([
@@ -70,8 +131,22 @@ gulp.task('js-news', function() {
 });
 // news page task end
 
+// values page task
+gulp.task('js-values', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/values.js'
+	])
+	.pipe(concat('values.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// values page task end
+
 // main page start
-gulp.task('js', ['common-js', 'js-commercial', 'js-news'], function() {
+gulp.task('js', ['common-js', 'js-commercial', 'js-news', 'js-day-in-o2','js-eco-farm', 'js-advantages', 'js-residence', 'js-values'], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',

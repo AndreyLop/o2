@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0,0,0,0.5);
+   // background-color: rgba(0,0,0,0.2);
     padding-top: 15px;
 }
 
@@ -77,8 +77,18 @@
     }
     &__opened {
         height: 100px;
+        &+.lang__icon {
+            transform: rotate(175deg);
+        }
     }
 }
+.lang-item {
+    transition: background-color $transitionTime;
+    &:hover {
+        background-color: $green;
+    }
+}
+
 .lang__icon {
     display: inline-block;
     width: 13px;
@@ -86,6 +96,7 @@
     background-image: url('../img/main/arrow.png');
     position: relative;
     left: 60px;
+    transition: all $transitionTime;
 }
 .menu {
     width: 60px;

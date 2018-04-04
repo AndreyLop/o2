@@ -409,7 +409,7 @@
             </div>
 
             <div class="info__item info__item_2">
-                <a href="#" class="main-page-hover-link">
+                <a href="eco-farm.php" class="main-page-hover-link">
                     <div class="info__item-image info__item-image_eco-farm"></div>
                     <div class="info__item-text">
                         <h4 class="info__item-heading heading">Еко-ферма</h4>
@@ -501,34 +501,6 @@
         </div>
     </section>
 
-    <section class="dayInO2 main-page animate-me">
-        <a href="#" class="wrapper main-page-hover-link">
-            <div class="dayInO2__wrapper">
-                <div class="dayInO2__main">
-                    <h2 class="heading dayInO2__heading">
-                        День в О2
-                    </h2>
-                    <p class="dayInO2__message">
-                        O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
-                    </p>
-                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі</span>
-                </div>
-            </div>
-            <div class="green-hover">
-                <div class="green-hover__outer-border">
-                    <div class="green-hover__message"> 
-                        <div class="green-hover__eye">
-                            <img src="img/main/eye.png" alt="Eye">
-                        </div>
-                        <div class="green-hover__text">
-                            Дізнатися про день в О2
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </section>
-
     <section class="projects main-page">
         <div class="wrapper projects__wrapper">
             <h2 class="projects__heading heading">
@@ -577,6 +549,34 @@
                 </div>
             
         </div>
+    </section>
+
+    <section class="dayInO2 main-page animate-me">
+        <a href="day-in-o2.php" class="wrapper main-page-hover-link">
+            <div class="dayInO2__wrapper">
+                <div class="dayInO2__main">
+                    <h2 class="heading dayInO2__heading">
+                        День в О2
+                    </h2>
+                    <p class="dayInO2__message">
+                        O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
+                    </p>
+                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі</span>
+                </div>
+            </div>
+            <div class="green-hover">
+                <div class="green-hover__outer-border">
+                    <div class="green-hover__message"> 
+                        <div class="green-hover__eye">
+                            <img src="img/main/eye.png" alt="Eye">
+                        </div>
+                        <div class="green-hover__text">
+                            Дізнатися про день в О2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
     </section>
 
     <section class="contacts main-page">

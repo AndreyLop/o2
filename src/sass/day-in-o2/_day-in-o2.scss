@@ -1,0 +1,115 @@
+.day-in-o2 {
+    position: relative;
+    .slick-vertical .slick-slide {
+        height: 100vh;
+    }
+  }
+.di2__slider-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.di2__slider-item-1 {
+    background-color: red;
+}
+.di2__slider-item-2 {
+    background-color: purple;
+}
+.di2__slider-item-3 {
+    background-color: hotpink;
+}
+.di2__slider-item-4 {
+    background-color: powderblue;
+}
+.di2__slider-item-5 {
+    background-color: khaki;
+}
+.di2__slider-item-6 {
+    background-color: seagreen;
+}
+.di2__slider-item-7 {
+    background-color: skyblue;
+}
+.di2__slider-item-8 {
+    background-color: sienna;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 110px;
+    right: 40px;
+    z-index: 1;
+}
+.slide-bar {
+    position: relative;
+}
+.slide-time {
+    position: absolute;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: $lightgreen;
+    font-weight: bold;
+    top: 37px;
+    left: -90px;
+    opacity: 0;
+    transition: opacity $transitionTime;
+    &.slide-time-first {
+        top: -9px;
+    }
+    &::after {
+        content: '';
+        position: relative;
+        left: 34px;
+        top: 1px;
+        display: inline-block;
+        width: 0; 
+        height: 0; 
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid $lightgreen;
+    }
+}
+.slide-circle {
+    border: 1px solid #ccc;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transition: all $transitionTime;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.slide-line {
+    height: 45px;
+    width: 1px;
+    margin: 0 auto;
+    background-color: #ccc;
+    transition: all $transitionTime;
+}
+.slide-bar-active  { 
+    .slide-circle {
+        background-color: $lightgreen;
+        border-color: $lightgreen;
+    }
+    .slide-line {
+        background-color: $lightgreen;
+        border-color: $lightgreen;
+    }
+}
+.slide-bar-last {
+    .slide-circle {
+        background-color: $green;
+        border-color: $green;
+    }
+    .slide-line {
+        background-color: $lightgreen;
+        border-color: $lightgreen;
+    }
+    .slide-time {
+        opacity: 1;
+    }
+}
+

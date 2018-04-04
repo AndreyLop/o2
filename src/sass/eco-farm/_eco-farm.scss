@@ -1,0 +1,104 @@
+.eco-farm__top {
+    padding: 60px 0px 0px 70px;
+    background-color: #454545;
+}
+.eco-farm__top_text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.eco-farm__top-heading {
+    max-width: 475px;
+}
+
+.eco-farm__top-paragraph {
+    max-width: 475px;
+}
+.eco-farm__top-images {
+    display: flex;
+    justify-content: space-between;
+}
+.eco-farm__middle {
+    .first-in-ua {
+        position: relative;
+        height: 600px;
+        background-color: #676767;
+    }
+    .first-in-ua__msg-frame {
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        width: 520px;
+        height: 395px;
+        border: 1px solid #fff;
+        padding: 4px;
+        background-color: transparent;
+    }
+    .first-in-ua__msg {
+        width: 100%;
+        height: 100%;
+        padding: 50px 70px 50px 40px;
+        background-color: #878778;
+    }
+    .what-to-grow {
+        color: #000;
+        padding: 55px 0px 60px 70px;
+        position: relative;
+        border: 1px solid #cbcbcb;
+        border-top: none;
+        height: 400px;
+    }
+    .what-to-grow-paragraph {
+        padding: 45px 0px 0px 80px;
+    }
+    .what-to-grow__image {
+        border: 5px solid #fff;
+        position: absolute;
+        top: -40px;
+        right: 20px;
+    }
+}
+
+.eco-farm__bottom {
+    background-color: #343434;
+    padding: 45px 15px 55px;
+}
+.how-this-works {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.how-this-works-item {
+    position: relative;
+    padding: 10px 45px 0 10px;
+    width: 33%;
+    height: 130px;
+    border: 1px solid #757f81;
+    margin-bottom: 20px;
+    &.how-this-works-item-first_last {
+        text-align: center;
+        padding: 5px;
+        border: none;
+        .how-this-works-item-text {
+            padding: 0;
+            &::before {
+                content: none;
+            }
+        }        
+    }
+}
+.how-this-works-item-text {
+    padding-left: 100px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform:translateY(-50%);
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+    }
+}
