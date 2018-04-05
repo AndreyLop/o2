@@ -7,11 +7,17 @@
     </div>
     <nav class="nav">
         <ul>
-            <li class="nav__item nav__item_camera">
+            <li class="nav__item nav__item_telephone">
+                <a href="#">(093) 82-33-115</a>
+            </li>
+            <li class="nav__item nav__item_callback nav__btn">
+                <a href="#">Замовити дзвінок</a>
+            </li>
+            <li class="nav__item nav__item_camera nav__btn">
                 <a href="#">Камера</a>
             </li>
-            <li class="nav__item nav__item_3d">
-                <a href="#"><span class="nav__item_3d-tour">Тур</span>3D</a>
+            <li class="nav__item nav__item_3d nav__btn">
+                <a href="#">Карта<span class="nav__3d-text">3D</span></a>
             </li>
             <li class="nav__item nav_item_lang">
                 <ul class="lang">

@@ -39,7 +39,7 @@
             </div>
             <div class="hero__bottom-container">
                 <div class="hero__bottom">
-                    <a class="btn btn_lightgreen btn__order-call" href="#" >Замовити дзвінок</a>
+                    <a class="btn btn_transparent btn__order-call" href="#" >Замовити дзвінок</a>
                     <span class="hero__phone">(093) 82-33-115</span>
                     <div class="hero__address">Київ, Бориспільська траса 252 А <br/>(метро Бориспільська)</div>
                 </div>
@@ -157,17 +157,17 @@
         </div>
     </section>
 
-    <section class="ThreeDtour main-page animate-me">
+    <section class="ThreeDMap main-page animate-me">
         <a href="#" class="wrapper main-page-hover-link">
-            <div class="ThreeDtour__wrapper">
-                <div class="ThreeDtour__main">
-                    <h2 class="heading ThreeDtour__heading">
-                        3D тур
+            <div class="ThreeDMap__wrapper">
+                <div class="ThreeDMap__main">
+                    <h2 class="heading ThreeDMap__heading">
+                        Карта
                     </h2>
-                    <p class="ThreeDtour__message">
-                    Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
+                    <p class="ThreeDMap__message">
+                        Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
                     </p>
-                    <span class="btn btn_green btn__watch_3d-tour" href="#">Дивитися 3D тур</span>
+                    <span class="btn btn_lightgreen btn__watch_3d-tour" href="#">Дивитися 3D карту <span class="btn_arrow"></span></span>
                 </div>
             </div>
             <div class="green-hover">
@@ -177,7 +177,7 @@
                             <img src="img/main/eye.png" alt="Eye">
                         </div>
                         <div class="green-hover__text">
-                            Переглянути 3D тур
+                            Переглянути 3D карту
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                 </ul>
             </div>
             <h2 class="construction-end__heading">
-                Завершення будівництва: II квартал 2018 року
+                Завершення будівництва: ...
             </h2>
         </div>
     </section>
@@ -234,7 +234,7 @@
                         <p class="info__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
                         <p class="info__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
                             перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                        <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                     </div>
                     <div class="green-hover">
                         <div class="green-hover__outer-border">
@@ -261,7 +261,7 @@
                         <p class="info__item-paragraph">Житловий комплекс О2 residence розташований серед мальовничого лісу, що всього у 20 кілометрах від межі Києва.</p>
                         <p class="info__item-paragraph">Величний сосновий ліс, казкове озеро, птахи та звірята – ось ваші нові сусіди! Досягнувши максимальної 
                             близькості до природи, ми зуміли сповнити резиденцію усіма зручностями сучасного житлового комплексу.</p>
-                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                        <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                     </div>
                     <div class="green-hover">
                         <div class="green-hover__outer-border">
@@ -391,7 +391,7 @@
                     <h4 class="info__item-heading heading">Квартири</h4>
                     <p class="info__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир.</p>
                     <p class="info__item-paragraph">Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії.</p>
-                    <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                    <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                 </div>
                 <div class="green-hover">
                     <div class="green-hover__outer-border">
@@ -417,7 +417,7 @@
                         <p class="info__item-paragraph">Саме тому ми першими в Україні створюємо житловий комплекс із власною еко-фермою. Ця ферма, яка складається з 
                             системи супер-сучасних теплиць, буде працювати цілий рік.
                         </p>
-                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                        <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                     </div>
                     <div class="green-hover">
                         <div class="green-hover__outer-border">
@@ -440,11 +440,22 @@
         <a href="#" class="wrapper main-page-hover-link">
             <div class="infrastructure__wrapper">
                 <div class="infrastructure__items">
-                    <div class="infrastructure__item infrastructure__item_1"></div>
+                    <div class="infrastructure__item infrastructure__item_1">
+                        <div class="infrastructure__item_text">
+                            Усе для спорту<br/> та відпочинку
+                        </div>
+                    </div>
                     <div class="infrastructure__item infrastructure__item_2">
                         <h2 class="heading infrastructure__heading">Інфраструктура</h2>
+                        <div class="infrastructure__item_text">
+                            Усе для<br/> дітей
+                        </div>
                     </div>
-                    <div class="infrastructure__item infrastructure__item_3"></div>
+                    <div class="infrastructure__item infrastructure__item_3">
+                        <div class="infrastructure__item_text">
+                            Усе для<br/> зручності
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="green-hover">
@@ -471,7 +482,7 @@
                         <h4 class="info__item-heading heading">Комерційна нерухомість</h4>
                         <p class="info__item-paragraph">Щоб сповнити O2 Residence життям і зробити його зручним для усіх мешканців, ми намагаємось залучити найцікавіші бізнес-проекти у різних галузях.</p>
                         <p class="info__item-paragraph">Комерційна нерухомість буде представлена: кафе та ресторани, шопінг, здоров’я та краса, освіта, сфера послуг.</p>
-                        <span class="btn btn_lightgreen btn_info">Читати далі</span>
+                        <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                     </div>
                     <div class="green-hover">
                         <div class="green-hover__outer-border">
@@ -489,7 +500,11 @@
             </div>
 
             <div class="info__item info__item_2">
-                <div class="info__item-image info__item-image_developer"></div>
+                <div class="info__item-image info__item-image_developer">
+                    <div class="info__item-developer-logo">
+                        <img src="img/main/saga-logo-w.svg" alt="Saga Logo">
+                    </div>
+                </div>
                 <div class="info__item-text">
                     <h4 class="info__item-heading heading">Забудовник</h4>
                     <p class="info__item-paragraph">Будівництво ЖК «SAN FRANCISCO city house» здійснюється 
@@ -551,8 +566,8 @@
         </div>
     </section>
 
-    <section class="dayInO2 main-page animate-me">
-        <a href="day-in-o2.php" class="wrapper main-page-hover-link">
+    <section class="dayInO2 wrapper main-page animate-me">
+        <a href="day-in-o2.php" class="main-page-hover-link">
             <div class="dayInO2__wrapper">
                 <div class="dayInO2__main">
                     <h2 class="heading dayInO2__heading">
@@ -561,7 +576,7 @@
                     <p class="dayInO2__message">
                         O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
                     </p>
-                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі</span>
+                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі <span class="btn_arrow"></span>
                 </div>
             </div>
             <div class="green-hover">

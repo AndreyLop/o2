@@ -30,8 +30,8 @@
         <div class="wrapper">
 
             <div class="values__ecology">
-                <div class="values__ecology-outer-frame">
-                    <div class="values__ecology-main">
+                <div class="values__outer-frame">
+                    <div class="values__main-text">
                         <h2>Heading</h2>
                         <p>Paragraph</p>
                     </div>
@@ -42,6 +42,34 @@
                 <div class="values__triangle"></div>
                 <div class="values__solar-panels-inner">
                     text
+                </div>
+            </div>
+
+            <div class="values__healthy-life">
+                <div class="values__healthy-life_image">
+                    <img src="img/values/rope_guy.jpg" alt="Rope">
+                </div>
+                <div class="values__healthy-life_text">
+                    <h3>Heading</h3>
+                    <p>paragraph</p>
+                </div>
+            </div>
+
+            <div class="values__children">
+                <div class="values__outer-frame">
+                    <div class="values__main-text">
+                        <h2>Heading</h2>
+                        <p>Paragraph</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values__service">
+                <div class="values__outer-frame">
+                    <div class="values__main-text">
+                        <h2>Heading</h2>
+                        <p>Paragraph</p>
+                    </div>
                 </div>
             </div>
             

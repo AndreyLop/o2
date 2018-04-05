@@ -230,7 +230,7 @@
 // hero section end
 
 // 3d-tour start
-.ThreeDtour {
+.ThreeDMap {
     position: relative;
     opacity: 1;
     left: 0px;
@@ -241,7 +241,7 @@
     }
     
 }
-.ThreeDtour__wrapper {
+.ThreeDMap__wrapper {
     background-image: url('../img/main/ThreeD_tour_bg.jpg');
     background-size: cover;
     background-position: center;
@@ -249,18 +249,18 @@
     position: relative;
     z-index: -1;
 }
-.ThreeDtour__main {
+.ThreeDMap__main {
     width: 640px;
     margin: 145px auto;
     text-align: center;
 }
-.ThreeDtour__heading {
+.ThreeDMap__heading {
     font-size: 1.875rem;
     &:after {
         margin: 8px auto 0px auto;
     }
 }
-.ThreeDtour__message {
+.ThreeDMap__message {
     line-height: 24px;
     letter-spacing: 0.45px;
     font-size: 1.125rem;
@@ -268,7 +268,6 @@
 }
 .btn__watch_3d-tour {
     display: inline-block;
-    width: 180px;
     font-size: 0.75rem;
     margin-top: 45px;
 }
@@ -453,6 +452,11 @@
 .info__item-image_developer {
     background-image: url('../img/main/info_developer_bg.jpg');
 }
+.info__item-developer-logo {
+
+    width: 200px;
+    margin: 75px auto 0 auto;
+}
 
 .info__item-text {
     color: #000;
@@ -471,7 +475,6 @@
 .btn_info {
     position: absolute;
     display: block;
-    width: 180px;
     bottom: 30px;
     right: 40px;
     color: #fff;
@@ -581,6 +584,11 @@
     }
 }
 // advantages end
+.values {
+    &.main-page {
+        color: #fff;
+    }
+}
 
 // values start
 .values__wrapper {
@@ -684,10 +692,20 @@
 .infrastructure__item_3 {
     background-image: url('../img/main/infrastructure_3_bg.jpg');
 }
+.infrastructure__item_text {
+    margin-top: 250px;
+    background-color: $lightgreen;
+    opacity: 0.9;
+    padding: 20px;
+    max-width: 200px;
+    height: 100px;
+    font-size: 1.125rem;
+}
 // infrastrucutre end
 
 // dayInO2 start 
 .dayInO2 {
+    padding:5px;
     position: relative;
     left: 0;
     opacity: 1;
@@ -704,15 +722,15 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    color: #000;
+    color: #fff;
 }
 .dayInO2__main {
-    margin: 145px 0px 0px 137px;
+    margin: 145px 0px 0px 80px;
 }
 .dayInO2__heading {
     font-size: 1.875rem;
     &::after {
-        background-color: #000;
+        background-color: #fff;
     }
 }
 .dayInO2__message {
@@ -722,7 +740,6 @@
 }
 .btn__dayInO2 {
     display: inline-block;
-    width: 180px;
     font-size: 0.75rem;
     margin-top: 45px;
 }

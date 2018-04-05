@@ -1,28 +1,62 @@
+.eco-farm {
+    .page-hero {
+        background-image: url('../img/eco-farm/eco_farm_head_bg.jpg');
+    }
+    .wrapper {
+        color: #000;
+    }
+}
+.eco-farm-paragraph {
+    line-height: 30px;
+    letter-spacing: 0.4;
+}
 .eco-farm__top {
     padding: 60px 0px 0px 70px;
-    background-color: #454545;
+    border: 1px solid #cbcbcb;
+    margin-top: 40px;
 }
 .eco-farm__top_text {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
 }
 .eco-farm__top-heading {
     max-width: 475px;
+    font-size: 1.5rem;
+    line-height: 36px;
 }
 
 .eco-farm__top-paragraph {
-    max-width: 475px;
+    max-width: 530px;
+    letter-spacing: 0.4;
+    float: right;
 }
 .eco-farm__top-images {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+.eco-farm__top-images_fruit-bowl {
+    width: 330px;
+    img {
+        display: block;
+    }
+}
+.eco-farm__top-images_tomatos {
+    img {
+        width: 100%;
+        vertical-align: bottom;
+    }
 }
 .eco-farm__middle {
+    margin-top: 40px;
     .first-in-ua {
         position: relative;
         height: 600px;
-        background-color: #676767;
+        background-image: url('../img/eco-farm/eco-farm_middle_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
     }
     .first-in-ua__msg-frame {
         position: absolute;
@@ -38,8 +72,17 @@
     .first-in-ua__msg {
         width: 100%;
         height: 100%;
-        padding: 50px 70px 50px 40px;
-        background-color: #878778;
+        padding: 50px 60px 50px 40px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .first-in-ua_heading {
+        line-height: 36px;
+        &::after {
+            background-color: #000;
+        }
+    }
+    .first-in-ua__paragraph {
+        padding: 27px 0px 0px 34px;
     }
     .what-to-grow {
         color: #000;
@@ -49,8 +92,16 @@
         border-top: none;
         height: 400px;
     }
-    .what-to-grow-paragraph {
+    .what-to-grow-paragraph-1 {
+        max-width: 400px;
+        span {
+            font-weight: 600;
+        }
+    }
+    .what-to-grow-paragraph-2 {
+        max-width: 540px;
         padding: 45px 0px 0px 80px;
+
     }
     .what-to-grow__image {
         border: 5px solid #fff;
@@ -61,7 +112,13 @@
 }
 
 .eco-farm__bottom {
-    background-color: #343434;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url('../img/eco-farm/how_this_works_bg.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 45px 15px 55px;
 }
 .how-this-works {
@@ -71,34 +128,98 @@
 }
 .how-this-works-item {
     position: relative;
-    padding: 10px 45px 0 10px;
+    padding: 0px 20px 0 10px;
     width: 33%;
     height: 130px;
     border: 1px solid #757f81;
     margin-bottom: 20px;
-    &.how-this-works-item-first_last {
-        text-align: center;
-        padding: 5px;
-        border: none;
-        .how-this-works-item-text {
-            padding: 0;
-            &::before {
-                content: none;
-            }
-        }        
+    display: flex;
+    align-items: center;
+}
+.how-this-works-item-icon-number {
+    width: 40%;
+}
+.how-this-works-item-1-text {
+    text-align: center;
+}
+.how-this-works-item_first-last {
+    padding: 0;
+    border: none;
+    .how-this-works-heading {
+        margin: 0 auto;
+        &::after {
+            margin: 10px auto 0px;
+        }
     }
 }
 .how-this-works-item-text {
-    padding-left: 100px;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        transform:translateY(-50%);
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        background-color: red;
+    width: 60%;
+}
+.how-this-works-item-icon {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url('../img/eco-farm/eco-farm_spritesheet.png');
+}
+.how-this-works-item-2 {
+    .how-this-works-item-icon {
+        width: 68px;
+        height: 68px;
     }
+}
+.how-this-works-item-3 {
+    .how-this-works-item-icon {
+        width: 37px;
+        height: 43px;
+        background-position-x: -74px;
+    }
+}
+.how-this-works-item-4 {
+    .how-this-works-item-icon {
+        width: 63px;
+        height: 56px;
+        background-position-x: -116px;
+    }
+}
+.how-this-works-item-5 {
+    .how-this-works-item-icon {
+        width: 79px;
+        height: 49px;
+        background-position-x: -183px;
+    }
+}
+.how-this-works-item-6 {
+    .how-this-works-item-icon {
+        width: 42px;
+        height: 70px;
+        background-position-x: -265px;
+    }
+}
+.how-this-works-item-7 {
+    .how-this-works-item-icon {
+        width: 55px;
+        height: 55px;
+        background-position-x: -311px;
+    }
+}
+.how-this-works-item-8 {
+    .how-this-works-item-icon {
+        width: 58px;
+        height: 62px;
+        background-position-x: -371px;
+    }
+}
+.how-this-works-item-9-text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.how-this-works-item-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+.how-this-works-item-text {
+    line-height: 24px;
+    font-size: 0.875rem;
 }

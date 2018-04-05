@@ -47,11 +47,32 @@ a {
         }
     }
     &.btn_lightgreen {
+        padding: 0px 36px;
         background-color: $lightgreen;
         transition: all $transitionTime;
         &:hover {
             background-color: $green;
         }
+    }
+    &.btn_transparent {
+        border: 3px solid $lightgreen;
+        line-height: 35px;
+        transition: all $transitionTime;
+        &:hover {
+            background-color: $lightgreen;
+            border-color: transparent;
+        }
+    }
+    .btn_arrow {
+        display: inline-block;
+        width: 26px;
+        height: 13px;
+        margin-left: 11px;
+        vertical-align: middle;
+        background-image: url('../img/main/btn_arrow.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -100,13 +121,43 @@ a {
     fill: #ffffff;
 }
 .page-hero {
-    background-color: #898989;
-        
-    .page-hero__heading {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    .page-hero_nav {
         position: absolute;
         left: 0;
         bottom: 55px;
     }
+}
+.page-hero__heading {
+    font-weight: 700;
+    font-size: 2.25rem;
+    display: inline-block;
+    margin: 50px;
+    color: #fff;
+}
+.page-hero_nav-links {
+    display: inline-block;
+}
+.page-hero_nav-links-main {
+    color: #ccc;
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 10px;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 15px;
+        margin-left: 12px;
+        background-color: #fff;
+        vertical-align: middle;
+    }
+}
+.page-hero_nav-links-active {
+    text-decoration: underline;
 }
 .page-hero__wrapper {
     height: 500px;

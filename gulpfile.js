@@ -29,12 +29,14 @@ gulp.task('common-js', function() {
 gulp.task('all-js', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
+		'src/js/libs/magnific-popup.js',
 		'src/js/useful_functions.js',
 		'src/js/common.js',
 		'src/js/commercial.js',
 		'src/js/day-in-o2.js',
 		'src/js/advantages.js',
 		'src/js/residence.js',
+		'src/js/construction.js',
 		'src/js/values.js',
 		'src/js/main.js',
 		'src/js/news.js'
@@ -59,6 +61,21 @@ gulp.task('js-commercial', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 // commercial page task end
+
+// construction page task
+gulp.task('js-construction', function() {
+	return gulp.src([
+		'src/js/libs/magnific-popup.js',
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/construction.js'
+	])
+	.pipe(concat('construction.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// construction page task end
 
 // residence page task
 gulp.task('js-residence', function() {
@@ -146,7 +163,16 @@ gulp.task('js-values', function() {
 // values page task end
 
 // main page start
-gulp.task('js', ['common-js', 'js-commercial', 'js-news', 'js-day-in-o2','js-eco-farm', 'js-advantages', 'js-residence', 'js-values'], function() {
+gulp.task('js', [
+	'common-js', 
+	'js-commercial', 
+	'js-news', 
+	'js-day-in-o2',
+	'js-eco-farm',
+	'js-advantages',
+	'js-residence',
+	'js-values',
+	'js-construction'], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',
