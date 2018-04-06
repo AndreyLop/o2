@@ -133,42 +133,6 @@ animateHTMLCtrl.init();
 // main page svg navigation end
 
 
-// main page tabs start
-(function() {
-
-    var activeTabClass = 'contacts__tab_active';
-    var hiddenTabContentClas = 'contacts__tab-content__hidden';
-
-    var NODES = {
-        cTabs:document.querySelector('.contacts__tabs'),  
-        cTab: document.querySelectorAll('.contacts__tab'),
-        cTabContent: document.querySelectorAll('.contacts__tab-content')
-    };
-
-    function removeActiveClassFromTabs() {
-        Array.prototype.forEach.call(NODES.cTab, function(node) {
-            node.classList.remove(activeTabClass);
-        });
-    };
-
-    function hideTabsContent() {
-        Array.prototype.forEach.call(NODES.cTabContent, function(node) {
-            node.classList.add(hiddenTabContentClas);
-        });
-    };
-
-    NODES.cTabs.addEventListener('click', function(e) {
-        if(Array.prototype.indexOf.call(e.target.classList)!==1) {
-            removeActiveClassFromTabs();
-            hideTabsContent();
-            e.target.classList.add(activeTabClass);
-            document.getElementById(e.target.dataset.tab).classList.remove(hiddenTabContentClas);
-        };
-    });
-
-})();
-// main page tabs end
-
 // bottom sliders start
 (function() {
     $('.advantages__slider').slick({

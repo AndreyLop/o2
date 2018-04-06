@@ -15,7 +15,6 @@
 }
 .header__fixed {
     transition: all $transitionTime;
-
     .lang {
         top: 25px;
     }
@@ -134,7 +133,7 @@
     left: 60px;
     transition: all $transitionTime;
 }
-.menu {
+.nav_item_menu {
     width: 60px;
     font-size: 0.75rem;
     .menu__line {
@@ -146,4 +145,96 @@
     .menu__line_2 {
         width: 60%;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+// Drop down menu start
+.menu {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/common/menu_bg.jpg');
+    transition: transform $transitionTime2;
+    &.menu_closed {
+        transform: translateY(-100%);
+    }
+}
+.menu__top {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__top-text {
+    font-size: 1.5rem;
+}
+.menu__close-btn {
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/common/close_menu_btn.png');
+    &:hover {
+        cursor: pointer;
+    }
+}
+.menu__main-nav {
+    max-width: 1160px;
+    margin: 0px auto 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.menu__nav {
+    width: 25%;
+    line-height: 36px;
+    margin-bottom: 45px;
+}
+.menu__nav-item_heading {
+    color: #b3b3b3;
+}
+.menu__nav-link-news {
+    margin-top: 36px;
+}
+
+.menu__nav-link-hover {
+    display: inline-block;
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #b3b3b3;
+        transition: width $transitionTime;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+.menu__nav-item {
+    padding-left: 10px;
+}
+.menu__nav_bottom-row {
+    margin-left: 25%;
+}
+.menu__bottom {
+    max-width: 550px;
+    margin: 0 auto 20px auto;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+// Drop down menu end

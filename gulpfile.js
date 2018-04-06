@@ -38,6 +38,7 @@ gulp.task('all-js', function() {
 		'src/js/residence.js',
 		'src/js/construction.js',
 		'src/js/values.js',
+		'src/js/developer.js',
 		'src/js/main.js',
 		'src/js/news.js'
 		])
@@ -120,6 +121,21 @@ gulp.task('js-eco-farm', function() {
 });
 // eco-farm page task end
 
+// developer page task
+gulp.task('js-developer', function() {
+	return gulp.src([
+		'src/js/libs/slick.min.js',
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/developer.js'
+	])
+	.pipe(concat('developer.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// developer page task end
+
 // advantages page task
 gulp.task('js-advantages', function() {
 	return gulp.src([
@@ -171,6 +187,7 @@ gulp.task('js', [
 	'js-eco-farm',
 	'js-advantages',
 	'js-residence',
+	'js-developer',
 	'js-values',
 	'js-construction'], function() {
 	return gulp.src([

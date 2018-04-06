@@ -1,0 +1,136 @@
+.developer {
+    .page-hero {
+        background-image: url('../img/developer/developer_bg.jpg');
+    }
+}
+
+.developer__slider-heading {
+    font-size: 1.5rem;
+    line-height: 36px;
+    max-width: 680px;
+    margin: 50px auto;
+    text-align: center;
+    &::after {
+        margin: 10px auto 0px;
+    }
+}
+
+.developer__slider-container {
+    padding: 10px;
+    margin-top: 40px;
+    background-image: url('../img/developer/developer_slider_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.developer__slider-frame {
+    position: relative;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+}
+.developer__slider {
+    width: 900px;
+    margin: 0 auto;
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.developer__slider-item {
+    a {
+        display: inline-block;
+    }
+    img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.developer__slider_arrow {
+    position: absolute;
+    top: 295px;
+}
+
+.developer__slider-arrow_left {
+    left: 30px;
+}
+.developer__slider-arrow_right {
+    right: 30px;
+}
+
+.developer__paragraph {
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    color: #000;
+}
+
+.developer__saga-container {
+    margin-top: 40px;
+    border: 1px solid #cdcdcd;
+    padding: 60px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.developer__logo {
+    width: 200px;
+    img {
+        width: 100%;
+    }
+}
+
+.developer__message {
+    width: 680px;
+}
+
+.developer__advantages {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.developer__advantage {
+    border: 1px solid #cdcdcd;
+    width: 32%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.developer__advantage-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/developer/developer_spritesheet.png');
+    margin: 0 auto;
+    height: 100px;
+
+}
+.developer__advantage-msg {
+    &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 62px;
+        margin: 10px auto;
+        background-color: #cdcdcd;
+    }
+}
+.developer__advantage-1 {
+    .developer__advantage-icon {
+        width: 84px;
+        background-position-x: 0px; 
+    }
+}
+.developer__advantage-2 {
+    .developer__advantage-icon {
+        width: 101px;
+        background-position-x: -84px; 
+        background-position-y: 30px; 
+    }
+}
+.developer__advantage-3 {
+    .developer__advantage-icon {
+        width: 69px;
+        background-position-x: -187px; 
+    }
+}

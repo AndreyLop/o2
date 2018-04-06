@@ -21,7 +21,7 @@
                         <a href="#">Цінності</a>
                     </li>
                     <li>
-                        <a href="#">Еко-ферма</a>
+                        <a href="eco-farm.php">Еко-ферма</a>
                     </li>
                     <li>
                         <a href="#">Контакти</a>
@@ -64,10 +64,10 @@
                 </h4>
                 <ul>
                     <li>
-                        <a href="#">Забудовник</a>
+                        <a href="developer.php">Забудовник</a>
                     </li>
                     <li>
-                        <a href="#">Хід будвництва</a>
+                        <a href="construction.php">Хід будвництва</a>
                     </li>
                     <li>
                         <a href="#">Веб-камера</a>
