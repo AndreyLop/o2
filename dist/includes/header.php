@@ -13,6 +13,9 @@
             <li class="nav__item nav__item_callback nav__btn">
                 <a href="#">Замовити дзвінок</a>
             </li>
+            <li class="nav__item nav__item_callback-mobile nav__btn">
+                <a href="#"></a>
+            </li>
             <li class="nav__item nav__item_camera nav__btn">
                 <a href="#">Камера</a>
             </li>

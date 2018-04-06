@@ -7,7 +7,7 @@
     }
 }
 
-@media only screen and(max-width: 820px) {
+@media only screen and(max-width: 1024px) {
     .b-nav__wrapper {
         justify-content: space-around;
     }
@@ -26,8 +26,7 @@
     }
 }
 
-
-@media only screen and(max-width: 640px) {
+@media only screen and(max-width: 768px) {
     .b-nav__heading {
         font-size: 1rem;
         line-height: 30px;
@@ -35,4 +34,4 @@
     .b-nav__phone {
         font-size: 0.85rem;
     }
-} //end 640px
+}

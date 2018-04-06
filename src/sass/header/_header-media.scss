@@ -1,4 +1,4 @@
-@media only screen and(max-width: 640px) {
+@media only screen and(max-width: 1024px) {
     .nav {
         min-width: auto;
     }
@@ -7,4 +7,12 @@
     .nav_item_lang {
         display: none;
     }
-} //end 640px
+}
+@media only screen and (max-width: 768px) {
+    .nav__item_callback-mobile {
+        display: block;
+    }
+    .nav__item_callback {
+        display: none;
+    }
+}//mobile

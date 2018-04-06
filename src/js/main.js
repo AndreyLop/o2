@@ -4,7 +4,6 @@ var animateHTMLCtrl = (function() {
     elems = document.querySelectorAll('.animate-me'),
     windowHeight = window.innerHeight,
     animatedElements;
-  
     var init = function() {
         _addEventHandlers();
     }
@@ -20,8 +19,10 @@ var animateHTMLCtrl = (function() {
       window.addEventListener('scroll', _checkPosition);
       window.addEventListener('resize', debounce(init, 100));
     }
+
+    setTimeout(_checkPosition, 500)
   
-    function _checkPosition() {
+    function _checkPosition() {        
     windowHeight = window.innerHeight;
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
@@ -141,7 +142,15 @@ animateHTMLCtrl.init();
         dots: true,
         customPaging : function(slider, i) {
             return '<span class="advantages__slider-dot"><span>';
-        }
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                }
+            }
+        ]
     });
     $('.values__slider').slick({
         prevArrow: $('.values-slider_arrows .slider_arrow-left'),

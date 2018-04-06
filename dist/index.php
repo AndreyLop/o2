@@ -35,7 +35,7 @@
                 <p class="hero__message">
                 Неподалік від Києва, серед величного лісу ми створюємо <br/> яскраву концепцію щасливого життя – життя у гармонії із природою.
                 </p>
-                <a class="btn btn_green btn__choose-apartment" href="#">Обрати квартиру</a>
+                <a class="btn btn_lightgreen btn__choose-apartment" href="#">Обрати квартиру</a>
             </div>
             <div class="hero__bottom-container">
                 <div class="hero__bottom">
@@ -442,18 +442,18 @@
                 <div class="infrastructure__items">
                     <div class="infrastructure__item infrastructure__item_1">
                         <div class="infrastructure__item_text">
-                            Усе для спорту<br/> та відпочинку
+                            Усе для спорту та відпочинку
                         </div>
                     </div>
                     <div class="infrastructure__item infrastructure__item_2">
                         <h2 class="heading infrastructure__heading">Інфраструктура</h2>
                         <div class="infrastructure__item_text">
-                            Усе для<br/> дітей
+                            Усе для дітей
                         </div>
                     </div>
                     <div class="infrastructure__item infrastructure__item_3">
                         <div class="infrastructure__item_text">
-                            Усе для<br/> зручності
+                            Усе для зручності
                         </div>
                     </div>
                 </div>
@@ -591,12 +591,15 @@
                     </div>
                 </div>
             </div>
+            <div class="dayInO2-border-container">
+                <div class="dayInO2-border"></div>
+            </div>
         </a>
     </section>
 
-    <? include_once('includes/contacts.php'); ?>
+    <?php include_once('includes/contacts.php'); ?>
 
-    <? include_once('includes/footer.php'); ?>
+    <?php include_once('includes/footer.php'); ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>

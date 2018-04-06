@@ -743,6 +743,19 @@
     font-size: 0.75rem;
     margin-top: 45px;
 }
+.dayInO2-border-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    .dayInO2-border {
+        border: 1px solid #fff;
+        width: 100%;
+        height: 100%;
+    }
+}
 // dayInO2 end
 
 // projects start

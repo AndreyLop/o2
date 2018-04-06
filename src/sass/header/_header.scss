@@ -69,6 +69,14 @@
         width: 180px;
     }
 }
+.nav__item_callback-mobile {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/common/phone_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .nav__item_3d {
     a {
         width: 120px;

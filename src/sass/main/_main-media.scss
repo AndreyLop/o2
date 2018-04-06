@@ -1,115 +1,83 @@
-@media only screen and(max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
+
     .hero__bottom {
-        width: 540px;
-    }
-    .hero__phone {
-        font-size: 1rem;
-    }
-}
-@media only screen and(max-width: 1000px) {
-    .hero__main {
-        left: 20px;
-    }
-    .hero__bottom {
-        flex-direction: column;
-        width: auto;    
+        flex-direction: column-reverse;
+        width: auto;
     }
     .hero__address {
-        border-left: none;
+        order: 3;
+        border: none;
+        margin-bottom: 20px;
+        text-align: center;
     }
+    .btn__order-call {
+        order: 2;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .hero__phone {
+        order: 1;
+    }
+} //desktop
+
+@media only screen and (max-width: 1024px) {
+
+    .construction-end__list {
+        justify-content: center;
+    }
+
     .construction-end_list-item {
         width: 50%;
     }
-    .adantages__heading {
-        top: 20px;
-        left: 80px;
-    }
-    .values__slide-caption-text {
-        padding: 130px 5% 0 70px
-    }
-    .dayInO2__main {
-        max-width: 600px;
-        margin: 100px auto;
-    }
-}
 
-@media only screen and(max-width: 820px) {
-    .infrastructure__item {
-        min-height: 300px;
+    .advantages__slide-caption-text {
+        width: 300px;
+    }
+    .dayInO2__wrapper {
+        background-position: 70%;
+    }
+
+} //tablet
+
+@media only screen and (max-width: 768px) {
+    .hero__svg-navigation {
+        display: none;
+    }
+    .hero__bottom {
+        margin: 0 auto;
+    }
+    .ThreeDMap__main {
+        width: 90%;
+    }
+    .construction-end_list-item {
+        width: 320px;
+        margin: 0 auto;
     }
     .info__wrapper {
         flex-direction: column;
     }
-    .info__item {
+    .info__item  {
         width: 95%;
-        margin: 0 auto;
-        margin-top: 10px;
+        margin: 40px auto 0 auto;
+    }
+    .advantages__slide {
+        height: 450px;
+        background-position: 67%;
+    }
+    .advantages__slide-caption-number {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .adantages__heading {
+        top:5px;
+        left: 25px;
     }
     .values__slide-caption {
         width: 100%;
     }
-}
-
-
-@media only screen and(max-width: 640px) {
-    .hero__heading {
-        font-size: 2rem;
-        text-align: center;
-        line-height: 35px;
-        &::after {
-            margin: 10px auto;
-        }
-    }
-    .heading {
-        line-height: 35px;
-    }
-    .btn__choose-apartment {
-        margin: 20px auto 0px;
-        display: block;
-    }
-    .hero__main {
-        position: static;
-        width: 310px;
-        margin: 10px auto;
-        transform: none;
-    }
-    .hero__bottom-container {
-        position: static;
-    }
-    .hero__bottom {
-        margin: 0 auto;
-    }
-    .hero__svg-navigation {
-        display: none;
-    }
-    .ThreeDtour__main {
-        max-width: 90%;
-    }
-    .constructin-end__wrapper {
-        padding: 40px 10px 10px 10px; 
-    }
-    .construction-end_list-item {
-        width: 90%;
-        height: 80px;
-        margin: 0 auto;
-        font-size: 1rem;
-    }
-    .info__item-text {
-        padding: 5px;
-    }
-    .btn_info {
-        position: static;
-        margin: 5px auto;
-    }
-    .values__slide-caption-heading {
-        font-size: 1.5rem;
-    }
     .values__slide-caption-text {
-        padding: 75px 35px 0px;
-    }
-    .values__slide-caption-paragraph {
-        font-size: 1rem;
-        margin-top: 15px;
+        padding: 80px 50px 0px 50px;
     }
     .infrastructure__items {
         flex-direction: column;
@@ -117,24 +85,13 @@
     .infrastructure__item {
         width: 100%;
     }
-    .dayInO2__main {
-        max-width: 90%;
-    }
-    .dayInO2__heading {
-        text-align: center;
-        &::after {
-            margin: 10px auto;
-        }
-    }
-    .btn__dayInO2 {
-        display: block;
-        margin: 45px auto 0 auto;
+    .contacts__tabs {
+        flex-direction: column;
     }
     .contacts__tab {
-        font-size: 0.75rem;
-        line-height: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 100%;
     }
-} //end 640px
+    .contacts__heading {
+        margin-top: 100px;
+    }
+}//mobile
