@@ -37,8 +37,7 @@
 
             <div class="commercial__about commercial__about-1">
                 <div class="commercial__about-container">
-                    <div class="commercial__about-image">
-                        <img src="img/commercial/commercial__about.jpg" alt="Commercial about">
+                    <div class="commercial__about-image commercial__about-image_1">
                     </div>
                     <div class="commercial__about-text">
                         <p class="commercial__paragraph">
@@ -91,14 +90,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="commercial__item-image commercial__item-image_right">
-                    <img src="img/commercial/commercial_restaraunts_img.jpg" alt="Commercial">
+                <div class="commercial__item-image commercial__item-image_restaraunts commercial__item-image_right">
                 </div>
             </div>
 
             <div class="commercial__item commercial__item-2">
-                <div class="commercial__item-image commercial__item-image_left">
-                    <img src="img/commercial/commercial_shops_img.jpg" alt="Commercial">
+                <div class="commercial__item-image commercial__item-image_shops commercial__item-image_left">
                 </div>
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container commercial__item-text-container_right">
@@ -188,14 +185,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="commercial__item-image commercial__item-image_right">
-                    <img src="img/commercial/commercial_hospitals.jpg" alt="Commercial">
+                <div class="commercial__item-image commercial__item-image_hospitals commercial__item-image_right">
                 </div>
             </div>
 
             <div class="commercial__item commercial__item-4">
-                <div class="commercial__item-image commercial__item-image_left">
-                    <img src="img/commercial/commercial_education_img.jpg" alt="Commercial">
+                <div class="commercial__item-image commercial__item-image_education commercial__item-image_left">
                 </div>
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container commercial__item-text-container_right">
@@ -282,8 +277,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="commercial__item-image commercial__item-image_right">
-                    <img src="img/commercial/commercial_service_img.jpg" alt="Commercial">
+                <div class="commercial__item-image commercial__item-image_service commercial__item-image_right">
                 </div>
             </div>
 
@@ -299,8 +293,7 @@
                             Розкажіть нам про ваш проект, щоб отримати спеціальні умови придбання комерційної нерухомості у O2 Residence. 
                         </p>
                     </div>
-                    <div class="commercial__about-image">
-                        <img src="img/commercial/commercial__about_2.jpg" alt="Commercial about">
+                    <div class="commercial__about-image commercial__about-image_2">
                     </div>
                 </div>
             </div>
@@ -309,7 +302,7 @@
 
     </section>
 
-    <? include_once('includes/footer.php'); ?>
+    <?php include_once('includes/footer.php'); ?>
     <script src="js/commercial.min.js"></script>
 </body>
 </html>

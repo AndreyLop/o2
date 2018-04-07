@@ -1,0 +1,30 @@
+@media only screen and(max-width: 1200px) {
+  .what-to-grow-paragraph-2 {
+    padding: 45px 0px 0px 0px;
+    max-width: 400px;
+  }
+}
+@media only screen and(max-width: 1024px) {
+  .eco-farm__top {
+    padding: 25px 0px 0px 25px;
+  }
+  .eco-farm__top-heading {
+    max-width: 320px;
+  }
+  .eco-farm__top-item-paragraph {
+    .eco-farm-paragraph {
+        max-width: 280px;
+    }
+  }
+  .eco-farm__top-item-fruit-bowl {
+    width: 30%;
+    img {
+      max-width: 355px;
+      margin-left: 5px;
+      margin-right: 20px;
+    }
+  }
+  .eco-farm__top-item-tomatos {
+    flex: 1;
+  }
+}

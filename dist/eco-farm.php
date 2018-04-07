@@ -37,22 +37,22 @@
         <div class="wrapper">
 
             <div class="eco-farm__top">
-                <div class="eco-farm__top_text">
+                <div class="eco-farm__top-item">
                     <h4 class="eco-farm__top-heading">
                         Кожен з нас все частіше замислюється про те, наскільки корисні та безпечні продукти, які ми вживаємо щодня.
                     </h4>
+                </div>
+                <div class="eco-farm__top-item eco-farm__top-item-paragraph">
                     <p class="eco-farm__top-paragraph eco-farm-paragraph">
                         Сьогодні в усіх прогресивних країнах перевагу віддають еко-продукції, тобто такій, яка вирощується у природних 
                         умовах і не містить хімічних добавок.
                     </p>
                 </div>
-                <div class="eco-farm__top-images">
-                    <div class="eco-farm__top-images_fruit-bowl">
-                        <img src="img/eco-farm/eco-farm__fruit-bowl.svg" alt="Fruit Bowl">
-                    </div>
-                    <div class="eco-farm__top-images_tomatos">
-                        <img src="img/eco-farm/eco-farm__tomatos.jpg" alt="Tomatos">
-                    </div>
+                <div class="eco-farm__top-item eco-farm__top-item-fruit-bowl">
+                    <img src="img/eco-farm/eco-farm__fruit-bowl.svg" alt="Fruit Bowl">
+                </div>
+                <div class="eco-farm__top-item eco-farm__top-item-tomatos">
+                    <img src="img/eco-farm/eco-farm__tomatos.jpg" alt="Tomatos">
                 </div>
             </div>
 
@@ -170,7 +170,7 @@
 
     </section>
 
-    <? include_once('includes/footer.php'); ?>
+    <?php include_once('includes/footer.php'); ?>
     <script src="js/eco-farm.min.js"></script>
 </body>
 </html>

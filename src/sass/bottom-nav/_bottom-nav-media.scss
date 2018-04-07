@@ -2,9 +2,6 @@
     .b-nav__wrapper {
         padding: 30px 5px 130px 5px;
     }
-    .b-nav__phone {
-        font-size: 1.125rem;
-    }
 }
 
 @media only screen and(max-width: 1024px) {
@@ -14,24 +11,26 @@
     .b-nav__item {
         width: 50%;
         flex: auto;
-        ul {
-            width: 80%;
-            margin: 0 auto;
-        }
     }
     .b-nav__phone {
         &:before {
             margin: 0;
         }
     }
+    .b-nav__wrapper {
+        padding: 60px 60px 130px 60px;
+    }
 }
 
 @media only screen and(max-width: 768px) {
     .b-nav__heading {
-        font-size: 1rem;
         line-height: 30px;
     }
-    .b-nav__phone {
-        font-size: 0.85rem;
+    .b-nav__wrapper {
+        padding: 10px 10px 130px 10px;
+    }
+    .b-nav__item {
+        width: 80%;
+        margin-bottom: 30px;
     }
 }

@@ -1,9 +1,13 @@
 var langMenu=function(){
-    var e=document.querySelector(".nav_item_lang"),
+    var navLangItem=document.querySelector(".nav__item-lang"),
     n=document.querySelector(".lang");
-    e.addEventListener("click",function(e){
+    navLangItem.addEventListener("click",function(e){
+        console.log('tset');
+        
         e.preventDefault(),
-        n.classList.contains("lang__opened")?n.classList.remove("lang__opened"):n.classList.add("lang__opened")})}();
+        this.classList.contains("nav__item-lang_opened") 
+        ? this.classList.remove("nav__item-lang_opened")
+        : this.classList.add("nav__item-lang_opened")})}();
 
 
 var navFixed = (function(){ 
@@ -60,7 +64,7 @@ var navFixed = (function(){
 
 var dropDownMenu = (function() {
 
-    var showMenuBtn = document.querySelector('.nav_item_menu');
+    var showMenuBtn = document.querySelector('.nav__item_menu');
     var hideMenuBtn = document.querySelector('.menu__close-btn');
     var menu = document.querySelector('.menu');
 
@@ -80,9 +84,9 @@ var dropDownMenu = (function() {
     // this listener checks if click was outside menu or on close menu btn
     function outsideClickListener(event) {
         if(!menu.contains(event.target)  
-        && !event.target.classList.contains('nav_item_menu')
-        && !event.target.parentNode.classList.contains('nav_item_menu')
-        && !event.target.parentNode.parentNode.classList.contains('nav_item_menu')) {
+        && !event.target.classList.contains('nav__item_menu')
+        && !event.target.parentNode.classList.contains('nav__item_menu')
+        && !event.target.parentNode.parentNode.classList.contains('nav__item_menu')) {
             hideMenu();
         }
     }

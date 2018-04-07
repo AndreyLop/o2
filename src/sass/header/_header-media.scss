@@ -2,17 +2,22 @@
     .nav {
         min-width: auto;
     }
-    .nav__item_camera, 
-    .nav__item_3d,
-    .nav_item_lang {
+    .nav__item-camera, 
+    .nav__item-3d,
+    .nav__item-lang {
         display: none;
+    }
+    .nav__item-camera_mobile,
+    .nav__item-3d_mobile,
+    .nav__item-lang_mobile {
+        display: block;
     }
 }
 @media only screen and (max-width: 768px) {
-    .nav__item_callback-mobile {
+    .nav__item-callback-mobile {
         display: block;
     }
-    .nav__item_callback {
+    .nav__item-callback {
         display: none;
     }
 }//mobile

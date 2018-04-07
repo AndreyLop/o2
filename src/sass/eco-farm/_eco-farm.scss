@@ -11,41 +11,54 @@
     letter-spacing: 0.4;
 }
 .eco-farm__top {
-    padding: 60px 0px 0px 70px;
-    border: 1px solid #cbcbcb;
     margin-top: 40px;
-}
-.eco-farm__top_text {
+    padding: 65px 0px 0px 70px;
+    border: 1px solid #cbcbcb;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+}
+.eco-farm__top-item {
+    width: 50%;
+    img {
+        display: block;
+    }
+}
+.eco-farm__top-item-fruit-bowl {
+    align-self: flex-end;
+    img {
+        max-width: 355px;
+        margin-left: 20px;
+    }
+}
+.eco-farm__top-item-tomatos {
+    align-self: flex-end;
+    img {
+        width: 100%;
+    }
 }
 .eco-farm__top-heading {
     max-width: 475px;
     font-size: 1.5rem;
     line-height: 36px;
 }
-
-.eco-farm__top-paragraph {
-    max-width: 530px;
-    letter-spacing: 0.4;
-    float: right;
+.eco-farm__top-item-paragraph {
+    margin-bottom: 70px;
+    .eco-farm-paragraph {
+        max-width: 530px;
+        letter-spacing: 0.4;
+    }
 }
+
 .eco-farm__top-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
 }
 .eco-farm__top-images_fruit-bowl {
-    width: 330px;
     img {
-        display: block;
     }
 }
 .eco-farm__top-images_tomatos {
     img {
-        width: 100%;
-        vertical-align: bottom;
     }
 }
 .eco-farm__middle {
@@ -84,31 +97,30 @@
     .first-in-ua__paragraph {
         padding: 27px 0px 0px 34px;
     }
-    .what-to-grow {
-        color: #000;
-        padding: 55px 0px 60px 70px;
-        position: relative;
-        border: 1px solid #cbcbcb;
-        border-top: none;
-        height: 400px;
+}
+.what-to-grow {
+    color: #000;
+    padding: 55px 0px 60px 70px;
+    position: relative;
+    border: 1px solid #cbcbcb;
+    border-top: none;
+    height: 400px;
+}
+.what-to-grow-paragraph-1 {
+    max-width: 400px;
+    span {
+        font-weight: 600;
     }
-    .what-to-grow-paragraph-1 {
-        max-width: 400px;
-        span {
-            font-weight: 600;
-        }
-    }
-    .what-to-grow-paragraph-2 {
-        max-width: 540px;
-        padding: 45px 0px 0px 80px;
-
-    }
-    .what-to-grow__image {
-        border: 5px solid #fff;
-        position: absolute;
-        top: -40px;
-        right: 20px;
-    }
+}
+.what-to-grow-paragraph-2 {
+    max-width: 540px;
+    padding: 45px 0px 0px 80px;
+}
+.what-to-grow__image {
+    border: 5px solid #fff;
+    position: absolute;
+    top: -40px;
+    right: 20px;
 }
 
 .eco-farm__bottom {

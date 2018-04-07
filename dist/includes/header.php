@@ -7,30 +7,30 @@
     </div>
     <nav class="nav">
         <ul>
-            <li class="nav__item nav__item_telephone">
+            <li class="nav__item nav__item-telephone">
                 <a href="#">(093) 82-33-115</a>
             </li>
-            <li class="nav__item nav__item_callback nav__btn">
+            <li class="nav__item nav__item-callback nav__btn">
                 <a href="#">Замовити дзвінок</a>
             </li>
-            <li class="nav__item nav__item_callback-mobile nav__btn">
+            <li class="nav__item nav__item-callback-mobile nav__btn">
                 <a href="#"></a>
             </li>
-            <li class="nav__item nav__item_camera nav__btn">
+            <li class="nav__item nav__item-camera nav__btn">
                 <a href="#">Камера</a>
             </li>
-            <li class="nav__item nav__item_3d nav__btn">
+            <li class="nav__item nav__item-3d nav__btn">
                 <a href="#">Карта<span class="nav__3d-text">3D</span></a>
             </li>
-            <li class="nav__item nav_item_lang">
-                <ul class="lang">
+            <li class="nav__item nav__item-lang">
+                <ul class="lang-list">
                     <li><a class="lang-item" href="#">Ukr</a></li>
                     <li><a class="lang-item" href="#">Ru</a></li>
                     <li><a class="lang-item" href="#">Eng</a></li>
                 </ul>
-                <span class="lang__icon"></span>
+                <span class="nav__item-lang-icon"></span>
             </li>
-            <li class="nav__item nav_item_menu">
+            <li class="nav__item nav__item_menu">
                 <a href="#">Menu</a>
                 <div class="menu__lines">
                     <div class="menu__line menu__line_1"></div>
@@ -117,14 +117,27 @@
     </div>
     <div class="menu__bottom">
         <ul>
-            <li class="nav__item nav__item_telephone">
+            <li class="nav__item nav__item-telephone">
                 <a href="#">(093) 82-33-115</a>
             </li>
-            <li class="nav__item nav__item_callback nav__btn">
+            <li class="nav__item nav__item-callback nav__btn">
                 <a href="#">Замовити дзвінок</a>
             </li>
-            <li class="nav__item nav__item_camera nav__btn">
+            <li class="nav__item nav__item-camera nav__item-camera_mobile nav__btn">
                 <a href="#">Камера</a>
+            </li>
+            <li class="nav__item nav__item-3d nav__item-3d_mobile nav__btn">
+                <a href="#">Карта<span class="nav__3d-text">3D</span></a>
+            </li>
+            <li class="nav__item-lang-placeholder">
+            </li>
+            <li class="nav__item nav__item-lang nav__item-lang_mobile">
+                <ul class="lang-list">
+                    <li><a class="lang-item" href="#">Ukr</a></li>
+                    <li><a class="lang-item" href="#">Ru</a></li>
+                    <li><a class="lang-item" href="#">Eng</a></li>
+                </ul>
+                <span class="nav__item-lang-icon"></span>
             </li>
         </ul>
     </div>
