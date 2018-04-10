@@ -27,4 +27,31 @@
   .eco-farm__top-item-tomatos {
     flex: 1;
   }
+  .how-this-works-item {
+    width: 48%;
+  }
+}
+@media only screen and(max-width: 768px) {
+  .eco-farm__top {
+    flex-direction: column;
+  }
+  .eco-farm__top-item {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .eco-farm__top-heading {
+    max-width: none;
+  }
+  .eco-farm__top-item-paragraph {
+    order: 1;
+    .eco-farm-paragraph {
+        max-width: none;
+    }
+  }
+  .eco-farm__top-item-fruit-bowl {
+    display: none;
+  }
+  .how-this-works-item {
+    width: 98%;
+  }
 }

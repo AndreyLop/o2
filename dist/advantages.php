@@ -19,9 +19,15 @@
 
             <div class="wrapper page-hero__wrapper">
 
-                <h1 class="page-hero__heading">
-                Advantages
-                </h1>
+                <div class="page-hero_nav">
+                    <h1 class="page-hero__heading">
+                    Переваги
+                    </h1>
+                    <div class="page-hero_nav-links">
+                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <a class="page-hero_nav-links-active" href="#">Переваги<span class="btn_arrow"></span></a>
+                    </div>
+                </div>
                 
             </div>
 
@@ -35,7 +41,9 @@
                     <div class="advantage__msg">
                         <div class="advantage__msg_number">1</div>
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                            <p>
+                                Продумана концепція життя у гармонії із природою
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +55,7 @@
                     <div class="advantage__msg">
                         <div class="advantage__msg_number">2</div>
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                            <p>Поєднання затишку і спокою із усіма перевагами сучасного житлового комплексу</p>
                         </div>
                     </div>
                 </div>
@@ -57,9 +65,9 @@
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
-                        <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
-                        </div>
+                    <div class="advantage__msg_text">
+                        <p>Чисте повітря та казковий вид з вікна</p>
+                    </div>
                         <div class="advantage__msg_number">3</div>
                     </div>
                 </div>
@@ -72,7 +80,7 @@
                     <div class="advantage__msg">
                         <div class="advantage__msg_number">4</div>
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                           <p>Безліч можливостей для спорту та відпочинку – як для дорослих, так і для дітей</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +92,7 @@
                     <div class="advantage__msg">
                         <div class="advantage__msg_number">5</div>
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                            <p>Розвинута інфраструктура: усе що, потрібно – на території резиденції</p> 
                         </div>
                     </div>
                 </div>
@@ -95,7 +103,7 @@
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                            <p>Продумане забезпечення усіх дитячих потреб: навчання, розвиток, відпочинок</p>
                         </div>
                         <div class="advantage__msg_number">6</div>
                     </div>
@@ -108,7 +116,7 @@
                     <div class="advantage__msg">
                         <div class="advantage__msg_number">7</div>
                         <div class="advantage__msg_text">
-                            TextTextTextTextTextText TextTextText TextTextTex
+                            <p>Власна еко-ферма – <br/>свіжі продукти цілий рік</p>
                         </div>
                     </div>
                 </div>

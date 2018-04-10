@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1200px) {
+    .developer__logo {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .developer__slider {
+        width: 768px;
+    }
+    .developer__slider-item {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .developer__logo {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .developer__slider {
+        width: 320px;
+    }
+    .developer__slider-item {
+        max-width: none;
+        img {
+            width: 100%;
+        }
+    }
+    .developer__saga-container {
+        flex-direction: column;
+    }
+    .developer__logo {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .developer__message {
+        width: 100%;
+    }
+    .developer__advantages {
+        flex-direction: column;
+    }
+    .developer__advantage {
+        width: 95%;
+        margin: 5px auto;
+    }
+}

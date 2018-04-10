@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1200px) {
+    .advantage-6 {
+        .advantage__image {
+            width: 55%;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .advantage {
+        .advantage__msg_number {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+        }
+        .advantage__msg {
+            transform: none;
+        }
+        .advantage__image {
+            width: calc(100% - 40px);
+        }
+    }
+    .advantage-1 {
+        .advantage__msg {
+            left: 0;
+            top: auto;
+            bottom: 20px;
+        }
+    }
+    .advantage-2 {
+        .advantage__msg {
+            right: 0;
+            left: auto;
+            top: 20px;
+        }
+    }
+    .advantage-3 {
+        .advantage__image {
+            float: none;
+            margin: 0;
+        }
+        .advantage__frame {
+            right: -39px;
+            left: auto;
+        }
+        .advantage__msg {
+            flex-direction: row-reverse;
+            right: auto;
+            top: auto;
+            left: 0;
+            bottom: 20px;
+        }
+    }
+    .advantage-4 {
+        .advantage__msg {
+            right: auto;
+            top: auto;
+            left: -39px;
+            bottom: 20px;
+        }
+    }
+    .advantage-5 {
+        .advantage__msg {
+            right: auto;
+            top: auto;
+            left: 0px;
+            bottom: 20px;
+        }
+    }
+    .advantage-6 {
+        .advantage__msg {
+            right: 0;
+            top: auto;
+            left: auto;
+            bottom: 20px;
+        }
+    }
+    .advantage-7 {
+        .advantage__image {
+            float: none;
+        }
+        .advantage__frame {
+            right: -39px;
+            left: auto;
+        }
+        .advantage__msg {
+            right: auto;
+            top: 20px;
+            left: 0;
+            bottom: auto;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .advantage {
+        .advantage__image {
+            height: 450px;
+            width: 100%;
+        }
+        .advantage__frame {
+            display: none;
+        }
+    }
+    .advantage-4 {
+        .advantage__msg {
+            left: 0px;
+        }
+    }
+}

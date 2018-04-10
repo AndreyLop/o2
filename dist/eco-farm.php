@@ -83,7 +83,6 @@
                         </p>
                     </div>
                     <div class="what-to-grow__image">
-                        <img src="img/eco-farm/eco-farm_gardener.jpg" alt="Gardener">
                     </div>
                 </div>
             </div>

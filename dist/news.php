@@ -19,9 +19,16 @@
 
             <div class="wrapper page-hero__wrapper">
 
-                <h1 class="page-hero__heading">
-                    News
-                </h1>
+                <div class="page-hero_nav">
+                    <h1 class="page-hero__heading">
+                        Новини
+                    </h1>
+                    <div class="page-hero_nav-links">
+                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <a class="page-hero_nav-links-active" href="#">Новини<span class="btn_arrow"></span></a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -32,94 +39,90 @@
                 <li class="news__item">
                     <div class="news__item-image news__item-image-1"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.terterrrterterte erter tert erterterte ert erterterrrrrrrrrrrrrrt erterttttttttttttttttttter terterrrtertertert 
-                        eweertertrrrrrrrrrrrrrrrrrrrrrrrr
-                    erterrrrrrrrrrrrrrrrrrrt
-                ertet</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                        <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-2"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                    <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-3"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-4"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-5"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-6"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-7"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-8"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item">
                     <div class="news__item-image news__item-image-9"></div>
                     <div class="news__item-text">
-                        <h4 class="news__item-heading heading">Резиденція</h4>
-                        <p class="news__item-paragraph">Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.</p>
-                        <p class="news__item-paragraph">Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у 
-                            перенаселеному місті, де постійно перебуваєш у людському натовпі.</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі</a>
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <div class="news__item-image news__item-image-10"></div>
+                    <div class="news__item-text">
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                    </div>
+                </li>
+                <li class="news__item">
+                    <div class="news__item-image news__item-image-11"></div>
+                    <div class="news__item-text">
+                    <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
+                        <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
+                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
             </ul>

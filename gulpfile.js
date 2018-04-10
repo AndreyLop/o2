@@ -153,6 +153,7 @@ gulp.task('js-advantages', function() {
 // news page task
 gulp.task('js-news', function() {
 	return gulp.src([
+		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',
 		'src/js/common.js',
 		'src/js/news.js'
@@ -205,8 +206,8 @@ gulp.task('js', [
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		proxy: "http://localhost:80/o2/dist",
-		// proxy: "o2/dist",
+		// proxy: "http://localhost:80/o2/dist",
+		proxy: "o2/dist",
     	notify: false // Отключаем уведомления
 	});
 });

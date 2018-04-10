@@ -19,9 +19,15 @@
 
             <div class="wrapper page-hero__wrapper">
 
-                <h1 class="page-hero__heading">
-                    Residence
-                </h1>
+                <div class="page-hero_nav">
+                    <h1 class="page-hero__heading">
+                        Резиденція
+                    </h1>
+                    <div class="page-hero_nav-links">
+                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <a class="page-hero_nav-links-active" href="#">Резиденція<span class="btn_arrow"></span></a>
+                    </div>
+                </div>
                 
             </div>
 
@@ -31,62 +37,79 @@
 
             <div class="residence residence-1">
                 <div class="residence__image">
-                    <img src="img/residence/residence_1.jpg" alt="Residence 1 image">
                 </div>
                 <div class="residence__text">
-                    TExt etxt etwerewet wwetwetwe wtertert ert ert ertert ert ertete tert rtert ert 
+                    <h3 class="residence__text-heading heading">
+                        Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
+                    </h3>
+                    <p class="residence__paragraph">
+                        Це місце призначене для тих, хто обирає здоровий спосіб життя – для себе та своїх близьких. Для тих, хто відчуває дискомфорт у перенаселеному місті, де постійно перебуваєш у людському натовпі.
+                    </p> 
                 </div>
             </div>
             <div class="residence residence-2">
                 <div class="residence__text">
-                    TExt etxt etwerewet wwetwetwe wtertert ert ert ertert ert ertete tert rtert ert 
+                    <p class="residence__paragraph">
+                        <span>Втомившись від міського галасу та метушні</span>, починаєш розуміти: кожна хвилина спокою безцінна. Тому ми так цінуємо час, який проводимо наодинці із природою. 
+                    </p>
                 </div>
                 <div class="residence__image">
-                    <img src="img/residence/residence_2.jpg" alt="Residence 2 image">
                 </div>
             </div>
             <div class="residence residence-3">
                 <div class="residence__image">
-                    <img src="img/residence/residence_3.jpg" alt="Residence 3 image">
                 </div>
                 <div class="residence__text">
-                    TExt etxt etwerewet wwetwetwe wtertert ert ert ertert ert ertete tert rtert ert 
+                    <p class="residence__paragraph">
+                        <span>Тепер радість від спілкування із природою доступна для вас кожен день.</span> Ваш дім, оточений віковими соснами та сповнений свіжим повітрям, стане місцем, яке заряджає вас енергією та дарує гармонію щомиті.
+                    </p>
+                    <p class="residence__paragraph">
+                        А власна еко-ферма дасть вам змогу куштувати овочі та фрукти, які ви виростили своїми руками.
+                    </p>
                 </div>
             </div>
             <div class="residence residence-4">
                 <div class="residence__text">
-                    TExt etxt etwerewet wwetwetwe wtertert ert ert ertert ert ertete tert rtert ert 
+                    <p class="residence__paragraph">
+                        <span>Декілька хвилин по Бориспільській трасі,</span> і ви опинитесь начебто у іншому вимірі. Тут ви забудете про агресію та стрес, про дорожні затори, галасливі вулиці та багатолюдні офіси.
+                    </p>
                 </div>
                 <div class="residence__image">
-                    <img src="img/residence/residence_4.jpg" alt="Residence 4 image">
                 </div>
             </div>
             <div class="residence residence-5">
                 <div class="residence__image">
-                    <img src="img/residence/residence_5.jpg" alt="Residence 5 image">
                 </div>
                 <div class="residence__text">
-                    TExt etxt etwerewet wwetwetwe wtertert ert ert ertert ert ertete tert rtert ert 
+                    <p class="residence__paragraph">
+                        <span>Тут можна просто насолоджуватися кожною хвилиною,</span> що проведена у колі найближчих людей у оточенні природи. Ви гідні цього, адже ви розумієте справжню цінність кожної хвилини життя.
+                    </p>
                 </div>
             </div>
 
             <div class="residence__conclusion">
                 <div class="residence__conclusion-inner-frame">
-                    <div class="logo">
+                    <div class="residence__logo">
                         <img src="img/common/o2_logo.png" alt="O2 Logo">
                     </div>
                     <ul class="residence__list">
                         <li class="residence__list-item">
-                            <span class="residence__list-icon"></span>
-                            <span class="residence__list-text">Text</span>
+                            <span class="residence__list-icon-container">
+                                <span class="residence__list-icon residence__list-icon-1"></span>
+                            </span>
+                            <span class="residence__list-text">Ближче до природи</span>
                         </li>
                         <li class="residence__list-item">
-                            <span class="residence__list-icon"></span>
-                            <span class="residence__list-text">Text</span>
+                            <span class="residence__list-icon-container">
+                                <span class="residence__list-icon residence__list-icon-2"></span>
+                            </span>
+                            <span class="residence__list-text">Ближче до сім’ї</span>
                         </li>
                         <li class="residence__list-item">
-                            <span class="residence__list-icon"></span>
-                            <span class="residence__list-text">Text</span>
+                            <span class="residence__list-icon-container">
+                                <span class="residence__list-icon residence__list-icon-3"></span>
+                            </span>
+                            <span class="residence__list-text">Ближче до гармонії</span>
                         </li>
                     </ul>
                 </div>

@@ -1,9 +1,7 @@
 var langMenu=function(){
     var navLangItem=document.querySelector(".nav__item-lang"),
     n=document.querySelector(".lang");
-    navLangItem.addEventListener("click",function(e){
-        console.log('tset');
-        
+    navLangItem.addEventListener("click",function(e){        
         e.preventDefault(),
         this.classList.contains("nav__item-lang_opened") 
         ? this.classList.remove("nav__item-lang_opened")

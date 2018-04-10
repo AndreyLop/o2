@@ -18,7 +18,7 @@
                         <a href="news.php">Новини</a>
                     </li>
                     <li>
-                        <a href="#">Цінності</a>
+                        <a href="values.php">Цінності</a>
                     </li>
                     <li>
                         <a href="eco-farm.php">Еко-ферма</a>

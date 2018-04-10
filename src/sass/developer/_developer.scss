@@ -72,17 +72,18 @@
     padding: 60px 90px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .developer__logo {
-    width: 200px;
+    width: 20%;
     img {
         width: 100%;
     }
 }
 
 .developer__message {
-    width: 680px;
+    width: 60%;
 }
 
 .developer__advantages {
