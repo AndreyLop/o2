@@ -24,7 +24,7 @@
                         <a href="eco-farm.php">Еко-ферма</a>
                     </li>
                     <li>
-                        <a href="#">Контакти</a>
+                        <a href="location.php">Контакти</a>
                     </li>
                 </ul>
             </div>

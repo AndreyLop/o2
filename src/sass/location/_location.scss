@@ -1,0 +1,201 @@
+.location {
+    .page-hero {
+        background-image: url('../img/location/location_page_hero_bg.jpg');
+    }
+}
+
+.location__heading {
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: #000;
+    &::after {
+        background-color: #000;
+        margin: 25px 0px
+    }
+}
+
+.location__paragraph {
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #000;
+}
+
+.location__about {
+    margin-top: 40px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__about-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/location/location_about_forest.jpg');
+    width: 47%;
+}
+
+.location__about-text {
+    padding: 55px 15px 60px 50px;
+    width: 53%;
+}
+
+.location__forest {
+    margin-top: 40px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location__forest-text {
+    padding: 95px 75px 95px 60px;
+    width: 53%;
+    span {
+        font-weight: 600;
+    }
+}
+
+.location__forest-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/location/location_forest_squirrel.jpg');
+    width: 47%;
+}
+
+.location_map-form {
+    margin-top: 40px;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+}
+.location__map {
+    height: 590px;
+    width: 53%;
+}
+.address {
+    width: 47%;
+    color: #000;
+}
+.address__outer-frame {
+    border: 1px solid #cdcdcd;
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 512px;
+}
+.address__outer-frame-1 {
+    margin-top: 35px;
+}
+.address__outer-frame-2 {
+    margin-top: 15px;
+}
+.address__inner-frame {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+    padding: 30px 0px 30px 30px;
+}
+.address__left {
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 600;
+}
+.address__right {
+    display: inline-block;
+    width: 66%;
+    position: relative;
+    margin-left: 15px;
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 38px;
+        width: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 5px;
+        left: -14px;
+    }
+}
+.location__form-outer-frame {
+    border: 1px solid #cdcdcd;
+    background-color: $lightgreen;
+    padding: 4px;
+    margin: 15px auto;
+    max-width: 512px;
+}
+.location__form-inner-frame {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    padding: 35px 17px 40px;
+}
+.location__form-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.location__form-input-container {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    input {
+        width: 95%;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+    input[type="text"],
+    input[type="email"], {
+        border: 1px solid #cdcdcd;
+        padding-left: 15px;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #000;
+            font-size: 1rem;
+            font-style: italic;
+          }
+        &::-moz-placeholder { /* Firefox 19+ */
+            color: #000;
+            font-size: 1rem;
+            font-style: italic;
+          }
+        &:-ms-input-placeholder { /* IE 10+ */
+            color: #000;
+            font-size: 1rem;
+            font-style: italic;
+          }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: #000;
+            font-size: 1rem;
+            font-style: italic;
+          }
+    }
+    input[type="submit"] {
+        background-color: $lightgreen;
+        color: #fff;
+        font-size: 0.75rem;
+        transition: all $transitionTime;
+        &:hover {
+            background-color: $green;
+            cursor: pointer;
+        }
+    }
+}
+.location___input-requred0icon {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    display: block;
+    background-color: $lightgreen;
+    width: 15px;
+    height: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+}

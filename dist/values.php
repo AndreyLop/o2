@@ -37,7 +37,7 @@
 
             <div class="values__ecology">
                 <div class="values__outer-frame">
-                    <div class="values__main-text">
+                    <div class="values__main-text values__ecology-main-text">
                         <h3 class="values-p__heading heading">Екологічність</h3>
                         <p class="values__paragraph">Ми подбали про органічне включення резиденції у оточуючий природний ландшафт 
                         та обладнали будинки затишними еко-лаунжами із видом на ліс та озеро.</p>
@@ -55,20 +55,19 @@
                 </div>
             </div>
 
-            <div class="values-p__healthy-life">
+            <div class="values__healthy-life">
                 <div class="values__healthy-life_image">
-                    <img src="img/values/rope_guy.jpg" alt="Rope">
                 </div>
-                <div class="values-p__healthy-life_text">
-                    <h3 class="values-p__heading heading">Здоровий спосіб життя</h3>
-                    <p class="values__paragraph">О2 residence дарує можливість насолоджуватися свіжим повітрям та щоденними прогулянками мальовничим лісом.</p>
-                    <p class="values__paragraph">Також ми створюємо розвинуту інфраструктуру для спорту та активного відпочинку – як в теплу пору року, так і взимку.</p>
+                <div class="values__healthy-life_text">
+                    <h3 class="values-p__heading values__healthy-life-container heading">Здоровий спосіб життя</h3>
+                    <p class="values__paragraph values__healthy-life-container">О2 residence дарує можливість насолоджуватися свіжим повітрям та щоденними прогулянками мальовничим лісом.</p>
+                    <p class="values__paragraph values__healthy-life-paragraph">Також ми створюємо розвинуту інфраструктуру для спорту та активного відпочинку – як в теплу пору року, так і взимку.</p>
                 </div>
             </div>
 
             <div class="values__children">
                 <div class="values__outer-frame">
-                    <div class="values__main-text">
+                    <div class="values__main-text values__children-main-text">
                         <h3 class="values-p__heading heading">Діти у центрі уваги</h3>
                         <p class="values__paragraph">Ваші діти мають почувати себе комфортно та безпечно – саме тому ми передбачили безліч розваг для них, а також обладнали усі дитячі майданчики відео-наглядом.</p>
                     </div>
@@ -77,10 +76,12 @@
 
             <div class="values__service">
                 <div class="values__outer-frame">
-                    <div class="values__main-text">
+                    <div class="values__main-text values__service-main-text">
                         <h3 class="values-p__heading heading">Продуманий сервіс</h3>
-                        <p class="values__paragraph">Ми впевнені, що життя за містом має бути сповнене усіма зручностями, що доступні містянам.</p>
-                        <p class="values__paragraph">Усе, що потрібно, знаходиться на території резиденції – вам не потрібно залишати її, щоб придбати щось необхідне.</p>
+                        <div class="values__service-paragraphs">
+                            <p class="values__paragraph">Ми впевнені, що життя за містом має бути сповнене усіма зручностями, що доступні містянам.</p>
+                            <p class="values__paragraph">Усе, що потрібно, знаходиться на території резиденції – вам не потрібно залишати її, щоб придбати щось необхідне.</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -19,9 +19,16 @@
 
             <div class="wrapper page-hero__wrapper">
 
-                <h1 class="page-hero__heading">
-                    Construction
-                </h1>
+                <div class="page-hero_nav">
+                    <h1 class="page-hero__heading">
+                        Хід будівництва
+                    </h1>
+                    <div class="page-hero_nav-links">
+                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <a class="page-hero_nav-links-active" href="#">Хід будівництва</a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -29,11 +36,78 @@
         <div class="wrapper">
 
             <div class="construction__percents">
-
+                <div class="construction__percents-item">
+                    <div class="construction__percents-text">
+                        Загальнобудівельні роботи:
+                    </div>
+                    <div class="construction__percents-numbers">
+                        <span class="construction__percents-numbers_actual">70%</span>
+                        <span class="construction__percents-numbers_visible">0%</span>
+                    </div>
+                    <div class="construction__percents-more-info">
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 1</li>
+                            <li>Item 1</li>
+                            <li>Item 1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="construction__percents-item">
+                    <div class="construction__percents-text">
+                        Благоустрій:
+                    </div>
+                    <div class="construction__percents-numbers">
+                        <span class="construction__percents-numbers_actual">70%</span>
+                        <span class="construction__percents-numbers_visible">0%</span>
+                    </div>
+                    <div class="construction__percents-more-info">
+                        <ul>
+                            <li>Item 2</li>
+                            <li>Item 2</li>
+                            <li>Item 2</li>
+                            <li>Item 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="construction__percents-item">
+                    <div class="construction__percents-text">
+                        Фасад:
+                    </div>
+                    <div class="construction__percents-numbers">
+                        <span class="construction__percents-numbers_actual">25%</span>
+                        <span class="construction__percents-numbers_visible">0%</span>
+                    </div>
+                    <div class="construction__percents-more-info">
+                        <ul>
+                            <li>Item 3</li>
+                            <li>Item 3</li>
+                            <li>Item 3</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="construction__percents-item">
+                    <div class="construction__percents-text">
+                        Мережі:
+                    </div>
+                    <div class="construction__percents-numbers">
+                        <span class="construction__percents-numbers_actual">56%</span>
+                        <span class="construction__percents-numbers_visible">0%</span>
+                    </div>
+                    <div class="construction__percents-more-info">
+                        <ul>
+                            <li>Item 4</li>
+                            <li>Item 4</li>
+                            <li>Item 4</li>
+                            <li>Item 4</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="construction__photos">
-                <h4 class="construction__photos_heading">Construction End</h4>
+                <h4 class="construction__photos_heading">Завершення будівництва: ...</h4>
 
                 <div class="construction__galleries">
                     <div class="construction__bar"></div>
@@ -44,8 +118,8 @@
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
                             </div>
                             <div class="construction__gallery_info">
-                                <span class="construction__gallery_icon">icon here</span>
-                                <span class="construction__gallery_date">super date here</span>
+                                <span class="construction__gallery_icon"></span>
+                                <span class="construction__gallery_date">30 березня 2018 р.</span>
                             </div>
                         </a>
                         <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
@@ -65,8 +139,8 @@
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
                             </div>
                             <div class="construction__gallery_info">
-                                <span class="construction__gallery_icon">icon here</span>
-                                <span class="construction__gallery_date">super date here</span>
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
                             </div>
                         </a>
                         <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
@@ -86,8 +160,8 @@
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
                             </div>
                             <div class="construction__gallery_info">
-                                <span class="construction__gallery_icon">icon here</span>
-                                <span class="construction__gallery_date">super date here</span>
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
                             </div>
                         </a>
                         <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
@@ -107,8 +181,8 @@
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
                             </div>
                             <div class="construction__gallery_info">
-                                <span class="construction__gallery_icon">icon here</span>
-                                <span class="construction__gallery_date">super date here</span>
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
                             </div>
                         </a>
                         <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
@@ -128,8 +202,8 @@
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
                             </div>
                             <div class="construction__gallery_info">
-                                <span class="construction__gallery_icon">icon here</span>
-                                <span class="construction__gallery_date">super date here</span>
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
                             </div>
                         </a>
                         <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>

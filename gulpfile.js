@@ -40,7 +40,8 @@ gulp.task('all-js', function() {
 		'src/js/values.js',
 		'src/js/developer.js',
 		'src/js/main.js',
-		'src/js/news.js'
+		'src/js/news.js',
+		'src/js/location.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -121,6 +122,20 @@ gulp.task('js-eco-farm', function() {
 });
 // eco-farm page task end
 
+// location page task
+gulp.task('js-location', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/common.js',
+		'src/js/location.js'
+	])
+	.pipe(concat('location.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+// location page task end
+
 // developer page task
 gulp.task('js-developer', function() {
 	return gulp.src([
@@ -190,7 +205,8 @@ gulp.task('js', [
 	'js-residence',
 	'js-developer',
 	'js-values',
-	'js-construction'], function() {
+	'js-construction',
+	'js-location'], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',

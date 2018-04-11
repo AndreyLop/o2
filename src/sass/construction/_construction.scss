@@ -1,3 +1,61 @@
+.construction {
+    .page-hero {
+        background-image: url('../img/construction/construction_page_hero_bg.jpg');
+    }
+}
+
+.construction__percents {
+    margin-top: 40px;
+    padding: 30px 50px 20px 50px; 
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/construction/construction_percents_bg.jpg');
+    
+}
+.construction__percents-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    position: relative;
+    &:hover {
+        cursor: pointer;
+        .construction__percents-more-info {
+            opacity: 1;
+            left: 50%;
+        }
+    }
+}
+.construction__percents-numbers {
+    background-image: url('../img/construction/construction_precents_bar_bg.jpg');
+    background-repeat: repeat-y;
+    background-size: 0%;
+    text-align: center;
+    width: 75%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 2s;
+}
+.construction__percents-numbers_actual {
+    display: none;
+}
+.construction__percents-text {
+    margin-right: 17px;
+}
+.construction__percents-more-info {
+    position: absolute;
+    z-index: 3;
+    top: -90px;
+    left: -100%;
+    background-color: $green;
+    opacity: 0;
+    transition: opacity $transitionTime;
+}
+.construction__photos_heading {
+    color: #000;
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .construction__galleries {
     position: relative;
     display: flex;
@@ -8,7 +66,7 @@
     position: absolute;
     width: 1px;
     height: calc(100% - 40px);
-    background-color: red;
+    background-color: #cbcbcb;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -31,21 +89,24 @@
         position: absolute;
         content: '';
         display: inline-block;
-        width: 10px;
-        height: 10px;
-        background-color: green;
         
     }
     &:nth-child(odd) {
         &::after {
             bottom: 0;
             left: -4%;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid #cbcbcb;
         }
     }
     &:nth-child(even) {
         &::after {
             top: 0;
             right: -4%;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent; 
+            border-right: 8px solid #cbcbcb; 
         }
     }
 }
@@ -58,4 +119,11 @@
     border: 1px solid #cdcdcd;
     border-top: none;
     padding: 15px 0px 15px 30px;
+}
+.construction__gallery_icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 16px;
+    background-image: url('../img/construction/construction_calendar.png');
 }

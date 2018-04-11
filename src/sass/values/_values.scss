@@ -1,26 +1,50 @@
 .values{
+    .page-hero {
+        background-image: url('../img/values/values_page_hero_bg.jpg');
+    }
+}
+.values-p__heading {
+    font-size: 2.25rem;
+    line-height: 48px;
+    color: #000;
+    font-weight: 700;
+    &::after {
+        background-color: #000;
+        margin: 25px 0px;
+    }
+}
+.values__healthy-life-container {
+    max-width: 290px;
+}
+.values__paragraph {
+    line-height: 30px;
+    letter-spacing: 0.4px;
     color: #000;
 }
 .values__ecology {
-    background-color: #565656;
-    height: 570px;
-    padding-top: 130px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/values/values_ecology.jpg');
+    overflow: hidden;
+    margin-top: 40px;
     .values__outer-frame {
         transform: translateX(-5px);
         height: 310px;
         width: 470px;
+        margin: 128px 0px 133px 0px;
     }
 }
+.values__ecology-main-text {
+    padding: 33px 62px 43px 79px;
+}
 .values__outer-frame {
-
     padding: 4px;
     border: 1px solid #fff;
 }
 .values__main-text {
     width: 100%;
     height: 100%;
-    padding: 35px 60px 0px 85px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .values__solar-panels {
@@ -30,7 +54,8 @@
 }
 
 .values__solar-panels-inner {
-    width: 60%;
+    padding: 35px 0px;
+    max-width: 710px;
     margin: 0 auto;
 }
 
@@ -41,7 +66,7 @@
     transform: translateX(-50%);
     border: 1px solid #cdcdcd;
     background-color: #fff;
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 1px 1px;
     width: 10px;
     height: 10px;
     line-height: 0;
@@ -53,6 +78,8 @@
     margin-top: 40px;
     padding-left: 80px;
     border: 1px solid #cdcdcd;
+    display: flex;
+    justify-content: space-between;
     &::after {
         content: '';
         display:block;
@@ -60,37 +87,57 @@
     }
 }
 .values__healthy-life_image{
-    display: inline-block;
-    width: 50%;
-    img {
-        vertical-align: bottom;
-        width: 100%;
-    }
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/values/values_healthy_life.jpg');
 }
 
 .values__healthy-life_text {
-    float: right;
-    padding: 40px;
+    max-width: 475px;
+    padding: 40px 40px 40px 75px;
+}
+
+.values__healthy-life-paragraph {
+    padding: 50px 0px 0px 80px;
 }
 
 .values__children {
     margin-top: 40px;
-    height: 500px;
-    background-color: #676767;
-    padding: 30px 0px 0px 80px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/values/values_children.jpg');
+    overflow: hidden;
     .values__outer-frame {
-        width: 380px;
+        margin: 35px 80px;
+        max-width: 381px;
     }
+}
+.values__children-main-text {
+    padding: 60px 60px 65px 55px;
 }
 
 .values__service {
     height: 600px;
-    margin-top: 40px;
-    background-color: #676767;
-    padding-top: 40px;
+    margin: 40px 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/values/values_service.jpg');
+    overflow: hidden;
     .values__outer-frame {
+        margin-top: 45px;
         width: 830px;
         float: right;
         transform: translateX(5px);
+    }
+}
+.values__service-main-text {
+    padding: 35px 25px 40px 45px;
+}
+.values__service-paragraphs {
+    display: flex;
+    justify-content: space-between;
+    .values__paragraph {
+        width: 48%;
     }
 }
