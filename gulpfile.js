@@ -41,7 +41,8 @@ gulp.task('all-js', function() {
 		'src/js/developer.js',
 		'src/js/main.js',
 		'src/js/news.js',
-		'src/js/location.js'
+		'src/js/location.js',
+		'src/js/choose-apartment.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)
@@ -54,7 +55,6 @@ gulp.task('all-js', function() {
 gulp.task('js-commercial', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/commercial.js'
 	])
 	.pipe(concat('commercial.min.js'))
@@ -69,7 +69,6 @@ gulp.task('js-construction', function() {
 	return gulp.src([
 		'src/js/libs/magnific-popup.js',
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/construction.js'
 	])
 	.pipe(concat('construction.min.js'))
@@ -83,7 +82,6 @@ gulp.task('js-construction', function() {
 gulp.task('js-residence', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/residence.js'
 	])
 	.pipe(concat('residence.min.js'))
@@ -98,7 +96,6 @@ gulp.task('js-day-in-o2', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
 		'src/js/libs/slick.min.js',
-		'src/js/common.js',
 		'src/js/day-in-o2.js'
 	])
 	.pipe(concat('day-in-o2.min.js'))
@@ -112,7 +109,6 @@ gulp.task('js-day-in-o2', function() {
 gulp.task('js-eco-farm', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/eco-farm.js'
 	])
 	.pipe(concat('eco-farm.min.js'))
@@ -126,7 +122,6 @@ gulp.task('js-eco-farm', function() {
 gulp.task('js-location', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/location.js'
 	])
 	.pipe(concat('location.min.js'))
@@ -136,12 +131,24 @@ gulp.task('js-location', function() {
 });
 // location page task end
 
+//choose-apartment page task
+gulp.task('js-choose-apartment', function() {
+	return gulp.src([
+		'src/js/useful_functions.js',
+		'src/js/choose-apartment.js'
+	])
+	.pipe(concat('choose-apartment.min.js'))
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/js'))
+	.pipe(browserSync.reload({stream: true}));
+});
+//choose-apartment page task end
+
 // developer page task
 gulp.task('js-developer', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/developer.js'
 	])
 	.pipe(concat('developer.min.js'))
@@ -155,7 +162,6 @@ gulp.task('js-developer', function() {
 gulp.task('js-advantages', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/advantages.js'
 	])
 	.pipe(concat('advantages.min.js'))
@@ -170,7 +176,6 @@ gulp.task('js-news', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/news.js'
 	])
 	.pipe(concat('news.min.js'))
@@ -184,7 +189,6 @@ gulp.task('js-news', function() {
 gulp.task('js-values', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/values.js'
 	])
 	.pipe(concat('values.min.js'))
@@ -206,11 +210,11 @@ gulp.task('js', [
 	'js-developer',
 	'js-values',
 	'js-construction',
-	'js-location'], function() {
+	'js-location',
+	'js-choose-apartment'], function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/useful_functions.js',
-		'src/js/common.js',
 		'src/js/main.js'
 		])
 	.pipe(concat('main.min.js'))

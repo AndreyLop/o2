@@ -54,6 +54,7 @@
         </div>
         <div class="menu__close-btn">
         </div>
+        <div class="menu__top-line"></div>
     </div>
     <div class="menu__main-nav">
         <div class="menu__nav">

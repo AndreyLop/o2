@@ -91,6 +91,6 @@
     </section>
 
     <? include_once('includes/footer.php'); ?>
-    <script src="js/values.min.js"></script>
+    <script src="js/common.min.js"></script>
 </body>
 </html>

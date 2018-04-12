@@ -46,10 +46,10 @@ var di2 = (function() {
       
       $(slideCircle).on('click', function() {
         $(sliderSelector).slick('slickGoTo', $(this).parent().data('slide'));
-      })
+      });
 
+      $(document).bind('mousewheel', debounce(showNextSlide));
 
-      
       function showNextSlide(e) {
         if(e.originalEvent.wheelDelta /120 > 0) {
           $(sliderSelector).slick('slickPrev');
@@ -57,10 +57,5 @@ var di2 = (function() {
           $(sliderSelector).slick('slickNext');
         }
       }
-
-
-      
-      $(document).bind('mousewheel', debounce(showNextSlide));
-
 })();
 

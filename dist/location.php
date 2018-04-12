@@ -119,6 +119,7 @@
     */
     ?>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeZ7W_mpcc25BT0seg7opc8JCzonurxEc"></script>
+    <script src="js/common.min.js"></script>
     <script src="js/location.min.js"></script>
 </body>
 </html>

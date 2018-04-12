@@ -1,13 +1,18 @@
-var langMenu=function(){
-    var navLangItem=document.querySelector(".nav__item-lang"),
-    n=document.querySelector(".lang");
-    navLangItem.addEventListener("click",function(e){        
-        e.preventDefault(),
-        this.classList.contains("nav__item-lang_opened") 
-        ? this.classList.remove("nav__item-lang_opened")
-        : this.classList.add("nav__item-lang_opened")})}();
+var langMenu=(function(){
+    var navLangItems=document.querySelectorAll(".nav__item-lang");
 
+    Array.prototype.forEach.call(navLangItems, function(item) {
+        item.addEventListener("click",function(e){
+            e.preventDefault(),
+            this.classList.contains("nav__item-lang_opened") 
+            ? this.classList.remove("nav__item-lang_opened")
+            : this.classList.add("nav__item-lang_opened")
+        });
+    });
+    
+    })();
 
+//fix nav during scroll down
 var navFixed = (function(){ 
     var header = document.querySelector('.header-container');
     var fixed = header.offsetTop;
@@ -21,7 +26,7 @@ var navFixed = (function(){
     window.addEventListener('scroll' ,debounce(isScrolled,100));
 })();
 
-// main page tabs start
+//tabs start
 (function() {
 
     var activeTabClass = 'contacts__tab_active';
@@ -57,9 +62,10 @@ var navFixed = (function(){
     }
     
 })();
-// main page tabs end
+//tabs end
 
 
+//main drop down menu
 var dropDownMenu = (function() {
 
     var showMenuBtn = document.querySelector('.nav__item_menu');

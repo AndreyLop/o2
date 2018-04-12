@@ -170,6 +170,6 @@
     </section>
 
     <?php include_once('includes/footer.php'); ?>
-    <script src="js/eco-farm.min.js"></script>
+    <script src="js/common.min.js"></script>
 </body>
 </html>

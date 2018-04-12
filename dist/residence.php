@@ -120,6 +120,6 @@
     </section>
 
     <? include_once('includes/footer.php'); ?>
-    <script src="js/residence.min.js"></script>
+    <script src="js/common.min.js"></script>
 </body>
 </html>

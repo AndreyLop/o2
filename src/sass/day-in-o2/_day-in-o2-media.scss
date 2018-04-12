@@ -1,0 +1,16 @@
+@media only screen and (max-height: 915px) {
+    .slide-line {
+        height: 30px;
+    }
+    .slide-time {
+        top: 23px;
+    }
+}
+@media only screen and (max-height: 750px) {
+    .slide-line {
+        height: 20px;
+    }
+    .slide-time {
+        top: 12px;
+    }
+}

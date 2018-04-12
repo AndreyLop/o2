@@ -227,7 +227,7 @@
     <section class="info info_1 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
-                <a href="#" class="main-page-hover-link">
+                <a href="residence.php" class="main-page-hover-link">
                     <div class="info__item-image info__item-image_residency"></div>
                     <div class="info__item-text">
                         <h4 class="info__item-heading heading">Резиденція</h4>
@@ -254,7 +254,7 @@
         
             <div class="info__item info__item_2">
 
-                <a href="#" class="main-page-hover-link">
+                <a href="location.php" class="main-page-hover-link">
                     <div class="info__item-image info__item-image_location"></div>
                     <div class="info__item-text">
                         <h4 class="info__item-heading heading">Розташування</h4>
@@ -476,7 +476,7 @@
     <section class="info info_3 main-page animate-me">
         <div class="wrapper info__wrapper">
             <div class="info__item info__item_1">
-                <a href="#" class="main-page-hover-link">
+                <a href="commercial.php" class="main-page-hover-link">
                     <div class="info__item-image info__item-image_commercial"></div>
                     <div class="info__item-text">
                         <h4 class="info__item-heading heading">Комерційна нерухомість</h4>
@@ -602,6 +602,7 @@
     <?php include_once('includes/footer.php'); ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/common.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>

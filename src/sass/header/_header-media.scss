@@ -1,4 +1,13 @@
 @media only screen and(max-width: 1024px) {
+    .menu__top-line {
+        width: 85%
+    }
+    .menu__main-nav {
+        justify-content: space-between;
+    }
+    .menu__nav {
+        width: 30%;
+    }
     .nav {
         min-width: auto;
     }
