@@ -8,7 +8,8 @@
     <title>O2 - Commercial</title>
 </head>
 <body>
-    
+<?php  include_once('includes/preloader.php'); ?> 
+
     <section class="commercial">
 
         <div class="page-hero">

@@ -1,11 +1,13 @@
-var preloader = (function() {
+
+
+var preloader2 = (function() {
   var canvas = document.querySelector('.myCanvas');
+  var greenOverlay = document.querySelector('.canvas__green-overlay');
   var ctx = canvas.getContext('2d');
 
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
-  console.log(devicePixelRatio);
   var ch = canvas.height,
   cw = canvas.width,
   innerCircleRadius = 100,
@@ -15,7 +17,9 @@ var preloader = (function() {
   percent,
   textXCoord = cw/2,
   textYCoord = ch/2 + 140,
-  loadColor = '#bada55';
+  greenOverlayOpacity = 0.8,
+  greenOverlayOpacityStep = 0.01;
+  loadColor = '#568752';
 
   function _drawInnerCircle() {
     ctx.beginPath();
@@ -26,23 +30,26 @@ var preloader = (function() {
 
   function _drawProgressCircle() {
     //draw text
-    // draw white rect over old text start
+    //draw white rect over old text start
     ctx.fillStyle='#ffffff';
     ctx.fillRect(textXCoord-20, textYCoord - 15, 45, 20);
-    // draw white rect over old text end
+    //draw white rect over old text end
 
-    // draw new tex start
+    //draw new text start
     percent = ((progressStart/progressStop) * 100).toFixed();
     ctx.fillStyle = loadColor;
     ctx.font = "20px OpenSans";
     ctx.textAlign = 'center';
     ctx.fillText(percent+'%', textXCoord, textYCoord);
-    // draw new tex start
     //draw text end
 
     // draw outer circle start
-    ctx.strokeStyle = loadColor; 
     ctx.lineWidth = 1;
+    ctx.strokeStyle = '#ffffff'; 
+    ctx.beginPath();
+    ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, 2*Math.PI);
+    ctx.stroke();
+    ctx.strokeStyle = loadColor; 
     ctx.beginPath();
     ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, progressStart*Math.PI);
     ctx.globalCompositeOperation="source-over";
@@ -59,7 +66,9 @@ var preloader = (function() {
 
   function _animateInnerCircleGrow() {
     _drawInnerCircle();
-    innerCircleRadius+=3;
+    greenOverlayOpacity-=greenOverlayOpacityStep;
+    greenOverlay.style.opacity = greenOverlayOpacity;
+    innerCircleRadius+=10;
     if(innerCircleRadius < 1200) {
       requestAnimationFrame(_animateInnerCircleGrow);
     } else {
@@ -81,4 +90,4 @@ var preloader = (function() {
 
 })();
 
-preloader.init();
+//preloader2.init();

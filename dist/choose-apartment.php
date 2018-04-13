@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <section class="choose-apartment">
+    <section class="stub">
 
         <div class="page-hero">
             
@@ -17,26 +17,26 @@
 
             <?php include_once('includes/header.php'); ?>
 
-            <div class="wrapper page-hero__wrapper">
+            <div class="wrapper">
 
-                <div class="page-hero_nav">
+                <div class="stub-container">
                     <h1 class="page-hero__heading">
-                        Резиденція
+                        Обрати квартиру
                     </h1>
-                    <div class="page-hero_nav-links">
-                        <a class="page-hero_nav-links-main" href="/">Головна</a>
-                        <a class="page-hero_nav-links-active" href="#">Резиденція<span class="btn_arrow"></span></a>
+                    <div class="stub_image">
+                        <img src="img/choose-apartment/house.png" alt="House Image">
+                    </div>
+                    <div class="stub__msg">
+                        Сторінка на стадії розробки
+                    </div>
+                    <div class="stub__btns">
+                        <a class="stub-btn stbu-btn__main" href="/">На головну</a>
+                        <a class="stub-btn stbu-btn__back" href="#">Повернутися на попередню сторінку</a>
                     </div>
                 </div>
                 
             </div>
 
-        </div>
-
-        <div class="wrapper">
-
-            
-        
         </div>
 
     </section>

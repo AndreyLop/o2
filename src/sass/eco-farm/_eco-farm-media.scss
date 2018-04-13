@@ -16,6 +16,19 @@
         max-width: 280px;
     }
   }
+  .what-to-grow {
+    padding: 20px 0px 0px 15px;
+  }
+  .what-to-grow__image {
+    width: 50%;
+  }
+  .what-to-grow__paragraph-container {
+    max-width: 315px;
+  }
+  .what-to-grow-paragraph-1,
+  .what-to-grow-paragraph-2 {
+    max-width: none;
+  }
   .eco-farm__top-item-fruit-bowl {
     width: 30%;
     img {
@@ -31,9 +44,10 @@
     width: 48%;
   }
 }
-@media only screen and(max-width: 768px) {
+@media only screen and(max-width: 767px) {
   .eco-farm__top {
     flex-direction: column;
+    padding: 5px;
   }
   .eco-farm__top-item {
     width: 90%;
@@ -51,7 +65,52 @@
   .eco-farm__top-item-fruit-bowl {
     display: none;
   }
+  .first-in-ua__mobile {
+    height: 290px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/eco-farm/eco-farm_middle_bg.jpg');
+  }
+  .eco-farm__middle {
+    .first-in-ua {
+        background-image: none;
+        height: auto;
+    }
+    .first-in-ua__paragraph {
+      padding: 0;
+    }
+    .first-in-ua__msg-frame {
+      position: relative;
+      top: -20px;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, 0);
+      width: 520px;
+      height: 395px;
+      border: 1px solid #fff;
+      padding: 4px;
+      background-color: transparent;
+    }
+  }
   .how-this-works-item {
     width: 98%;
+  }
+  .what-to-grow {
+    padding: 0;
+    height: auto;
+    margin: 0 auto;
+    width: 95%;
+    border: none;
+  }
+  .what-to-grow__paragraph-container {
+    max-width: none;
+  }
+  .what-to-grow-paragraph-2 {
+    padding: 20px 0px 0px;
+  }
+  .what-to-grow__image {
+    position: static;
+    width: 100%;
   }
 }

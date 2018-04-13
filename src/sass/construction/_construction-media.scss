@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1200px) {
+    .construction__percents {
+        padding: 30px 20px 20px 20px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .construction__percents-text {
+        width: 33%;
+    }
+    .construction__percents-item {
+        justify-content: space-between;
+    }
+    .construction__percents-numbers {
+        width: 65%;
+    }
+} 
+
+@media only screen and (max-width: 767px) {
+    .construction__percents-item {
+        justify-content: center;
+    }
+    .construction__percents-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .construction__percents-numbers {
+        width: 100%;
+    }
+    .construction__bar {
+        display: none;
+    }
+    .construction__gallery {
+        width: 100%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        &::after {
+            content: none;
+        
+        }
+    }
+    .construction__gallery-image {
+        height: auto;
+    }
+}

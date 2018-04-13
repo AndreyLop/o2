@@ -11,7 +11,7 @@
     
     <section class="hero main-page">
 
-    <?php /* include_once('includes/preloader.php'); */?> 
+    <?php  include_once('includes/preloader.php'); ?> 
 
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
@@ -332,7 +332,7 @@
             <h2 class="heading adantages__heading">Цінності</h2>
             
             <div class="values__slider">
-                <div class="values__slide advantages__slide_1">
+                <div class="values__slide values__slide_1">
                     <div class="values__slide-caption">
                         <div class="values__slide-caption-text">
                             <h4 class="values__slide-caption-heading">Екологічність</h4>
@@ -347,7 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="advantages__slide advantages__slide_2">
+                <div class="values__slide values__slide_2">
                     <div class="values__slide-caption">
                         <div class="values__slide-caption-text">
                         <h4 class="values__slide-caption-heading">Екологічність</h4>
@@ -516,35 +516,35 @@
         </div>
     </section>
 
-    <section class="projects main-page">
-        <div class="wrapper projects__wrapper">
+    <section class="wrapper projects main-page">
+        <div class=" projects__wrapper">
             <h2 class="projects__heading heading">
                 Інші проекти забудовника
             </h2>
             <div class="projects__slider-container">
                 <div class="projects__slider">
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_bristol" href="" target="_blank">
                         <img src="img/main/logos/bristol_logo.svg" alt="BRISTOL Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_chicago" href="" target="_blank">
                         <img src="img/main/logos/chicago_logo.svg" alt="Chicago Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_einstein" href="" target="_blank">
                         <img src="img/main/logos/einstein_logo.svg" alt="EINSTEIN Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_kandinskiy" href="" target="_blank">
                         <img src="img/main/logos/kandinsky_logo.svg" alt="Kandinsky Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_new-york" href="" target="_blank">
                         <img src="img/main/logos/new_york_logo.svg" alt="New York Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_resident" href="" target="_blank">
                         <img src="img/main/logos/resident_logo.svg" alt="Resident House Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_rybalsky" href="" target="_blank">
                         <img src="img/main/logos/rybalsky_logo.svg" alt="Rybalsky Logo">
                     </a>
-                    <a class="projects__slider-item" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_san-francisco" href="" target="_blank">
                         <img src="img/main/logos/san_francisco_logo.svg" alt="San Francisco Logo">
                     </a>
                 </div>

@@ -8,7 +8,8 @@
     <title>O2 - Advantages</title>
 </head>
 <body>
-    
+<?php  include_once('includes/preloader.php'); ?> 
+
     <section class="advantages">
 
         <div class="page-hero">

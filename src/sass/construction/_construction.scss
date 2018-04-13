@@ -14,7 +14,8 @@
 }
 .construction__percents-item {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 20px;
     position: relative;
     &:hover {
@@ -25,21 +26,23 @@
         }
     }
 }
+.construction__percents-text {
+    width: 25%;
+    text-align: right;
+}
 .construction__percents-numbers {
     background-image: url('../img/construction/construction_precents_bar_bg.jpg');
     background-repeat: repeat-y;
     background-size: 0%;
     text-align: center;
-    width: 75%;
+    width: 70%;
     border: 1px solid rgba(255, 255, 255, 0.25);
     transition: all 2s;
 }
 .construction__percents-numbers_actual {
     display: none;
 }
-.construction__percents-text {
-    margin-right: 17px;
-}
+
 .construction__percents-more-info {
     position: absolute;
     z-index: 3;

@@ -8,7 +8,9 @@
     <title>O2 - Developer</title>
 </head>
 <body>
-    
+
+    <?php  include_once('includes/preloader.php'); ?> 
+
     <section class="developer">
 
         <div class="page-hero">
@@ -44,28 +46,28 @@
                         </h3>
                     </div>
                     <div class="developer__slider">
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_bristol" href="" target="_blank">
                             <img src="img/developer/bristol_logo_white.svg" alt="BRISTOL Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_chicago" href="" target="_blank">
                             <img src="img/developer/chicago_logo_white.svg" alt="Chicago Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_einstein" href="" target="_blank">
                             <img src="img/developer/einstein_logo_white.svg" alt="EINSTEIN Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_kandinskiy" href="" target="_blank">
                             <img src="img/developer/kandinsky_logo_white.svg" alt="Kandinsky Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_new-yourk" href="" target="_blank">
                             <img src="img/developer/new_york_logo_white.svg" alt="New York Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_resident" href="" target="_blank">
                             <img src="img/developer/resident_logo_white.svg" alt="Resident House Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_rybalsky" href="" target="_blank">
                             <img src="img/developer/rybalsky_logo_white.svg" alt="Rybalsky Logo">
                         </a>
-                        <a class="developer__slider-item" href="" target="_blank">
+                        <a class="developer__slider-item developer__slider-item_san-francisco" href="" target="_blank">
                             <img src="img/developer/san-francisco_logo_white.svg" alt="San Francisco Logo">
                         </a>
                     </div>

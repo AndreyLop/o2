@@ -8,7 +8,8 @@
     <title>O2 - News Open</title>
 </head>
 <body>
-    
+<?php  include_once('includes/preloader.php'); ?> 
+
     <section class="news-open">
 
         <div class="page-hero">

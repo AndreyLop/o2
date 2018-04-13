@@ -8,7 +8,9 @@
     <title>O2 - Eco Farm</title>
 </head>
 <body>
-    
+
+<?php  include_once('includes/preloader.php'); ?> 
+
     <section class="eco-farm">
 
         <div class="page-hero">
@@ -57,6 +59,8 @@
             </div>
 
             <div class="eco-farm__middle">
+                <div class="first-in-ua__mobile">
+                </div>
                 <div class="first-in-ua">
                     <div class="first-in-ua__msg-frame">
                         <div class="first-in-ua__msg">
@@ -72,7 +76,9 @@
                     </div>
                 </div>
                 <div class="what-to-grow">
-                    <div>
+                    <div class="what-to-grow__image">
+                    </div>
+                    <div class="what-to-grow__paragraph-container">
                         <p class="what-to-grow-paragraph-1 eco-farm-paragraph">
                             <span>Що саме вирощувати на власній еко-фермі визначатимуть 
                             жителі</span> – за допомогою зручного онлайн-голосування.
@@ -81,8 +87,6 @@
                             Якщо забажаєте, ви зможете прийняти безпосередню участь у вирощуванні еко-продукції. 
                             Або ж цю справу можна доручити кваліфікованим садівникам, які доглядатимуть за фермою.
                         </p>
-                    </div>
-                    <div class="what-to-grow__image">
                     </div>
                 </div>
             </div>

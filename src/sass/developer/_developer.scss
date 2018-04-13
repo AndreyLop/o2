@@ -8,7 +8,7 @@
     font-size: 1.5rem;
     line-height: 36px;
     max-width: 680px;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     text-align: center;
     &::after {
         margin: 10px auto 0px;
@@ -48,9 +48,29 @@
     }
 }
 
+.developer__slider-item_kandinskiy {
+    margin-bottom: 14px;
+}
+.developer__slider-item_bristol {
+    margin-top: 18px;
+}
+.developer__slider-item_einstein {
+    img {
+        max-width: 60%;
+    }
+}
+.developer__slider-item_rybalsky {
+    img {
+        max-width: 60%;
+    }
+}
+
 .developer__slider_arrow {
     position: absolute;
-    top: 295px;
+    top: 50%;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .developer__slider-arrow_left {

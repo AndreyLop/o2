@@ -1,16 +1,16 @@
-.stub {
+.not-found {
     .page-hero {
         height: 100vh;
-        background-image: url('../img/choose-apartment/choose-apartment_hero_bg.jpg');
+        background-image: url('../img/404/not-found_hero_bg.jpg');
     }
 }
-.stub-container {
-    max-width: 510px;
-    margin: 100px auto 0px;
+.not-found-container {
+    max-width: 672px;
+    margin: 160px auto 0px;
     text-align: center;
 }
 
-.stub_image {
+.not-found__image {
     &::after {
         content: '';
         display: block;
@@ -20,11 +20,11 @@
         background-color: rgba(225, 255, 255, 0.4);
     }
 }
-.stub__msg {
+.not-found__msg {
     margin-bottom: 45px;
 }
 
-.stub-btn {
+.not-found-btn {
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -37,11 +37,11 @@
     }
 }
 
-.stbu-btn__main {
+.not-found-btn__main {
     width: 180px;
 }
 
-.stbu-btn__back {
+.not-found-btn__back {
     width: 300px;
-    float: right;
+    margin-left: 20px;
 }

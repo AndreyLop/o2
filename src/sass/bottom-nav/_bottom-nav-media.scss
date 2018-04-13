@@ -11,18 +11,14 @@
     .b-nav__item {
         width: 50%;
         flex: auto;
-    }
-    .b-nav__phone {
-        &:before {
-            margin: 0;
-        }
+        margin-bottom: 20px;
     }
     .b-nav__wrapper {
         padding: 60px 60px 130px 60px;
     }
 }
 
-@media only screen and(max-width: 768px) {
+@media only screen and(max-width: 767px) {
     .b-nav__heading {
         line-height: 30px;
     }

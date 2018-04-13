@@ -26,7 +26,7 @@ var animateHTMLCtrl = (function() {
     windowHeight = window.innerHeight;
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
-        if (posFromTop - windowHeight <= 0) {
+        if (posFromTop - windowHeight <= -200) {
           elems[i].classList.remove(aniamteClass);
         }
       }
@@ -106,30 +106,6 @@ animateHTMLCtrl.init();
         text.addEventListener('click', changeMarkerPositionClick);
     });
 
-
-
-    // var bezier = MorphSVGPlugin.pathDataToBezier("#move_path", {offsetX: -MARKER.width, offsetY: -MARKER.height});
-
-
-    // function check(obj, i, ev) {
-    //     var xDiff = obj.x - (ev.offsetX - MARKER.width);
-    //     var yDiff = (ev.offsetY - MARKER.height) - obj.y;
-    //     if(xDiff >= -4 && xDiff <= 4 && yDiff >=-4 && xDiff <= 4) {
-    //         console.log(i);
-    //     }
-    // }
-
-    // var copyBezier = bezier.concat();
-    // for(var i = 0; i < bezier.length; i++) {
-    //     var xDiff = bezier[i].x - (e.offsetX - MARKER.width);
-    //     var yDiff = (e.offsetY - MARKER.height) - bezier[i].y;
-    //     if(xDiff >= -3 && xDiff <= 3 && yDiff >=-3 && xDiff <= 3) {
-    //         copyBezier.splice(i+1);
-    //         break;
-    //     }
-    // }
-    // TweenLite.to("#svg-nav__marker", 2, {bezier:{values:copyBezier}});
-
 })();
 // main page svg navigation end
 
@@ -168,7 +144,13 @@ animateHTMLCtrl.init();
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
                 }

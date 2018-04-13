@@ -8,7 +8,7 @@
 }
 .eco-farm-paragraph {
     line-height: 30px;
-    letter-spacing: 0.4;
+    letter-spacing: 0.4px;
 }
 .eco-farm__top {
     margin-top: 40px;
@@ -76,8 +76,7 @@
         top: 50%;
         right: -10px;
         transform: translateY(-50%);
-        width: 520px;
-        height: 395px;
+        max-width: 520px;
         border: 1px solid #fff;
         padding: 4px;
         background-color: transparent;

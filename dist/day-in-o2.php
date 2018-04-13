@@ -8,7 +8,8 @@
     <title>O2 - Day-In-O2</title>
 </head>
 <body>
-    
+<?php  include_once('includes/preloader.php'); ?> 
+
     <section class="day-in-o2">
 
         <?php include_once('includes/header.php'); ?>

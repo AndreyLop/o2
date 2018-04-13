@@ -11,22 +11,36 @@
         max-width: 280px;
         margin: 0 auto;
     }
+    .developer__slider {
+        width: 80%;
+    }
     .developer__logo {
         width: 30%;
     }
 }
 @media only screen and (max-width: 768px) {
-    .developer__slider {
-        width: 320px;
-    }
+    
     .developer__slider-item {
         max-width: none;
         img {
-            width: 100%;
+            width: 80%;
         }
+    }
+    .developer__slider_arrow {
+        top: 70%;
+    }
+    .developer__slider-arrow_right {
+        right: 10px;
+    }
+    .developer__slider-arrow_left {
+        left: 10px;
     }
     .developer__saga-container {
         flex-direction: column;
+        padding: 10px;
+        .developer__logo {
+            max-width: 160px;
+        }
     }
     .developer__logo {
         width: 100%;

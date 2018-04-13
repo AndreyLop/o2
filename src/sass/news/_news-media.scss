@@ -20,9 +20,12 @@
         .news-open__text {
             padding: 35px 50px 20px;
         }
+        .page-hero__heading {
+            margin: 0 auto 40px auto;
+        }
     }
 }
-@media only screen and(max-width: 768px) {
+@media only screen and(max-width: 767px) {
     .news__item-text {
         padding: 20px 15px 70px 15px;
     }
@@ -43,5 +46,6 @@
             width: 90%;
             margin: 0 auto;
         }
+
     }
 }
