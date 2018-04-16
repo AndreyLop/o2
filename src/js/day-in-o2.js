@@ -35,12 +35,12 @@ var di2 = (function() {
     $(sliderSelector).on('beforeChange', function(event, slick, currentSlide, nextSlide){
         fillActiveSlideBars(nextSlide);
         
-        if(nextSlide+1 === slick.slideCount) {
-            showScrollBar();
-        } else {
-            $(document).scrollTop(0, 0)
-            hideScrollBar();
-        }
+        // if(nextSlide+1 === slick.slideCount) {
+        //     showScrollBar();
+        // } else {
+        //     $(document).scrollTop(0, 0)
+        //     hideScrollBar();
+        // }
       });
 
       

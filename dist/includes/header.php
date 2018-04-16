@@ -115,6 +115,26 @@
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Будівництво</a></li>
             </ul>
         </div>
+        <div class="menu__nav">
+            <ul class="menu__nav-sub">
+                <li class="menu__nav-item_heading">Test</li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="404.php">404</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="advantages.php">advantages</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="choose-apartment.php">choose-apartment</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="commercial.php">commercial</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="construction.php">construction</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="day-in-o2.php">day-in-o2</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="developer.php">developer</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="eco-farm.php">eco-farm</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="index.php">main</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="location.php">location</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="news-open.php">news-open</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="news.php">news</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="residence.php">residence</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="values.php">values</a></li>
+
+            </ul>
+        </div>
     </div>
     <div class="menu__bottom">
         <ul>
@@ -129,8 +149,6 @@
             </li>
             <li class="nav__item nav__item-3d nav__item-3d_mobile nav__btn">
                 <a href="#">Карта<span class="nav__3d-text">3D</span></a>
-            </li>
-            <li class="nav__item-lang-placeholder">
             </li>
             <li class="nav__item nav__item-lang nav__item-lang_mobile">
                 <ul class="lang-list">

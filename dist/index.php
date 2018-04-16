@@ -11,7 +11,7 @@
     
     <section class="hero main-page">
 
-    <?php  include_once('includes/preloader.php'); ?> 
+<?php  include_once('includes/preloader_2.php'); ?> 
 
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
@@ -327,7 +327,7 @@
 
         </div>
     </section>
-    <section class="values main-page">
+    <section class="values main-page animate-me">
         <div class="wrapper values__wrapper">
             <h2 class="heading adantages__heading">Цінності</h2>
             
@@ -475,6 +475,7 @@
 
     <section class="info info_3 main-page animate-me">
         <div class="wrapper info__wrapper">
+
             <div class="info__item info__item_1">
                 <a href="commercial.php" class="main-page-hover-link">
                     <div class="info__item-image info__item-image_commercial"></div>
@@ -500,6 +501,7 @@
             </div>
 
             <div class="info__item info__item_2">
+                <a href="developer.php" class="main-page-hover-link">
                 <div class="info__item-image info__item-image_developer">
                     <div class="info__item-developer-logo">
                         <img src="img/main/saga-logo-w.svg" alt="Saga Logo">
@@ -511,7 +513,21 @@
                         з дотриманням усіх норм та вимог чинного законодавства України у галузі будівництва та на 
                         підставі всієї необхідної дозвільної документації
                     </p>
+                    <span class="btn btn_lightgreen btn_info">Читати далі <span class="btn_arrow"></span></span>
                 </div>
+                <div class="green-hover">
+                    <div class="green-hover__outer-border">
+                        <div class="green-hover__message"> 
+                            <div class="green-hover__eye">
+                                <img src="img/main/eye.png" alt="Eye">
+                            </div>
+                            <div class="green-hover__text">
+                                Переглянути забудовника
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
             </div>
         </div>
     </section>

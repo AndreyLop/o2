@@ -256,6 +256,8 @@
 }
 .ThreeDMap__heading {
     font-size: 1.875rem;
+    transform: none;
+    transition: all $transitionTime $transitionTime2;
     &:after {
         margin: 8px auto 0px auto;
     }
@@ -265,12 +267,34 @@
     letter-spacing: 0.45px;
     font-size: 1.125rem;
     margin-top: 26px;
+    transform: none;
+    transition: all $transitionTime $transitionTime2;
 }
-.btn__watch_3d-tour {
+.btn.btn__watch_3d-tour {
     display: inline-block;
     font-size: 0.75rem;
     margin-top: 45px;
+    transform: none;
+    transition: all 1s $transitionTime2;
 }
+.animate-me {
+    .ThreeDMap__heading {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    .ThreeDMap__message {
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    .btn__watch_3d-tour {
+        transform: perspective(50em) rotateX(90deg);
+        transform-origin: bottom;
+    }
+    
+}
+
+
+
 // 3d-tour end
 
 // construction-end start
@@ -317,6 +341,7 @@
         transform: translateY(-50%);
         display: block;
         background-image: url('../img/main/construction-end.png');
+        transition: all $transitionTime $transitionTime2;
     }
 }
 .construction-end_list-item-1 {
@@ -381,6 +406,14 @@
         height: 44px;
         background-position: -546px 0;
         left: 10px;
+    }
+}
+.animate-me {
+    .construction-end_list-item  {
+        &:before {
+            opacity: 0;
+            transform: translate(10px , -10px)
+        }
     }
 }
 // construction-end end
@@ -453,7 +486,6 @@
     background-image: url('../img/main/info_developer_bg.jpg');
 }
 .info__item-developer-logo {
-
     width: 200px;
     margin: 75px auto 0 auto;
 }
@@ -461,16 +493,19 @@
 .info__item-text {
     color: #000;
     padding: 39px 40px 81px 28px;
-    border: 1px solid #cdcdcd; 
+    border: 1px solid $grey; 
     flex: 1;
     position: relative;
 }
-
+.info__item-heading{
+    transition: all 1s $transitionTime2;
+}
 .info__item-paragraph {
     font-size: 1rem;
     line-height: 26px;
     letter-spacing: 0.4px;
     margin-bottom: 35px;
+    transition: all 1s $transitionTime2;
 }
 .btn_info {
     position: absolute;
@@ -479,18 +514,32 @@
     right: 40px;
     color: #fff;
     font-size: 0.75rem;
-    
+}
+.btn {
+    &.btn_info {
+        transition: all 1s $transitionTime2;
+    }
+}
+.animate-me {
+    .info__item-heading {
+        opacity: 0;
+    }
+    .info__item-paragraph {
+        opacity: 0;
+    }
+    .btn_info {
+        transform: perspective(50em) rotateX(90deg);
+        transform-origin: bottom;
+    }
 }
 // info end
 
 // advantages start
 .advantages {
     position: relative;
-    top: 0;
     opacity: 1;
     transition: all $transitionTime2;
     &.animate-me {
-        top: -200px;
         opacity: 0;
     }
 }
@@ -584,13 +633,23 @@
     }
 }
 // advantages end
+
+
+// values start
 .values {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transform: none;
+    transition: all $transitionTime2;
     &.main-page {
         color: #fff;
     }
+    &.animate-me {
+        left: -200px;
+        opacity: 0;
+    }
 }
-
-// values start
 .values__wrapper {
     position: relative;
 }
@@ -743,6 +802,8 @@
 }
 .dayInO2__heading {
     font-size: 1.875rem;
+    transform: none;
+    transition: all 1s $transitionTime2; 
     &::after {
         background-color: #fff;
     }
@@ -751,6 +812,8 @@
     font-size: 1.125rem;
     margin-top: 26px;
     max-width: 440px;
+    transform: none;
+    transition: all 1s $transitionTime2; 
 }
 .btn__dayInO2 {
     display: inline-block;
@@ -770,6 +833,16 @@
         height: 100%;
     }
 }
+.animate-me {
+    .dayInO2__heading {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    .dayInO2__message {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+}
 // dayInO2 end
 
 // projects start
@@ -783,7 +856,7 @@
 }
 
 .projects__wrapper {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $grey;
 }
 .projects__slider-container {
     position: relative;

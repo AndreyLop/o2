@@ -8,7 +8,7 @@
     <title>O2 - Advantages</title>
 </head>
 <body>
-<?php  include_once('includes/preloader.php'); ?> 
+<?php  include_once('includes/preloader_2.php'); ?> 
 
     <section class="advantages">
 
@@ -36,7 +36,7 @@
 
         <div class="wrapper">
 
-            <div class="advantage advantage-1">
+            <div class="advantage advantage-1 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="advantage advantage-2">
+            <div class="advantage advantage-2 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="advantage advantage-3">
+            <div class="advantage advantage-3 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -75,7 +75,7 @@
             </div>
             
 
-            <div class="advantage advantage-4">
+            <div class="advantage advantage-4 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="advantage advantage-5">
+            <div class="advantage advantage-5 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -99,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="advantage advantage-6">
+            <div class="advantage advantage-6 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">
@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="advantage advantage-7">
+            <div class="advantage advantage-7 animate-me">
                 <div class="advantage__image">
                     <div class="advantage__frame"></div>
                     <div class="advantage__msg">

@@ -8,7 +8,8 @@
     <title>O2 - Choose Apartment</title>
 </head>
 <body>
-    
+<?php  include_once('includes/preloader_2.php'); ?> 
+
     <section class="stub">
 
         <div class="page-hero">

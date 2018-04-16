@@ -88,7 +88,7 @@
 
 .developer__saga-container {
     margin-top: 40px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $grey;
     padding: 60px 90px;
     display: flex;
     justify-content: space-between;
@@ -113,7 +113,7 @@
     justify-content: space-between;
 }
 .developer__advantage {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $grey;
     width: 32%;
     text-align: center;
     padding-bottom: 50px;
@@ -133,7 +133,7 @@
         height: 1px;
         width: 62px;
         margin: 10px auto;
-        background-color: #cdcdcd;
+        background-color: $grey;
     }
 }
 .developer__advantage-1 {

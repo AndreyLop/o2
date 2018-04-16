@@ -8,7 +8,7 @@
     <title>O2 - Construction</title>
 </head>
 <body>
-<?php  include_once('includes/preloader.php'); ?> 
+<?php  include_once('includes/preloader_2.php'); ?> 
     <section class="construction">
 
         <div class="page-hero">

@@ -9,6 +9,8 @@
 </head>
 <body>
     
+<?php  include_once('includes/preloader_2.php'); ?> 
+
     <section class="residences">
 
         <div class="page-hero">

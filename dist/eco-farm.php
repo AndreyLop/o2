@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<?php  include_once('includes/preloader.php'); ?> 
+<?php  include_once('includes/preloader_2.php'); ?> 
 
     <section class="eco-farm">
 

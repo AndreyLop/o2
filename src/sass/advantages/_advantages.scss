@@ -11,6 +11,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        transform: none;
+        transition: all 1s $transitionTime2;
     }
     .advantage__frame {
         position: absolute;
@@ -25,6 +27,7 @@
         top: 50%;
         transform: translateY(-50%);
         display: flex;
+        transition: all 1s $transitionTime2;
     }
     .advantage__msg_number {
         width: 100px;
@@ -166,5 +169,16 @@
     }
     .advantage__msg {
         left: -100px;
+    }
+}
+
+.animate-me {
+    .advantage__msg {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    .advantage__image {
+        transform: translateX(-200px);
+        opacity: 0;
     }
 }

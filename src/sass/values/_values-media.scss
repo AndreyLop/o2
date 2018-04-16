@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1024px) {
+    .values__healthy-life {
+        padding-left: 0px;
+    }
+    .values__healthy-life_text {
+        padding: 40px;
+    }
+    .values__healthy-life-paragraph {
+        padding: 20px 0px 0px 0px;
+    }
+    .values__service {
+        .values__outer-frame {
+            width: 700px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .values__ecology {
+        .values__outer-frame {
+            transform: none;
+            max-width: 95%;
+            margin: 20px auto 0px auto;
+        }
+    }
+    .values__ecology-main-text {
+        padding: 15px;
+    }
+    .values__solar-panels-inner {
+        padding: 25px;
+        text-align: center;
+    }
+    .values__healthy-life {
+        flex-direction: column;
+    }
+    .values__healthy-life_image {
+        width: 100%;
+        height: 500px;
+    }
+    .values__healthy-life_text {
+        width: 100%;
+        max-width: none;
+    }
+    .values__healthy-life-container {
+        max-width: none;
+    }
+    .values__children {
+
+        .values__outer-frame {
+            margin: 20px auto;
+            max-width: none;
+            max-width: 95%;
+        }
+    }
+    .values__children-main-text {
+        padding: 15px;
+    }
+    .values__service {
+        .values__outer-frame {
+            margin: 20px auto;
+            width: 95%;
+            float: none;
+            transform: none;
+        }
+    }
+    .values__service-paragraphs {
+        flex-direction: column;
+        .values__paragraph {
+            width: 100%;
+        }
+    }
+    .values__service-main-text {
+        padding: 15px;
+    }
+
+}
+
