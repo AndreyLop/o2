@@ -27,6 +27,7 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Резиденція<span class="btn_arrow"></span></a>
                     </div>
                 </div>

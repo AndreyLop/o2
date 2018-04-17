@@ -27,6 +27,7 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Забудовник</a>
                     </div>
                 </div>
@@ -37,7 +38,7 @@
 
         <div class="wrapper developer__wrapper">
 
-            <div class="developer__slider-container">
+            <div class="developer__slider-container animate-me">
                 <div class="developer__slider-frame">
                     <div class="developer__slider-heading heading">
                         <h3>  
@@ -90,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="developer__saga-container">
+            <div class="developer__saga-container animate-me">
                 <div class="developer__logo">
                     <img src="img/developer/saga-logo.svg" alt="Saga Logo">
                 </div>
@@ -103,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="developer__advantages">
+            <div class="developer__advantages animate-me">
 
                 <div class="developer__advantage developer__advantage-1">
                     <div class="developer__advantage-icon"></div>

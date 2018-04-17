@@ -25,6 +25,9 @@
     .b-nav__wrapper {
         padding: 10px 10px 130px 10px;
     }
+}
+
+@media only screen and(max-width: 530px) {
     .b-nav__item {
         width: 80%;
         margin-bottom: 30px;

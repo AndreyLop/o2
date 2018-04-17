@@ -2,7 +2,7 @@
     <div class="wrapper header">
     <div class="logo">
         <a href="/">
-            <img src="img/common/o2_logo.png" alt="O2 Logo">
+            <img src="img/common/o2_logo.svg" alt="O2 Logo">
         </a>
     </div>
     <nav class="nav">

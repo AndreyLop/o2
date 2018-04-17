@@ -89,11 +89,35 @@
             bottom: auto;
         }
     }
+
+    .animate-me {
+        &.advantage-1 {
+            .advantage__msg {
+                left: 600px;
+            }
+        }
+        &.advantage-2 {
+            .advantage__msg {
+                right: 600px;
+            }
+        }
+        &.advantage-5 {
+            .advantage__msg {
+                left: 600px;
+            }
+        }
+        &.advantage-6 {
+            .advantage__msg {
+                right: 600px;
+            }
+        }
+    }
+
 }
 @media only screen and (max-width: 767px) {
     .advantage {
         .advantage__image {
-            height: 450px;
+            //height: 450px;
             width: 100%;
         }
         .advantage__frame {
@@ -103,6 +127,52 @@
     .advantage-4 {
         .advantage__msg {
             left: 0px;
+        }
+    }
+}
+@media only screen and (max-width: 510px) {
+    .advantage {
+        .advantage__image {
+            height: 450px;
+        }
+        .advantage__msg_text {
+            width: 240px;
+            padding: 0 10px;
+        }
+    }
+    .advantage-1 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_1_mob.jpg');
+        }
+    }
+    .advantage-2 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_2_mob.jpg');
+        }
+    }
+    .advantage-3 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_3_mob.jpg');
+        }
+    }
+    .advantage-4 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_4_mob.jpg');
+        }
+    }
+    .advantage-5 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_5_mob.jpg');
+        }
+    }
+    .advantage-6 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_6_mob.jpg');
+        }
+    }
+    .advantage-7 {
+        .advantage__image {
+            background-image: url('../img/advantages/advantage_7_mob.jpg');
         }
     }
 }

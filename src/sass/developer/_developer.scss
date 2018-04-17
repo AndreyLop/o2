@@ -22,6 +22,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all $transitionTime3;
 }
 .developer__slider-frame {
     position: relative;
@@ -97,6 +98,9 @@
 
 .developer__logo {
     width: 20%;
+    position: relative;
+    left: 0;
+    transition: all $transitionTime3;
     img {
         width: 100%;
     }
@@ -104,6 +108,9 @@
 
 .developer__message {
     width: 60%;
+    position: relative;
+    right: 0;
+    transition: all $transitionTime3;
 }
 
 .developer__advantages {
@@ -117,6 +124,8 @@
     width: 32%;
     text-align: center;
     padding-bottom: 50px;
+    transform: none;
+    transition: all $transitionTime3;
 }
 .developer__advantage-icon {
     background-repeat: no-repeat;
@@ -127,6 +136,7 @@
 
 }
 .developer__advantage-msg {
+    padding: 0px 10px;
     &::before {
         content: '';
         display: block;
@@ -153,5 +163,23 @@
     .developer__advantage-icon {
         width: 69px;
         background-position-x: -187px; 
+    }
+}
+
+.animate-me {
+    &.developer__slider-container {
+        opacity: 0;
+    }
+    .developer__logo  {
+        left: -100px;
+        opacity: 0;
+    }
+    .developer__message {
+        right: -100px;
+        opacity: 0;
+    }
+    .developer__advantage {
+        transform: scale(0.5);
+        opacity: 0;
     }
 }

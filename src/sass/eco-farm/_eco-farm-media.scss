@@ -65,6 +65,11 @@
   .eco-farm__top-item-fruit-bowl {
     display: none;
   }
+  .first-in-ua_heading  {
+    &:after {
+      margin: 15px 0px;
+    }
+  }
   .first-in-ua__mobile {
     height: 290px;
     width: 100%;
@@ -80,14 +85,16 @@
     .first-in-ua__paragraph {
       padding: 0;
     }
+    .first-in-ua__msg {
+      padding: 10px;
+    }
     .first-in-ua__msg-frame {
       position: relative;
       top: -20px;
       left: 50%;
       right: auto;
       transform: translate(-50%, 0);
-      width: 520px;
-      height: 395px;
+      height: auto;
       border: 1px solid #fff;
       padding: 4px;
       background-color: transparent;

@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition: all $transitionTime3;
 }
 .eco-farm__top-item {
     width: 50%;
@@ -41,24 +42,16 @@
     max-width: 475px;
     font-size: 1.5rem;
     line-height: 36px;
+    transform: none;
+    transition: all $transitionTime3;
 }
 .eco-farm__top-item-paragraph {
     margin-bottom: 70px;
+    transform: none;
+    transition: all $transitionTime3;
     .eco-farm-paragraph {
         max-width: 530px;
         letter-spacing: 0.4;
-    }
-}
-
-.eco-farm__top-images {
-
-}
-.eco-farm__top-images_fruit-bowl {
-    img {
-    }
-}
-.eco-farm__top-images_tomatos {
-    img {
     }
 }
 .eco-farm__middle {
@@ -79,7 +72,7 @@
         max-width: 520px;
         border: 1px solid #fff;
         padding: 4px;
-        background-color: transparent;
+        transition: all $transitionTime3;
     }
     .first-in-ua__msg {
         width: 100%;
@@ -107,6 +100,8 @@
 }
 .what-to-grow-paragraph-1 {
     max-width: 400px;
+    transform: none;
+    transition: all $transitionTime3;
     span {
         font-weight: 600;
     }
@@ -114,6 +109,8 @@
 .what-to-grow-paragraph-2 {
     max-width: 540px;
     padding: 45px 0px 0px 80px;
+    transform: none;
+    transition: all $transitionTime3;
 }
 .what-to-grow__image {
     border: 5px solid #fff;
@@ -126,6 +123,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/eco-farm/eco-farm_gardener.jpg');
+    transition: all $transitionTime3;
 }
 
 .eco-farm__bottom {
@@ -235,8 +233,47 @@
     top: 5px;
     left: 5px;
     font-size: 1.5rem;
+    transition: all $transitionTime3 $transitionTime;
 }
 .how-this-works-item-text {
     line-height: 24px;
     font-size: 0.875rem;
+    transition: all $transitionTime3 $transitionTime;
+}
+
+.animate-me {
+    &.eco-farm__top {
+        opacity: 0;
+    }
+    .eco-farm__top-heading {
+        transform: translateX(-100px);
+    }
+    .eco-farm__top-item-paragraph {
+        transform: translateX(100px);
+    }
+    .first-in-ua__msg-frame {
+        right: 100px;
+        opacity: 0;
+    }
+    .what-to-grow__image {
+        right: -200px;
+        opacity: 0;
+    }
+    .what-to-grow-paragraph-1 {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    .what-to-grow-paragraph-2 {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    .how-this-works-item-number {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+    }
+    .how-this-works-item-text {
+        opacity: 0;
+    }
 }

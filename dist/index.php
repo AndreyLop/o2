@@ -329,7 +329,7 @@
     </section>
     <section class="values main-page animate-me">
         <div class="wrapper values__wrapper">
-            <h2 class="heading adantages__heading">Цінності</h2>
+            <h2 class="heading values__heading adantages__heading">Цінності</h2>
             
             <div class="values__slider">
                 <div class="values__slide values__slide_1">
@@ -438,7 +438,9 @@
 
     <section class="infrastructure main-page animate-me">
         <a href="#" class="wrapper main-page-hover-link">
+
             <div class="infrastructure__wrapper">
+            <h2 class="heading infrastructure__heading">Інфраструктура</h2>
                 <div class="infrastructure__items">
                     <div class="infrastructure__item infrastructure__item_1">
                         <div class="infrastructure__item_text">
@@ -446,7 +448,6 @@
                         </div>
                     </div>
                     <div class="infrastructure__item infrastructure__item_2">
-                        <h2 class="heading infrastructure__heading">Інфраструктура</h2>
                         <div class="infrastructure__item_text">
                             Усе для дітей
                         </div>

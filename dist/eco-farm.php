@@ -27,6 +27,7 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Еко ферма</a>
                     </div>
                 </div>
@@ -38,7 +39,7 @@
 
         <div class="wrapper">
 
-            <div class="eco-farm__top">
+            <div class="eco-farm__top animate-me">
                 <div class="eco-farm__top-item">
                     <h4 class="eco-farm__top-heading">
                         Кожен з нас все частіше замислюється про те, наскільки корисні та безпечні продукти, які ми вживаємо щодня.
@@ -61,7 +62,7 @@
             <div class="eco-farm__middle">
                 <div class="first-in-ua__mobile">
                 </div>
-                <div class="first-in-ua">
+                <div class="first-in-ua animate-me">
                     <div class="first-in-ua__msg-frame">
                         <div class="first-in-ua__msg">
                             <h4 class="first-in-ua_heading heading">
@@ -75,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="what-to-grow">
+                <div class="what-to-grow animate-me">
                     <div class="what-to-grow__image">
                     </div>
                     <div class="what-to-grow__paragraph-container">
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="eco-farm__bottom">
+            <div class="eco-farm__bottom animate-me">
                 <div>
                     <ul class="how-this-works">
                         <li class="how-this-works-item how-this-works-item_first-last">

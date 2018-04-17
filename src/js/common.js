@@ -317,32 +317,33 @@ if(!sessionStorage.getItem('preloaderActivated')) {
 }
 //preloader2.init();
 
-
+// animation on scroll
 var animateHTMLCtrl = (function() {
     var aniamteClass = 'animate-me',
     elems = document.querySelectorAll('.animate-me'),
     windowHeight = window.innerHeight,
     animatedElements;
-    var init = function() {
-        _addEventHandlers();
-    }
+
+
+    // Here debounce returns your passed functions and assigns them to new vars so that you can do removeEventListener
+    var _debouncedScroll = debounce(_checkPosition, 100);
+    var _debouncedInit = debounce(init, 100);
 
     // if to more elements to animate remove event listener from scroll
     function _checkForAnimatedElements() {
+        elems = document.querySelectorAll('.animate-me');
         if(elems.length === 0 ) {
-            window.removeEventListener('scroll', _checkPosition);
+            window.removeEventListener('scroll', _debouncedScroll);
+            window.removeEventListener('resize', _debouncedInit);
         }
-    }
-  
-    function _addEventHandlers() {
-      window.addEventListener('scroll', _checkPosition);
-      window.addEventListener('resize', debounce(init, 100));
-    }
+    };
 
-    setTimeout(_checkPosition, 500)
+    function _addEventHandlers() {
+      window.addEventListener('scroll', _debouncedScroll);
+      window.addEventListener('resize', _debouncedInit);
+    };
   
     function _checkPosition() {        
-    windowHeight = window.innerHeight;
       for (var i = 0; i < elems.length; i++) {
         var posFromTop = elems[i].getBoundingClientRect().top;
         if (posFromTop - windowHeight <= -200) {
@@ -350,13 +351,20 @@ var animateHTMLCtrl = (function() {
         }
       }
       _checkForAnimatedElements();
-    }
-    _checkPosition();
+    };
+    
+    function init() {
+        _addEventHandlers();
+        _checkPosition();
+    };
+
+    setTimeout(_checkPosition, 500)
+
     return {
       init: init
-    }
+    };
   
   })();
 
 animateHTMLCtrl.init();
-// end animateHTMLCtrl
+// animation on scroll end

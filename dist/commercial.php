@@ -26,6 +26,7 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Комерційна нерухомість</a>
                     </div>
                 </div>
@@ -53,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="commercial__item commercial__item-right commercial__item-1">
+            <div class="commercial__item commercial__item-right commercial__item-1 animate-me">
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container">
                         <div class="commercial__heading-container">
@@ -95,31 +96,44 @@
                 </div>
             </div>
 
-            <div class="commercial__item commercial__item-2">
+            <div class="commercial__item commercial__item-2 animate-me">
                 <div class="commercial__item-image commercial__item-image_shops commercial__item-image_left">
                 </div>
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container commercial__item-text-container_right">
                     <div class="commercial__heading-container">
                             <div class="commercial__item-icon-container">
-                                <svg
-                                    xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                    xmlns:cc="http://creativecommons.org/ns#"
-                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                    xmlns:svg="http://www.w3.org/2000/svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    height="100%"
-                                    width="100%"
-                                    viewBox="0 0 78 80.000053"
-                                    y="0px"
-                                    x="0px"
-                                    >
-                                    <g transform="translate(-11,-962.36215)">
-                                        <path  class="commercial-icon commercial-icon_restaraunt"
-                                        d="m 11,962.36215 13.99999,0 0,25 c 0,2.3333 -2.39999,5.0001 -6.99999,5.0001 -4.60001,0 -7,-2.6668 -7,-5.0001 z m 15.99999,0 14.00001,0 0,25 c 0,2.3333 -2.4,5.0001 -7,5.0001 -4.60001,0 -7.00001,-2.6668 -7.00001,-5.0001 z m 16,0 14.00001,0 0,25 c 0,2.3333 -2.40001,5.0001 -7,5.0001 -4.6,0 -7.00001,-2.6668 -7.00001,-5.0001 z m 16,0 14.00001,0 0,25 c 0,2.3333 -2.4,5.0001 -7,5.0001 -4.6,0 -7.00001,-2.6668 -7.00001,-5.0001 z m 16.00001,0 14,0 0,25 c 0,2.3333 -2.4,5.0001 -7,5.0001 -4.6,0 -7,-2.6668 -7,-5.0001 z m -57,15.5625 c -1.16153,1.1651 -2.41503,2.4029 -3.40626,3.4376 1.15886,1.1587 2.39765,2.3977 3.40626,3.4061 1.25823,-1.2581 2.22541,-2.2254 3.40624,-3.4061 -1.13488,-1.1921 -2.39302,-2.4245 -3.40624,-3.4376 z m 16,0 c -1.16153,1.1651 -2.41503,2.4029 -3.40626,3.4376 1.25774,1.2576 2.22172,2.2217 3.40626,3.4061 1.25824,-1.2581 2.22541,-2.2254 3.40624,-3.4061 -1.23725,-1.2895 -2.21665,-2.248 -3.40624,-3.4376 z m 16,0 c -1.26088,1.267 -2.24508,2.2235 -3.40625,3.4376 1.15885,1.1587 2.39765,2.3977 3.40625,3.4061 1.25824,-1.2581 2.22541,-2.2254 3.40624,-3.4061 -1.23725,-1.2895 -2.21665,-2.248 -3.40624,-3.4376 z m 16,0 c -1.26088,1.267 -2.24507,2.2235 -3.40625,3.4376 1.15885,1.1587 2.39765,2.3977 3.40625,3.4061 1.25824,-1.2581 2.22541,-2.2254 3.40625,-3.4061 -1.23726,-1.2895 -2.21665,-2.248 -3.40625,-3.4376 z m 16,0 c -1.26088,1.267 -2.24507,2.2235 -3.40625,3.4376 1.15886,1.1587 2.39765,2.3977 3.40625,3.4061 1.25824,-1.2581 2.22541,-2.2254 3.40625,-3.4061 -1.23725,-1.2895 -2.21665,-2.248 -3.40625,-3.4376 z m -56,12.6875 c 1.42603,2.1762 4.28749,3.75 8,3.75 3.71249,0 6.57397,-1.5738 8,-3.75 1.42603,2.1762 4.28749,3.75 8,3.75 3.7125,0 6.57397,-1.5738 8,-3.75 1.42603,2.1762 4.2875,3.75 8,3.75 3.7125,0 6.57397,-1.5738 8,-3.75 1.42603,2.1762 4.2875,3.75 8,3.75 2.97815,0 5.41878,-1.0068 7,-2.5312 l 0,50.53125 -52,0 0,-25 c 0,-2.3333 -1.22416,-4.2014 -2.93751,-5.3438 -1.71335,-1.1422 -3.89582,-1.6562 -6.06249,-1.6562 -2.16667,0 -4.34915,0.514 -6.0625,1.6562 -1.71335,1.1423 -2.9375,3.0105 -2.9375,5.3438 l 0,25 -8,0 0,-50.53125 c 1.58122,1.5244 4.02184,2.5312 7,2.5312 3.71249,0 6.57397,-1.5738 8,-3.75 z m 18.81249,10.75005 c -0.45839,0.088 -0.82071,0.5333 -0.81249,0.9999 l 0,30 c 5e-5,0.5237 0.47642,1 1,1.0001 l 36,0 c 0.52358,-10e-5 0.99995,-0.4764 1,-1.0001 l 0,-30 c -5e-5,-0.5236 -0.47642,-0.9998 -1,-0.9999 -12.05733,0 -24.14542,0 -36.18751,0 z m 1.1875,1.9999 34.00002,0 0,28.0001 -34.00002,0 z m 17.00001,3 c -2,2 -2,5.0001 0,8.0001 -1,-3 0,-8.0001 0,-8.0001 z m -4.00001,2 c -1.99999,2.0001 -1.99999,3.0001 0,6.0001 -0.99999,-3 0,-6.0001 0,-6.0001 z m 8.00001,0 c -2,2.0001 -2,3.0001 0,6.0001 -1,-3 0,-6.0001 0,-6.0001 z m -12.5,7.0001 c -0.0829,2.0595 0.0211,4.1689 1.15625,5.8749 -0.87062,0.2564 -1.50182,0.6754 -1.875,1.3126 -0.56897,1.11 -0.26738,2.0598 0.62495,2.8123 1.47096,1.2048 5.50906,1.9976 8.5937,2 3.54401,-0.099 6.17855,-0.7193 7.6875,-2.0625 0.97167,-0.9656 0.88829,-2.1983 0.375,-2.9063 -0.40152,-0.5321 -1.003,-0.8817 -1.75,-1.125 1.94692,-0.039 3.40501,-0.9994 3.65625,-2.875 0.18892,-1.8441 -0.87292,-2.5284 -2.46875,-2.75 -4.3e-4,-0.066 5e-5,-0.251 0,-0.2812 -6.49241,0.01 -12.1672,-0.06 -16,0 z m 15.96875,2.3438 c 0.29552,0.012 0.47478,0.017 0.53125,0.031 0.0665,0.779 -0.35643,1.0402 -0.74995,1.4062 0.15952,-0.5132 0.1657,-0.9746 0.2187,-1.4372 z m -2.78125,5.2187 c 0.67848,0.019 1.80297,0.2241 1.81245,0.7185 0.0284,0.7322 -3.195,1.6987 -6.5,1.7188 -3.42235,-0.016 -7.46981,-1.0947 -7.4999,-1.7809 -0.003,-0.4353 1.09498,-0.5646 1.8125,-0.5935 1.38609,1.0467 3.18263,1.6614 5.15625,1.6562 2.04061,-0.01 4.00133,-0.6754 5.2187,-1.7191 z"
-                                        />
-                                    </g>
+                            <svg
+                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:svg="http://www.w3.org/2000/svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="100%"
+                                width="100%"
+                                id="svg2"
+                                y="0px"
+                                x="0px"
+                                version="1.1"
+                                viewBox="0 0 7.4083335 6.8791666">
+                                <g 
+                                    transform="translate(-0.52916666,-289.32707)">
+                                    <path class="commercial-icon commercial-icon_restaraunt"
+                                    id="path6"
+                                    transform="matrix(0.26458333,0,0,0.26458333,0,288.53332)"
+                                    d="m 8,12 0,3 -6,0 0,14 28,0 0,-14 -6,0 0,-3 -16,0 z m 8.140625,5 a 26.999995,26.999995 0 0 1 10.244141,2.076172 L 26,20 A 25.999996,25.999996 0 0 0 6,20 L 5.6152344,19.076172 A 26.999995,26.999995 0 0 1 16.140625,17 Z M 15.75,19.751953 l 0,8.498047 -7,0 0,-7.390625 a 24.249996,24.249996 0 0 1 7,-1.107422 z m 0.5,0 a 24.249996,24.249996 0 0 1 7,1.107422 l 0,7.390625 -7,0 0,-8.498047 z"/>
+                                    <path class="commercial-icon commercial-icon_restaraunt"
+                                    id="path8"
+                                    d="m 3.7703104,291.2453 a 0.1984378,0.1984378 0 1 0 -0.3968755,0 0.1984378,0.1984378 0 1 0 0.3968755,0 z" />
+                                    <path class="commercial-icon commercial-icon_restaraunt"
+                                    id="path10"
+                                    d="m 5.0932313,291.2453 a 0.19843777,0.19843777 0 1 0 -0.3968755,0 0.19843777,0.19843777 0 1 0 0.3968755,0 z"/>
+                                    <path class="commercial-icon commercial-icon_restaraunt"
+                                    id="path12"
+                                    d="m 3.5718761,290.91457 1.3229137,0 0.3307287,-1.32291 0.1984412,0 0,-0.26459 -0.4050171,0 -0.1322943,0.52917 -1.5793606,0 z" />
+                                </g>
                                 </svg>
+
                             </div>
                             <div class="commercial__heading-line"></div>
                             <h2 class="commercial__item-text-heading commercial__heading">Магазини</h2>
@@ -143,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="commercial__item commercial__item-right commercial__item-3">
+            <div class="commercial__item commercial__item-right commercial__item-3 animate-me">
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container">
                         <div class="commercial__heading-container">
@@ -190,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="commercial__item commercial__item-4">
+            <div class="commercial__item commercial__item-4 animate-me">
                 <div class="commercial__item-image commercial__item-image_education commercial__item-image_left">
                 </div>
                 <div class="commercial__item-text">
@@ -239,7 +253,7 @@
                 </div>
             </div>
 
-            <div class="commercial__item commercial__item-right commercial__item-5">
+            <div class="commercial__item commercial__item-right commercial__item-5 animate-me">
                 <div class="commercial__item-text">
                     <div class="commercial__item-text-container">
                         <div class="commercial__heading-container">

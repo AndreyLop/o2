@@ -60,7 +60,7 @@
     left: 0px;
     border: 1px solid #cbcbcb;
     width: 100%;
-    transition: all $transitionTime;
+    transition: all $transitionTime2;
     &:hover {
         cursor: pointer;
         background-color: $lightgreen;
@@ -119,6 +119,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: none;
+    transition: all $transitionTime3;
 }
 .commercial__item-image_restaraunts {
     background-image: url('../img/commercial/commercial_restaraunts_img.jpg');
@@ -192,5 +194,14 @@
     }
     .commercial__about-image {
         float: right;
+    }
+}
+
+.animate-me {
+    .commercial__item-image {
+        transform: perspective(50em) rotateY(90deg);
+    }
+    .commercial__item-text {
+        opacity: 0;
     }
 }

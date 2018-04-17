@@ -60,6 +60,10 @@
   .commercial__item-5 {
     flex-direction: column-reverse;
   }
+  .commercial__item-image_education,
+  .commercial__item-image_service {
+    background-position: top;
+  }
   .commercial__item-text-container_right {
     float: none;
     width: 100%;

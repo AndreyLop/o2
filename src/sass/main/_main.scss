@@ -257,7 +257,7 @@
 .ThreeDMap__heading {
     font-size: 1.875rem;
     transform: none;
-    transition: all $transitionTime $transitionTime2;
+    transition: all $transitionTime3 $transitionTime2;
     &:after {
         margin: 8px auto 0px auto;
     }
@@ -268,7 +268,7 @@
     font-size: 1.125rem;
     margin-top: 26px;
     transform: none;
-    transition: all $transitionTime $transitionTime2;
+    transition: all $transitionTime3 $transitionTime2;
 }
 .btn.btn__watch_3d-tour {
     display: inline-block;
@@ -319,6 +319,7 @@
 }
 .construction-end__heading {
     text-align: center;
+    font-size: 1.3rem;
 }
 .construction-end__list {
     display: flex;
@@ -341,7 +342,7 @@
         transform: translateY(-50%);
         display: block;
         background-image: url('../img/main/construction-end.png');
-        transition: all $transitionTime $transitionTime2;
+        transition: all $transitionTime3 $transitionTime2;
     }
 }
 .construction-end_list-item-1 {
@@ -498,14 +499,14 @@
     position: relative;
 }
 .info__item-heading{
-    transition: all 1s $transitionTime2;
+    transition: all $transitionTime3 $transitionTime2;
 }
 .info__item-paragraph {
     font-size: 1rem;
     line-height: 26px;
     letter-spacing: 0.4px;
     margin-bottom: 35px;
-    transition: all 1s $transitionTime2;
+    transition: all $transitionTime3 $transitionTime2;
 }
 .btn_info {
     position: absolute;
@@ -517,7 +518,7 @@
 }
 .btn {
     &.btn_info {
-        transition: all 1s $transitionTime2;
+        transition: all $transitionTime3 $transitionTime2;
     }
 }
 .animate-me {
@@ -572,7 +573,7 @@
     position: absolute;
     display: flex;
     left: 0;
-    bottom: 100px;
+    bottom: 50px;
     height: 100px;
     z-index: 1;
 }
@@ -734,6 +735,7 @@
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
     &:after {
         margin: 8px auto 0px;
     }
@@ -773,6 +775,13 @@
     width: 200px;
     height: 100px;
     font-size: 1.125rem;
+    transition: all $transitionTime3 $transitionTime2;
+}
+.animate-me {
+    .infrastructure__item_text {
+        bottom: 40px;
+        opacity: 0;
+    }
 }
 // infrastrucutre end
 
@@ -803,7 +812,7 @@
 .dayInO2__heading {
     font-size: 1.875rem;
     transform: none;
-    transition: all 1s $transitionTime2; 
+    transition: all $transitionTime3 $transitionTime2; 
     &::after {
         background-color: #fff;
     }
@@ -813,12 +822,16 @@
     margin-top: 26px;
     max-width: 440px;
     transform: none;
-    transition: all 1s $transitionTime2; 
+    transition: all $transitionTime3 $transitionTime2; 
 }
 .btn__dayInO2 {
     display: inline-block;
     font-size: 0.75rem;
     margin-top: 45px;
+    &.btn {
+        transform: none;
+        transition: all $transitionTime3 $transitionTime2; 
+    }
 }
 .dayInO2-border-container {
     position: absolute;
@@ -839,6 +852,10 @@
         opacity: 0;
     }
     .dayInO2__message {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    .btn__dayInO2 {
         transform: translateX(30px);
         opacity: 0;
     }
@@ -950,6 +967,7 @@
 }
 .contacts__tab-content {
     padding: 0px 5px;
+    margin-bottom: 50px;
 }
 .contacts__tab-content__hidden {
     display: none;

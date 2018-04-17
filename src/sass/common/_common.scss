@@ -166,6 +166,7 @@ a {
 .page-hero__heading {
     font-weight: 700;
     font-size: 2.25rem;
+    line-height: 40px;
     display: inline-block;
     margin: 50px;
     margin-left: 0px;
@@ -176,21 +177,19 @@ a {
 }
 .page-hero_nav-links-main {
     color: #ccc;
-    text-decoration: underline;
+    border-bottom: 1px solid $grey;
     display: inline-block;
-    margin-right: 10px;
-    &::after {
-        content: '';
-        display: inline-block;
-        width: 1px;
-        height: 15px;
-        margin-left: 12px;
-        background-color: #fff;
-        vertical-align: middle;
-    }
+}
+.page-hero_vertical-line {
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin: 0 10px;
 }
 .page-hero_nav-links-active {
-    text-decoration: underline;
+    border-bottom: 1px solid $grey;
 }
 .page-hero__wrapper {
     height: 500px;
