@@ -1,3 +1,10 @@
+
+var o2AppState = {
+    menuOpen: false,
+    callbackOpen: false,
+    scrollHidden: false
+};
+
 var langMenu=(function(){
     var navLangItems=document.querySelectorAll(".nav__item-lang");
 
@@ -75,36 +82,40 @@ var dropDownMenu = (function() {
     function showMenu() {                
         if(menu.classList.contains('menu_closed')) {
             menu.classList.remove('menu_closed');
-        }
+        };
     };
 
     // this one hides menu by addng class and shows scrollbar
     function hideMenu(){
         menu.classList.add('menu_closed');
-        document.removeEventListener('click', outsideClickListener);
+        //document.removeEventListener('click', outsideClickListener);
         showScrollBar();
     };
 
     // this listener checks if click was outside menu or on close menu btn
-    function outsideClickListener(event) {
-        if(!menu.contains(event.target)  
-        && !event.target.classList.contains('nav__item_menu')
-        && !event.target.parentNode.classList.contains('nav__item_menu')
-        && !event.target.parentNode.parentNode.classList.contains('nav__item_menu')) {
-            hideMenu();
-        }
-    }
+    // function outsideClickListener(event) {
+    //     if(!menu.contains(event.target)  
+    //     && !event.target.classList.contains('nav__item_menu')
+    //     && !event.target.parentNode.classList.contains('nav__item_menu')
+    //     && !event.target.parentNode.parentNode.classList.contains('nav__item_menu')) {
+    //         hideMenu();
+    //     }
+    // }
 
     // show menu on click and add event listener to hide outside menu
     showMenuBtn.addEventListener('click', function(e) {
         e.preventDefault();
         showMenu();
-        document.addEventListener('click', outsideClickListener);
+        //document.addEventListener('click', outsideClickListener);
         hideScrollBar();
+        o2AppState.menuOpen = true;
+        o2AppState.scrollHidden = true;
     });
 
     hideMenuBtn.addEventListener('click', function() {
         hideMenu();
+        o2AppState.menuOpen = false;
+        o2AppState.scrollHidden = false;
     });
 })();
 
@@ -217,104 +228,104 @@ var dropDownMenu = (function() {
 //preloader logick end
 
  
-var preloader2 = (function() {
-    var canvas = document.querySelector('.myCanvas');
-    var greenOverlay = document.querySelector('.canvas__green-overlay');
-    var ctx = canvas.getContext('2d');
+// var preloader2 = (function() {
+//     var canvas = document.querySelector('.myCanvas');
+//     var greenOverlay = document.querySelector('.canvas__green-overlay');
+//     var ctx = canvas.getContext('2d');
   
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
   
-    var ch = canvas.height,
-    cw = canvas.width,
-    finalRadius = window.innerWidth > window.innerHeight ? window.innerWidth : window.innerHeight,
-    innerCircleRadius = 100,
-    outerCircleRadius = 120,
-    progressStart = 0,
-    progressStop = 2.1,
-    progressCircleStep = 0.02, //Progress circle step
-    percent,
-    textXCoord = cw/2,
-    innerCircleGrowvelocity = 10, // Inner circle grow velocity
-    textYCoord = ch/2 + 140,
-    greenOverlayOpacity = 0.8,
-    greenOverlayOpacityStep = 0.01;
-    loadColor = '#568752';
+//     var ch = canvas.height,
+//     cw = canvas.width,
+//     finalRadius = window.innerWidth > window.innerHeight ? window.innerWidth : window.innerHeight,
+//     innerCircleRadius = 100,
+//     outerCircleRadius = 120,
+//     progressStart = 0,
+//     progressStop = 2.1,
+//     progressCircleStep = 0.02, //Progress circle step
+//     percent,
+//     textXCoord = cw/2,
+//     innerCircleGrowvelocity = 10, // Inner circle grow velocity
+//     textYCoord = ch/2 + 140,
+//     greenOverlayOpacity = 0.8,
+//     greenOverlayOpacityStep = 0.01;
+//     loadColor = '#568752';
   
-    function _drawInnerCircle() {
-      ctx.beginPath();
-      ctx.arc(cw/2, ch/2, innerCircleRadius, 0*Math.PI, 2*Math.PI);
-      ctx.globalCompositeOperation="destination-out";
-      ctx.fill();
-    };
+//     function _drawInnerCircle() {
+//       ctx.beginPath();
+//       ctx.arc(cw/2, ch/2, innerCircleRadius, 0*Math.PI, 2*Math.PI);
+//       ctx.globalCompositeOperation="destination-out";
+//       ctx.fill();
+//     };
   
-    function _drawProgressCircle(e) {
-      //draw text
-      //draw white rect over old text start
-      ctx.fillStyle='#ffffff';
-      ctx.fillRect(textXCoord-20, textYCoord - 15, 45, 20);
-      //draw white rect over old text end
+//     function _drawProgressCircle(e) {
+//       //draw text
+//       //draw white rect over old text start
+//       ctx.fillStyle='#ffffff';
+//       ctx.fillRect(textXCoord-20, textYCoord - 15, 45, 20);
+//       //draw white rect over old text end
   
-      //draw new text start
-      percent = ((progressStart/progressStop) * 100).toFixed();
-      ctx.fillStyle = loadColor;
-      ctx.font = "20px OpenSans";
-      ctx.textAlign = 'center';
-      ctx.fillText(percent+'%', textXCoord, textYCoord);
-      //draw text end
+//       //draw new text start
+//       percent = ((progressStart/progressStop) * 100).toFixed();
+//       ctx.fillStyle = loadColor;
+//       ctx.font = "20px OpenSans";
+//       ctx.textAlign = 'center';
+//       ctx.fillText(percent+'%', textXCoord, textYCoord);
+//       //draw text end
   
-      // draw outer circle start
-      ctx.lineWidth = 2;
-      ctx.strokeStyle = '#ffffff'; 
-      ctx.beginPath();
-      ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, 2*Math.PI);
-      ctx.stroke();
-      ctx.strokeStyle = loadColor; 
-      ctx.beginPath();
-      ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, progressStart*Math.PI);
-      ctx.globalCompositeOperation="source-over";
-      ctx.stroke();
-      progressStart+=progressCircleStep;
-      // If fulle outer circle begin inner circle grow
-      if(progressStart <= progressStop) {
-        requestAnimationFrame(_drawProgressCircle);
-      } else {
-        _animateInnerCircleGrow();
-      }
-      // draw outer circle end
-    };
+//       // draw outer circle start
+//       ctx.lineWidth = 2;
+//       ctx.strokeStyle = '#ffffff'; 
+//       ctx.beginPath();
+//       ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, 2*Math.PI);
+//       ctx.stroke();
+//       ctx.strokeStyle = loadColor; 
+//       ctx.beginPath();
+//       ctx.arc(cw/2, ch/2, outerCircleRadius, 0*Math.PI, progressStart*Math.PI);
+//       ctx.globalCompositeOperation="source-over";
+//       ctx.stroke();
+//       progressStart+=progressCircleStep;
+//       // If fulle outer circle begin inner circle grow
+//       if(progressStart <= progressStop) {
+//         requestAnimationFrame(_drawProgressCircle);
+//       } else {
+//         _animateInnerCircleGrow();
+//       }
+//       // draw outer circle end
+//     };
   
-    function _animateInnerCircleGrow() {
-      _drawInnerCircle();
-      greenOverlayOpacity-=greenOverlayOpacityStep;
-      greenOverlay.style.opacity = greenOverlayOpacity;
-      innerCircleRadius+=innerCircleGrowvelocity;
-      if(innerCircleRadius < finalRadius) {
-        requestAnimationFrame(_animateInnerCircleGrow);
-      } else {
-        canvas.style.display = 'none';
-        greenOverlay.style.display = 'none';
-      }
-    };
+//     function _animateInnerCircleGrow() {
+//       _drawInnerCircle();
+//       greenOverlayOpacity-=greenOverlayOpacityStep;
+//       greenOverlay.style.opacity = greenOverlayOpacity;
+//       innerCircleRadius+=innerCircleGrowvelocity;
+//       if(innerCircleRadius < finalRadius) {
+//         requestAnimationFrame(_animateInnerCircleGrow);
+//       } else {
+//         canvas.style.display = 'none';
+//         greenOverlay.style.display = 'none';
+//       }
+//     };
   
-    function init() {
-        greenOverlay.style.display = 'block';
-        canvas.style.display = 'block';
-        sessionStorage.setItem('preloaderActivated', true);
-        ctx.fillStyle = "#ffffff";
-        ctx.fillRect(0, 0, cw, ch);
-        _drawInnerCircle();
-        _drawProgressCircle();
-    };
+//     function init() {
+//         greenOverlay.style.display = 'block';
+//         canvas.style.display = 'block';
+//         sessionStorage.setItem('preloaderActivated', true);
+//         ctx.fillStyle = "#ffffff";
+//         ctx.fillRect(0, 0, cw, ch);
+//         _drawInnerCircle();
+//         _drawProgressCircle();
+//     };
   
-    return {
-      init: init
-    };
+//     return {
+//       init: init
+//     };
   
-  })();
-if(!sessionStorage.getItem('preloaderActivated')) {
-    preloader2.init();
-}
+//   })();
+// if(!sessionStorage.getItem('preloaderActivated')) {
+//     preloader2.init();
+// }
 //preloader2.init();
 
 // animation on scroll
@@ -368,3 +379,39 @@ var animateHTMLCtrl = (function() {
 
 animateHTMLCtrl.init();
 // animation on scroll end
+
+
+// show callback form start
+var showCallbackForm = (function() {
+    var callbackBtn = document.querySelectorAll('.js-callback-form');
+    var callbackForm = document.querySelector('.callback-form');
+    var callbackClose = document.querySelector('.callback-form__close-btn');
+
+    function showCallbackForm() {
+        callbackForm.classList.add('callback-form__visible');
+    };
+
+    function hideCallbackForm() {
+        callbackForm.classList.remove('callback-form__visible');
+    };
+
+    Array.prototype.forEach.call(callbackBtn, function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            hideScrollBar();
+            showCallbackForm();
+            o2AppState.callbackOpen = true;
+        });
+    });
+
+    callbackClose.addEventListener('click', function() {
+        if(!o2AppState.menuOpen && !o2AppState.scrollHidden) {
+            showScrollBar();
+            o2AppState.scrollHidden = false;
+        }
+        hideCallbackForm();
+        o2AppState.callbackOpen = false;
+    });
+    
+})();
+// show callback form end

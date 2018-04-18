@@ -90,7 +90,7 @@
                         <span class="b-nav__phone">(093) 82-33-115</span>
                     </li>
                     <li>
-                        <a class="btn btn_transparent btn_b-nav" href="#">Замовити дзвінок</a>
+                        <a class="btn btn_transparent btn_b-nav js-callback-form" href="#">Замовити дзвінок</a>
                     </li>
                 </ul>
             </div>

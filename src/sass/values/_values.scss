@@ -27,10 +27,12 @@
     background-image: url('../img/values/values_ecology.jpg');
     overflow: hidden;
     margin-top: 40px;
+    transition: all $transitionTime3;
     .values__outer-frame {
         transform: translateX(-5px);
         max-width: 470px;
         margin: 128px 0px 133px 0px;
+        transition: all $transitionTime3;
     }
 }
 .values__ecology-main-text {
@@ -50,12 +52,15 @@
     margin-top: 40px;
     border: 1px solid #cdcdcd;
     position: relative;
+    transition: all $transitionTime3;
 }
 
 .values__solar-panels-inner {
     padding: 35px 0px;
     max-width: 710px;
     margin: 0 auto;
+    height: 100%;
+    transition: all $transitionTime3;
 }
 
 .values__triangle {
@@ -139,4 +144,22 @@
     .values__paragraph {
         width: 48%;
     }
+}
+
+.animate-me {
+    &.values__ecology {
+        opacity: 0;
+        .values__outer-frame {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+    }
+    &.values__solar-panels {
+        opacity: 0;
+        .values__solar-panels-inner {
+            height: 0px;
+            padding: 0px;
+        } 
+    }
+    
 }

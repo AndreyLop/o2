@@ -11,7 +11,7 @@
     
     <section class="hero main-page">
 
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
@@ -39,7 +39,7 @@
             </div>
             <div class="hero__bottom-container">
                 <div class="hero__bottom">
-                    <a class="btn btn_transparent btn__order-call" href="#" >Замовити дзвінок</a>
+                    <a class="btn btn_transparent btn__order-call js-callback-form" href="#" >Замовити дзвінок</a>
                     <span class="hero__phone">(093) 82-33-115</span>
                     <div class="hero__address">Київ, Бориспільська траса 252 А <br/>(метро Бориспільська)</div>
                 </div>

@@ -124,6 +124,7 @@
     width: 100%;
     height: 100%;
     display: block;
+    transition: all $transitionTime;
     &:hover {
         background-color: $green;
     }
@@ -141,6 +142,12 @@
 .nav__item-lang_opened {
     .lang-list {
         height: 96px;
+    }
+    .lang-item {
+        background-color: rgba(0,0,0,0.5);
+        &:hover {
+            background-color: $green;
+        }
     }
     .nav__item-lang-icon {
         transform: rotate(175deg);
@@ -190,11 +197,12 @@
     background-size: cover;
     background-position: center;
     background-image: url('../img/common/menu_bg.jpg');
+    transform: none;
     transition: all $transitionTime2;
     z-index: 4;
     &.menu_closed {
-        transform: perspective(50em) rotateY(-90deg);
-        transform-origin: right;
+        transform: scale(0.1);
+        transform-origin: right top;
         opacity: 0;
     }
 }
@@ -215,7 +223,7 @@
     height: 28px;
     background-size: cover;
     background-position: center;
-    background-image: url('../img/common/close_menu_btn.png');
+    background-image: url('../img/common/close_icon.svg');
     &:hover {
         cursor: pointer;
     }

@@ -19,8 +19,28 @@ function debounce(func, wait, immediate) {
 // debouncing function stop
 
 function hideScrollBar() {
-    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-  }
+    document.getElementsByTagName('body')[0].classList.add('body-overflow_hidden');
+};
 function showScrollBar() {
-    document.getElementsByTagName('body')[0].style.overflow = 'visible';
-}
+    document.getElementsByTagName('body')[0].classList.remove('body-overflow_hidden');
+};
+
+//AJAX POST Form data function start
+function sendFormData(formId, url, callback) {
+	var body = 'test';
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', url, true);
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.send(body);
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState !== 4) {
+			return
+		}
+		if(xhr.status !== 200) {
+			console.log(xhr.status + ': ' + xhr.statusText);
+		} else {
+			callback(xhr.responseText);
+		}
+	};
+};
+//AJAX POST Form data function end

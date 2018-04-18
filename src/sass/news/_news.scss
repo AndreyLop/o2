@@ -131,6 +131,11 @@
 }
 .news__pagination-item {
     display: inline-block;
+    border-radius: 5px;
+    transition: all $transitionTime;
+    &:hover {
+        background-color: $green;
+    }
 }
 .news__pagination-item_active {
     background-color: $lightgreen;
@@ -145,8 +150,10 @@
     display: inline-block;
     vertical-align: middle;
     fill: $lightgreen;
+    transition: fill $transitionTime;
     &:hover {
         cursor: pointer;
+        fill: $green;
     }
 }
 .news__pagination_arrow-left {
@@ -163,14 +170,14 @@
 .news-open {
     .page-hero {
         background-image: url('../img/news/news-open_bg.jpg');
-        .page-hero_nav {
-            width: 100%;
-        }
+    }
+    .page-hero_nav {
+        margin-top: 200px;
     }
     .page-hero__heading {
         display: block;
         max-width: 800px;
-        margin: 0 auto 140px auto;
+        margin: 0 auto 120px auto;
         text-align: center;
         line-height: 48px;
     }
@@ -231,6 +238,9 @@
         background-size: cover;
         background-position: center;
         background-image: url('../img/news/back-to-news-arrow.png');
+    }
+    .news__list {
+        margin-bottom: 40px;
     }
 }
 

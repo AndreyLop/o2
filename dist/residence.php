@@ -9,7 +9,7 @@
 </head>
 <body>
     
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
     <section class="residences">
 
@@ -93,7 +93,7 @@
             <div class="residence__conclusion">
                 <div class="residence__conclusion-inner-frame">
                     <div class="residence__logo">
-                        <img src="img/common/o2_logo.png" alt="O2 Logo">
+                        <img src="img/common/o2_logo.svg" alt="O2 Logo">
                     </div>
                     <ul class="residence__list">
                         <li class="residence__list-item">

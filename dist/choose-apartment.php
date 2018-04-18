@@ -8,7 +8,7 @@
     <title>O2 - Choose Apartment</title>
 </head>
 <body>
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
     <section class="stub">
 

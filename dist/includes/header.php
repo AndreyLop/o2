@@ -10,7 +10,7 @@
             <li class="nav__item nav__item-telephone">
                 <a href="#">(093) 82-33-115</a>
             </li>
-            <li class="nav__item nav__item-callback nav__btn">
+            <li class="nav__item nav__item-callback nav__btn js-callback-form">
                 <a href="#">Замовити дзвінок</a>
             </li>
             <li class="nav__item nav__item-callback-mobile nav__btn">
@@ -138,10 +138,10 @@
     </div>
     <div class="menu__bottom">
         <ul>
-            <li class="nav__item nav__item-telephone">
+            <li class="nav__item nav__item-telephone nav__item-telephone_mobile">
                 <a href="#">(093) 82-33-115</a>
             </li>
-            <li class="nav__item nav__item-callback nav__btn">
+            <li class="nav__item nav__item-callback nav__item-callback_mobile nav__btn js-callback-form">
                 <a href="#">Замовити дзвінок</a>
             </li>
             <li class="nav__item nav__item-camera nav__item-camera_mobile nav__btn">

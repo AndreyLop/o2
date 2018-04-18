@@ -8,14 +8,12 @@
     <title>O2 - Location</title>
 </head>
 <body>
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
     <section class="location">
 
         <div class="page-hero">
             
-            <? include_once('includes/preloader.php'); ?> 
-
             <?php include_once('includes/header.php'); ?>
 
             <div class="wrapper page-hero__wrapper">

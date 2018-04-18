@@ -9,7 +9,7 @@
 </head>
 <body>
     
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
     <section class="values">
 
@@ -38,7 +38,7 @@
 
         <div class="wrapper">
 
-            <div class="values__ecology">
+            <div class="values__ecology animate-me">
                 <div class="values__outer-frame">
                     <div class="values__main-text values__ecology-main-text">
                         <h3 class="values-p__heading heading">Екологічність</h3>
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="values__solar-panels">
+            <div class="values__solar-panels animate-me">
                 <div class="values__triangle"></div>
                 <div class="values__solar-panels-inner">
                     <p class="values__paragraph">

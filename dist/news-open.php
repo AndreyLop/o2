@@ -8,7 +8,7 @@
     <title>O2 - News Open</title>
 </head>
 <body>
-<?php  include_once('includes/preloader_2.php'); ?> 
+<?php  include_once('includes/forms/callback_form.php'); ?> 
 
     <section class="news-open">
 
@@ -26,7 +26,9 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-main" href="/">Новини</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Заголовок для нової новини у два рядки тексту на одну новину<span class="btn_arrow"></span></a>
                     </div>
                 </div>

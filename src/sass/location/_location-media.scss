@@ -22,6 +22,12 @@
     }
 }
 @media only screen and (max-width: 767px) {
+
+.location__heading {
+    &::after {
+        margin: 15px 0px
+    }
+}
     .location__about {
         flex-direction: column;
     }
@@ -48,6 +54,9 @@
         text-align: left;
         display: block;
         width: 100%;
+    }
+    .location__map {
+        height: 395px;
     }
     .address__right {
         display: block;

@@ -8,7 +8,8 @@
     <title>O2 - Page Not Found</title>
 </head>
 <body>
-    
+<?php  include_once('includes/forms/callback_form.php'); ?> 
+
     <section class="not-found">
 
         <div class="page-hero">

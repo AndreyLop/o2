@@ -15,7 +15,12 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .values-p__heading {
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
     .values__ecology {
+        min-height: 600px;
         .values__outer-frame {
             transform: none;
             max-width: 95%;
@@ -39,16 +44,17 @@
     .values__healthy-life_text {
         width: 100%;
         max-width: none;
+        padding: 15px;
     }
     .values__healthy-life-container {
         max-width: none;
     }
     .values__children {
-
+        min-height: 600px;
+        //background-image: url('../img/values/values_children_mob.jpg');
+        background-position: 70%;
         .values__outer-frame {
-            margin: 20px auto;
-            max-width: none;
-            max-width: 95%;
+            margin: 220px 0 0 10px;
         }
     }
     .values__children-main-text {
@@ -74,3 +80,15 @@
 
 }
 
+@media only screen and (max-width: 510px) {
+    .values__ecology {
+        background-image: url('../img/values/values_ecology_mob.jpg');
+    }
+    .values__children {
+        background-image: url('../img/values/values_children_mob.jpg');
+        background-position: center;
+        .values__outer-frame {
+            margin: 20px auto;
+        }
+    }
+}

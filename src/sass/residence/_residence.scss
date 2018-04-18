@@ -45,9 +45,9 @@
 .residence__text-heading {
     line-height: 36px;
     letter-spacing: 0.6px;
-    font-weight: 600;
     &::after {
         background-color: #000;
+        margin: 15px 0px;
     }
 }
 .residence__paragraph {
@@ -83,6 +83,9 @@
     background-image: url('../img/residence/residence_bottom_bg.jpg');
     padding: 10px;
 }
+.residence__logo {
+    width: 80px;
+}
 .residence__conclusion-inner-frame {
     width: 100%;
     height: 100%;
@@ -103,10 +106,11 @@
     &::before {
         content: '';
         display: inline-block;
-        margin-right: 20px;
+        margin-right: 40px;
         width: 1px;
-        height: 26px;
+        height: 36px;
         background-color: #fff;
+        vertical-align: middle;
     }
 }
 
