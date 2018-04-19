@@ -86,6 +86,11 @@
 
     <div class="di2__slider">
       <div class="di2__slider-item di2__slider-item-1">
+
+        <video preload="auto" autoplay class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4" >
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
             <div class="di2__slider-msg_time">08:00</div>
@@ -94,6 +99,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-2">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">08:30</div>
@@ -102,6 +112,11 @@
           </div>
         </div>
       <div class="di2__slider-item di2__slider-item-3">
+
+        <video class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">  
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">09:00</div>
@@ -110,6 +125,11 @@
           </div>
         </div>
       <div class="di2__slider-item di2__slider-item-4">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
             <div class="di2__slider-msg_time">09:30</div>
@@ -118,6 +138,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-5">
+
+        <video class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">11:00</div>
@@ -126,6 +151,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-6">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">13:00</div>
@@ -134,6 +164,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-7">
+
+        <video class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
             <div class="di2__slider-msg_time">15:00</div>
@@ -142,6 +177,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-8">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
             <div class="di2__slider-msg_time">17:00</div>
@@ -150,6 +190,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-9">
+
+        <video class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">18:00</div>
@@ -158,6 +203,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-10">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">19:00</div>
@@ -166,6 +216,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-11">
+
+        <video class="di2__slider-item_video">
+          <source src="video/nature_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
             <div class="di2__slider-msg">
               <div class="di2__slider-msg_time">20:00</div>
@@ -174,6 +229,11 @@
         </div>
       </div>
       <div class="di2__slider-item di2__slider-item-12">
+
+        <video class="di2__slider-item_video">
+          <source src="video/restaraunt_video.mp4" type="video/mp4">
+        </video>
+
         <div class="di2__slider-msg-wrapper">
           <div class="di2__slider-msg">
             <div class="di2__slider-msg_time">22:00</div>

@@ -39,7 +39,8 @@
         <div class="wrapper">
 
             <ul class="news__list">
-                <li class="news__item">
+
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-1"></div>
                     <div class="news__item-text">
                         <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -47,7 +48,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-2"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -56,7 +57,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-3"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -64,7 +65,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-4"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -72,7 +73,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-5"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -80,7 +81,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-6"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -88,7 +89,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-7"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -96,7 +97,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-8"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -104,7 +105,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-9"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -112,7 +113,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-10"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
@@ -120,7 +121,7 @@
                         <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
-                <li class="news__item">
+                <li class="news__item animate-me">
                     <div class="news__item-image news__item-image-11"></div>
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>

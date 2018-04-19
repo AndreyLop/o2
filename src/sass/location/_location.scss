@@ -25,6 +25,12 @@
     border: 1px solid $grey;
     display: flex;
     justify-content: space-between;
+    &.animate-me {
+        .location__about-text {
+            opacity: 0;
+            transform: scale(0.4);
+        }
+    }
 }
 
 .location__about-image {
@@ -37,6 +43,8 @@
 .location__about-text {
     padding: 55px 15px 60px 50px;
     width: 53%;
+    transform: none;
+    transition: all $transitionTime3;
 }
 
 .location__forest {
@@ -44,14 +52,23 @@
     border: 1px solid $grey;
     display: flex;
     justify-content: space-between;
+    &.animate-me {
+        .location__forest-text {
+            opacity: 0;
+            transform: scale(0.4);
+        }
+    }
 }
 
 .location__forest-text {
     padding: 95px 75px 95px 60px;
     width: 53%;
+    transform: none;
+    transition: all $transitionTime3;
     span {
         font-weight: 600;
     }
+    
 }
 
 .location__forest-image {
@@ -66,6 +83,20 @@
     border: 1px solid $grey;
     display: flex;
     justify-content: space-between;
+    &.animate-me {
+        .address__left {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        .address__right {
+            opacity: 0;
+            transform: translateX(100px);
+            &::before {
+                top: -30px;
+                opacity: 0;
+            }
+        }             
+    }
 }
 .location__map {
     height: 590px;
@@ -100,14 +131,18 @@
     display: inline-block;
     width: 25%;
     text-align: right;
-    margin-right: 15px;
+    margin-right: 11px;
     font-weight: 600;
+    transform: none;
+    transition: all $transitionTime3;
 }
 .address__right {
     display: inline-block;
     width: 66%;
     position: relative;
     margin-left: 15px;
+    transform: none;
+    transition: all $transitionTime3;
     &::before {
         content: '';
         display: inline-block;
@@ -117,6 +152,7 @@
         position: absolute;
         top: 5px;
         left: -14px;
+        transition: all $transitionTime3 $transitionTime3;
     }
 }
 .location__form-outer-frame {

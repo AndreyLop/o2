@@ -8,12 +8,13 @@
     &:hover {
         .green-hover {
             opacity: 1;
+            transition: opacity 1s 1s;
         }
     }
 }
 .green-hover {
     opacity: 0;
-    transition: opacity 1s 1s;
+    transition: opacity 0.3s;
     position: absolute;
     top: 0;
     left: 0;
@@ -928,7 +929,7 @@
 
 .wrapper{
     &.contacts__wrapper {
-        padding:0;
+        padding:0 0 30px 0;
     }
 }
 
@@ -937,7 +938,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 500px;
 }
 .contacts__tabs {
     display: flex;
@@ -967,7 +967,6 @@
 }
 .contacts__tab-content {
     padding: 0px 5px;
-    margin-bottom: 50px;
 }
 .contacts__tab-content__hidden {
     display: none;

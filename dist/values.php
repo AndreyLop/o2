@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="values__healthy-life">
+            <div class="values__healthy-life animate-me">
                 <div class="values__healthy-life_image">
                 </div>
                 <div class="values__healthy-life_text">
@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="values__children">
+            <div class="values__children animate-me">
                 <div class="values__outer-frame">
                     <div class="values__main-text values__children-main-text">
                         <h3 class="values-p__heading heading">Діти у центрі уваги</h3>
@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="values__service">
+            <div class="values__service animate-me">
                 <div class="values__outer-frame">
                     <div class="values__main-text values__service-main-text">
                         <h3 class="values-p__heading heading">Продуманий сервіс</h3>

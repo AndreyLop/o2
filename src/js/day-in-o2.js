@@ -5,6 +5,14 @@ var di2 = (function() {
     var sliderSelector = '.di2__slider';
     var slideBars = $('.slide-bar');
     var slideCircle = $('.slide-circle');
+    //video 
+    var videos = $('.di2__slider-item_video');
+
+    setTimeout(function() {
+      videos[0].play();
+    }, 500);
+    
+    //video
     // var slidesCount = $('.di2__slider-item:last-child');
     // console.log(slidesCount)
 
@@ -34,6 +42,10 @@ var di2 = (function() {
 
     $(sliderSelector).on('beforeChange', function(event, slick, currentSlide, nextSlide){
         fillActiveSlideBars(nextSlide);
+        // video
+        videos[currentSlide].pause();
+        videos[nextSlide].play();
+        // video
         
         // if(nextSlide+1 === slick.slideCount) {
         //     showScrollBar();

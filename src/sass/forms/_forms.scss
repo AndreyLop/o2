@@ -1,0 +1,101 @@
+.callback-form {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 10;
+    transform: translateX(-100%);
+    &.callback-form__visible {
+        opacity: 1;
+        transform: none;
+        transition: opacity $transitionTime;
+    }
+}
+
+.callback-form__container {
+    position: relative;
+    max-width: 700px;
+    margin: 150px auto 0 auto;
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        outline: none;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+    textarea {
+        height: 100px;
+        padding-top: 20px;
+    }
+    input {
+        height: 50px;
+    }
+    .input-field,
+    textarea {
+        padding-left: 25px;
+        color: #fff;
+        font-size: 1.125rem;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #fff;
+                font-family: "OpenSans", sans-serif;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+                color: #fff;
+                font-family: "OpenSans", sans-serif;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+                color: #fff;
+                font-family: "OpenSans", sans-serif;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+                color: #fff;
+                font-family: "OpenSans", sans-serif;
+            }
+    }
+    .submit_btn {
+        color: #fff;
+        font-size: 0.875rem;
+        border: none;
+        background-color: $lightgreen;
+        transition: all $transitionTime;
+        &:hover {
+            cursor: pointer;
+            background-color: $green;
+        }
+    }
+}
+
+.callback-form__close-btn {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    font-size: 0.75rem;
+    .callback-form__close-image {
+        transition: all $transitionTime2;
+    }
+    &:hover {
+        cursor: pointer;
+        .callback-form__close-image {
+            transform: rotate(90deg);
+
+        }
+    }
+}
+.callback-form__close-image {
+    width: 49px;
+    height: 49px;
+    img{
+        width: 100%;
+    }
+}
+.callback-form__heading {
+    text-align: center;
+    line-height: inherit;
+    &::after {
+        margin: 20px auto;
+    }
+}

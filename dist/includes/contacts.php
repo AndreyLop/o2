@@ -19,7 +19,7 @@
             <div class="contacts__tab-content-2-form">
                 <form action="">
                     <input type="text" name="name" placeholder="Ваше ім'я:">
-                    <input type="email" name="e-mail" placeholder="E-mail:">
+                    <input type="text" name="phone" placeholder="Ваш телефон:">
                     <input type="text" name="question" placeholder="Ваше питання:">
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
@@ -30,6 +30,14 @@
             <h3 class="heading contacts__heading">
                 Форма зворотного зв′язку
             </h3>
+            <div class="contacts__tab-content-2-form">
+                <form action="">
+                    <input type="text" name="name" placeholder="Ваше ім'я:">
+                    <input type="text" name="phone" placeholder="Ваш e-mail:">
+                    <input type="text" name="question" placeholder="Ваше питання:">
+                    <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
+                </form>
+            </div>
         </div>
     
     </div>

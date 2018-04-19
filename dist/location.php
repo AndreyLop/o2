@@ -35,7 +35,7 @@
 
         <div class="wrapper">
 
-           <div class="location__about">
+           <div class="location__about animate-me">
                <div class="location__about-image"></div>
                <div class="location__about-text">
                     <h3 class="location__heading heading">
@@ -47,7 +47,7 @@
                </div>
            </div>
 
-           <div class="location__forest">
+           <div class="location__forest animate-me">
                 <div class="location__forest-text">
                     <p class="location__paragraph">
                         <span>Величний сосновий ліс, казкове озеро, птахи та звірята –</span> ось ваші нові сусіди! Досягнувши максимальної 
@@ -58,7 +58,7 @@
                 </div>
            </div>
 
-           <div class="location_map-form">
+           <div class="location_map-form animate-me">
                <div class="location__map" id="location__map"></div>
                <div class="address">
                    <div class="address__outer-frame address__outer-frame-1">

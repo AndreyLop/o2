@@ -38,7 +38,7 @@
 
         <div class="wrapper">
 
-            <div class="residence residence-1">
+            <div class="residence residence-1 animate-me">
                 <div class="residence__image">
                 </div>
                 <div class="residence__text">
@@ -50,7 +50,7 @@
                     </p> 
                 </div>
             </div>
-            <div class="residence residence-2">
+            <div class="residence residence-2 animate-me">
                 <div class="residence__text">
                     <p class="residence__paragraph">
                         <span>Втомившись від міського галасу та метушні</span>, починаєш розуміти: кожна хвилина спокою безцінна. Тому ми так цінуємо час, який проводимо наодинці із природою. 
@@ -59,7 +59,7 @@
                 <div class="residence__image">
                 </div>
             </div>
-            <div class="residence residence-3">
+            <div class="residence residence-3 animate-me">
                 <div class="residence__image">
                 </div>
                 <div class="residence__text">
@@ -71,7 +71,7 @@
                     </p>
                 </div>
             </div>
-            <div class="residence residence-4">
+            <div class="residence residence-4 animate-me">
                 <div class="residence__text">
                     <p class="residence__paragraph">
                         <span>Декілька хвилин по Бориспільській трасі,</span> і ви опинитесь начебто у іншому вимірі. Тут ви забудете про агресію та стрес, про дорожні затори, галасливі вулиці та багатолюдні офіси.
@@ -80,7 +80,7 @@
                 <div class="residence__image">
                 </div>
             </div>
-            <div class="residence residence-5">
+            <div class="residence residence-5 animate-me">
                 <div class="residence__image">
                 </div>
                 <div class="residence__text">
@@ -90,25 +90,25 @@
                 </div>
             </div>
 
-            <div class="residence__conclusion">
+            <div class="residence__conclusion animate-me">
                 <div class="residence__conclusion-inner-frame">
                     <div class="residence__logo">
                         <img src="img/common/o2_logo.svg" alt="O2 Logo">
                     </div>
                     <ul class="residence__list">
-                        <li class="residence__list-item">
+                        <li class="residence__list-item residence__list-item_1">
                             <span class="residence__list-icon-container">
                                 <span class="residence__list-icon residence__list-icon-1"></span>
                             </span>
                             <span class="residence__list-text">Ближче до природи</span>
                         </li>
-                        <li class="residence__list-item">
+                        <li class="residence__list-item residence__list-item_2">
                             <span class="residence__list-icon-container">
                                 <span class="residence__list-icon residence__list-icon-2"></span>
                             </span>
                             <span class="residence__list-text">Ближче до сім’ї</span>
                         </li>
-                        <li class="residence__list-item">
+                        <li class="residence__list-item residence__list-item_3">
                             <span class="residence__list-icon-container">
                                 <span class="residence__list-icon residence__list-icon-3"></span>
                             </span>

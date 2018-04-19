@@ -26,6 +26,7 @@
                     </h1>
                     <div class="page-hero_nav-links">
                         <a class="page-hero_nav-links-main" href="/">Головна</a>
+                        <span class="page-hero_vertical-line"></span>
                         <a class="page-hero_nav-links-active" href="#">Хід будівництва</a>
                     </div>
                 </div>
@@ -111,9 +112,9 @@
                 <h4 class="construction__photos_heading">Завершення будівництва: ...</h4>
 
                 <div class="construction__galleries">
-                    <div class="construction__bar"></div>
+                    <div class="construction__bar animate-me"></div>
 
-                    <div class="construction__gallery">
+                    <div class="construction__gallery animate-me">
                         <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
                             <div class="construction__gallery-image">
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
@@ -134,7 +135,7 @@
                         <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
                     </div>
 
-                    <div class="construction__gallery">
+                    <div class="construction__gallery animate-me">
                         <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
                             <div class="construction__gallery-image">
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
@@ -155,7 +156,7 @@
                         <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
                     </div>
 
-                    <div class="construction__gallery">
+                    <div class="construction__gallery animate-me">
                         <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
                             <div class="construction__gallery-image">
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
@@ -176,7 +177,7 @@
                         <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
                     </div>
 
-                    <div class="construction__gallery">
+                    <div class="construction__gallery animate-me">
                         <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
                             <div class="construction__gallery-image">
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">
@@ -197,7 +198,49 @@
                         <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
                     </div>
 
-                    <div class="construction__gallery">
+                    <div class="construction__gallery animate-me">
+                        <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
+                            <div class="construction__gallery-image">
+                                <img src="img/construction/con_1.jpg" alt="Gallery Image">
+                            </div>
+                            <div class="construction__gallery_info">
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
+                            </div>
+                        </a>
+                        <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_3.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_4.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_5.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_6.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_7.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_8.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_9.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
+                    </div>
+
+                    <div class="construction__gallery animate-me">
+                        <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
+                            <div class="construction__gallery-image">
+                                <img src="img/construction/con_1.jpg" alt="Gallery Image">
+                            </div>
+                            <div class="construction__gallery_info">
+                            <span class="construction__gallery_icon"></span>
+                            <span class="construction__gallery_date">30 березня 2018 р.</span>
+                            </div>
+                        </a>
+                        <a href="img/construction/con_2.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_3.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_4.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_5.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_6.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_7.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_8.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_9.jpg" class="construction__gallery-item"></a>
+                        <a href="img/construction/con_10.jpg" class="construction__gallery-item"></a>
+                    </div>
+
+                    <div class="construction__gallery animate-me">
                         <a href="img/construction/con_1.jpg" class="construction__gallery-item construction__gallery-item_first">
                             <div class="construction__gallery-image">
                                 <img src="img/construction/con_1.jpg" alt="Gallery Image">

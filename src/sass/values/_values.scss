@@ -34,6 +34,13 @@
         margin: 128px 0px 133px 0px;
         transition: all $transitionTime3;
     }
+    &.animate-me {
+        opacity: 0;
+        .values__outer-frame {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+    }
 }
 .values__ecology-main-text {
     padding: 33px 62px 43px 79px;
@@ -53,14 +60,17 @@
     border: 1px solid #cdcdcd;
     position: relative;
     transition: all $transitionTime3;
+    &.animate-me {
+        opacity: 0;
+        transform: translateY(50px);
+    }
 }
 
 .values__solar-panels-inner {
     padding: 35px 0px;
     max-width: 710px;
     margin: 0 auto;
-    height: 100%;
-    transition: all $transitionTime3;
+    max-height: 700px;
 }
 
 .values__triangle {
@@ -89,6 +99,12 @@
         display:block;
         clear: both;
     }
+    &.animate-me {
+        .values__healthy-life_text {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+    }
 }
 .values__healthy-life_image{
     width: 60%;
@@ -100,6 +116,7 @@
 .values__healthy-life_text {
     max-width: 475px;
     padding: 40px 40px 40px 75px;
+    transition: all $transitionTime3;
 }
 
 .values__healthy-life-paragraph {
@@ -115,6 +132,13 @@
     .values__outer-frame {
         margin: 35px 80px;
         max-width: 381px;
+        transition: all $transitionTime3;
+    }
+    &.animate-me {
+        .values__outer-frame {
+            opacity: 0;
+            transform: translateX(200px);
+        }
     }
 }
 .values__children-main-text {
@@ -133,6 +157,13 @@
         width: 830px;
         float: right;
         transform: translateX(5px);
+        transition: all $transitionTime3;
+    }
+    &.animate-me {
+        .values__outer-frame {
+            opacity: 0;
+            transform: translateX(-200px);
+        }
     }
 }
 .values__service-main-text {
@@ -144,22 +175,4 @@
     .values__paragraph {
         width: 48%;
     }
-}
-
-.animate-me {
-    &.values__ecology {
-        opacity: 0;
-        .values__outer-frame {
-            transform: translateX(200px);
-            opacity: 0;
-        }
-    }
-    &.values__solar-panels {
-        opacity: 0;
-        .values__solar-panels-inner {
-            height: 0px;
-            padding: 0px;
-        } 
-    }
-    
 }

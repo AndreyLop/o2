@@ -161,12 +161,11 @@
         height: 2px;
         background-color: #fff;
         width: 100%;
-        transition: all $transitionTime;
-        margin-top: 5px;
-    }
+        transition: all $transitionTime;    }
     .menu__line_2 {
         transition: all $transitionTime;
         width: 60%;
+        margin: 5px 0px;
     }
     .menu__line_3 {
         transition: all $transitionTime;
@@ -201,9 +200,36 @@
     transition: all $transitionTime2;
     z-index: 4;
     &.menu_closed {
-        transform: scale(0.1);
+        transform: scale(0);
         transform-origin: right top;
         opacity: 0;
+        .menu__top-line {
+            width: 0;
+            transition: all 0.5s; 
+        }
+        .menu__bottom-line {
+            width: 0;
+            transition: all 0.5s; 
+        }
+        .menu__top-logo {
+            opacity: 0;
+            transition: all 0.5s; 
+        }
+        .menu__nav {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.5s; 
+        }
+        .menu__top-text {
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.5s; 
+        }
+        .menu__bottom-items-list {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s; 
+        }
     }
 }
 .menu__top {
@@ -217,6 +243,7 @@
 }
 .menu__top-text {
     font-size: 1.5rem;
+    transition: all $transitionTime3 1s;
 }
 .menu__close-btn {
     width: 28px;
@@ -224,9 +251,15 @@
     background-size: cover;
     background-position: center;
     background-image: url('../img/common/close_icon.svg');
+    transition: all 0.5s; 
     &:hover {
         cursor: pointer;
+        transform: rotate(90deg);
     }
+}
+.menu__top-logo {
+    opacity: 1;
+    transition: all $transitionTime3 2s; 
 }
 .menu__top-line {
     position: absolute;
@@ -235,6 +268,7 @@
     height: 1px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.25);
+    transition: all $transitionTime4 $transitionTime2; 
 }
 .menu__main-nav {
     max-width: 1160px;
@@ -244,12 +278,31 @@
     justify-content: center;
     flex-wrap: wrap;
     //border-top: 1px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
+
 .menu__nav {
     width: 25%;
     line-height: 36px;
     margin-bottom: 45px;
+    transform: none;
+}
+.menu__nav_1 {
+    transition: all 0.5s 1s; 
+}
+.menu__nav_2 {
+    transition: all 0.5s 1.2s; 
+}
+.menu__nav_3 {
+    transition: all 0.5s 1.4s; 
+}
+.menu__nav_4 {
+    transition: all 0.5s 1.6s; 
+}
+.menu__nav_5 {
+    transition: all 0.5s 1.8s; 
+}
+.menu__nav_6 {
+    transition: all 0.5s 2s; 
 }
 .menu__nav-item_heading {
     color: #b3b3b3;
@@ -278,14 +331,26 @@
     padding-left: 10px;
 }
 .menu__bottom {
-    margin: 0 auto 80px auto;
     position: relative;
-    max-width: 800px;
-    >ul {
+    max-width: 1160px;
+    margin: 0 auto;
+    .menu__bottom-items-list {
+        margin: 0 auto 80px;
+        max-width: 800px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all $transitionTime4 $transitionTime2; 
     }
+}
+.menu__bottom-line {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all $transitionTime4 $transitionTime2; 
 }
 .nav__item-3d_mobile {
     display: none;
