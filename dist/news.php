@@ -25,10 +25,10 @@
                     <h1 class="page-hero__heading">
                         Новини
                     </h1>
-                    <div class="page-hero_nav-links">
-                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                    <div class="page-hero__nav-links">
+                        <a class="page-hero__nav-link page-hero__nav-link_main" href="/">Головна</a>
                         <span class="page-hero_vertical-line"></span>
-                        <a class="page-hero_nav-links-active" href="#">Новини<span class="btn_arrow"></span></a>
+                        <a class="page-hero__nav-link page-hero__nav-link_active" href="#">Новини<span class="btn_arrow"></span></a>
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
                     <div class="news__item-text">
                         <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -54,7 +54,7 @@
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                     <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
 
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -62,7 +62,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -70,7 +70,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -78,7 +78,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -86,7 +86,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -94,7 +94,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -102,7 +102,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -110,7 +110,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -118,7 +118,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
                 <li class="news__item animate-me">
@@ -126,7 +126,7 @@
                     <div class="news__item-text">
                     <h4 class="news__item-heading heading">Заголовок для нової новини у два рядки тексту на одну новину</h4>
                         <p class="news__item-paragraph">Житловий комплекс О2 residence складається з 12 будинків, у яких розташовані 800 квартир. Ми пропонуємо квартири різних розмірів та конфігурацій, а вільне планування дозволить вам створити простір для життя своєї мрії...</p>
-                        <a href="#" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
+                        <a href="news-open.php" class="btn btn_lightgreen btn_news">Читати далі<span class="btn_arrow"></span></a>
                     </div>
                 </li>
             </ul>

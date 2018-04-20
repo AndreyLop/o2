@@ -69,8 +69,10 @@
 .developer__slider_arrow {
     position: absolute;
     top: 50%;
+    transition: fill $transitionTime;
     &:hover {
         cursor: pointer;
+        fill: $lightgreen;
     }
 }
 

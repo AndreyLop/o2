@@ -24,10 +24,10 @@
                     <h1 class="page-hero__heading">
                     Переваги
                     </h1>
-                    <div class="page-hero_nav-links">
-                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                    <div class="page-hero__nav-links">
+                        <a class="page-hero__nav-link page-hero__nav-link_main" href="/">Головна</a>
                         <span class="page-hero_vertical-line"></span>
-                        <a class="page-hero_nav-links-active" href="#">Переваги<span class="btn_arrow"></span></a>
+                        <a class="page-hero__nav-link page-hero__nav-link_active" href="#">Переваги<span class="btn_arrow"></span></a>
                     </div>
                 </div>
                 

@@ -60,13 +60,13 @@ var di2 = (function() {
         $(sliderSelector).slick('slickGoTo', $(this).parent().data('slide'));
       });
 
-      $(document).bind('mousewheel', debounce(showNextSlide));
+      $(document).bind('wheel', debounce(showNextSlide));
 
       function showNextSlide(e) {
-        if(e.originalEvent.wheelDelta /120 > 0) {
-          $(sliderSelector).slick('slickPrev');
-        }else{
+        if(e.originalEvent.deltaY > 0) {
           $(sliderSelector).slick('slickNext');
+        }else{
+          $(sliderSelector).slick('slickPrev');
         }
       }
 })();

@@ -85,6 +85,8 @@
 }
 .commercial-icon {
     fill: $lightgreen;
+    transition: all $transitionTime2;
+
 }
 .commercial__heading-line {
     width: 1px;

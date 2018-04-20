@@ -24,12 +24,12 @@
                     <h1 class="page-hero__heading">
                         Заголовок для нової новини у два рядки тексту на одну новину
                     </h1>
-                    <div class="page-hero_nav-links">
-                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                    <div class="page-hero__nav-links">
+                        <a class="page-hero__nav-link page-hero__nav-link_main" href="/">Головна</a>
                         <span class="page-hero_vertical-line"></span>
-                        <a class="page-hero_nav-links-main" href="/">Новини</a>
+                        <a class="page-hero__nav-link page-hero__nav-link_main" href="/">Новини</a>
                         <span class="page-hero_vertical-line"></span>
-                        <a class="page-hero_nav-links-active" href="#">Заголовок для нової новини у два рядки тексту на одну новину<span class="btn_arrow"></span></a>
+                        <a class="page-hero__nav-link page-hero__nav-link_active" href="#">Заголовок для нової новини у два рядки тексту на одну новину<span class="btn_arrow"></span></a>
                     </div>
                 </div>
 
@@ -82,7 +82,10 @@
                 </p>
                 <div class="news-open__text-btns">
                     <a href="#" class="btn btn_lightgreen btn_choose-apartment">Обрати квартиру</a>
-                    <a href="#" class="btn btn_transparent btn_back-to-news"><span class="btn_back-to-news-arrow"></span>Повернутися до новин</a>
+                    <a href="#" class="btn btn_transparent btn_back-to-news">
+                    <span class="btn_back-to-news-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 29 17"><defs><path id="3al5a" d="M561.53 1855v-1H586v1z"/><path id="3al5b" d="M567.64 1860.27l-.77.73-6.87-6.6.76-.73z"/><path id="3al5c" d="M560.79 1855.27l-.76-.73 6.82-6.54.75.72z"/></defs><g><g transform="translate(-558 -1846)"><use xlink:href="#3al5a"/></g><g transform="translate(-558 -1846)"><use xlink:href="#3al5b"/></g><g transform="translate(-558 -1846)"><use xlink:href="#3al5c"/></g></g></svg>
+                    </span>Повернутися до новин</a>
                 </div>
             </div>
 

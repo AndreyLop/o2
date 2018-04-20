@@ -17,7 +17,7 @@
                 Замовити телефонний дзвінок
             </h3>
             <div class="contacts__tab-content-2-form">
-                <form action="">
+                <form>
                     <input type="text" name="name" placeholder="Ваше ім'я:">
                     <input type="text" name="phone" placeholder="Ваш телефон:">
                     <input type="text" name="question" placeholder="Ваше питання:">
@@ -31,7 +31,7 @@
                 Форма зворотного зв′язку
             </h3>
             <div class="contacts__tab-content-2-form">
-                <form action="">
+                <form>
                     <input type="text" name="name" placeholder="Ваше ім'я:">
                     <input type="text" name="phone" placeholder="Ваш e-mail:">
                     <input type="text" name="question" placeholder="Ваше питання:">

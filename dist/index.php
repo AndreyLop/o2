@@ -167,7 +167,7 @@
                     <p class="ThreeDMap__message">
                         Неподалік від Києва, серед величного лісу ми створюємо яскраву концепцію щасливого життя – життя у гармонії із природою.
                     </p>
-                    <span class="btn btn_lightgreen btn__watch_3d-tour" href="#">Дивитися 3D карту <span class="btn_arrow"></span></span>
+                    <span class="btn btn_lightgreen btn__watch_3d-tour">Дивитися 3D карту <span class="btn_arrow"></span></span>
                 </div>
             </div>
             <div class="green-hover">
@@ -593,7 +593,7 @@
                     <p class="dayInO2__message">
                         O2 residence – це особливий спосіб життя. Дізнайтеся, як це – жити у гармонії з природою!
                     </p>
-                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі <span class="btn_arrow"></span>
+                    <span class="btn btn_lightgreen btn__dayInO2">Читати далі <span class="btn_arrow"></span></span>
                 </div>
             </div>
             <div class="green-hover">

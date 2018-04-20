@@ -22,10 +22,10 @@
                     <h1 class="page-hero__heading">
                         Розташування
                     </h1>
-                    <div class="page-hero_nav-links">
-                        <a class="page-hero_nav-links-main" href="/">Головна</a>
+                    <div class="page-hero__nav-links">
+                        <a class="page-hero__nav-link page-hero__nav-link_main" href="/">Головна</a>
                         <span class="page-hero_vertical-line"></span>
-                        <a class="page-hero_nav-links-active" href="/">Розташування</a>
+                        <a class="page-hero__nav-link page-hero__nav-link_active" href="/">Розташування</a>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@
                    </div>
                    <div class="location__form-outer-frame">
                        <div class="location__form-inner-frame">
-                        <form action="">
+                        <form>
                             <h4 class="location__form-heading">Зворотній дзвінок</h4>
                             <div class="location__form-inputs">
                                 <div class="location__form-input-container">

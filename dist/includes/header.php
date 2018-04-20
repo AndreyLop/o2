@@ -17,21 +17,21 @@
                 <a href="#"></a>
             </li>
             <li class="nav__item nav__item-camera nav__btn">
-                <a href="#">Камера</a>
+                <a href="#">Камера <span class="nav__item-camera_icon"></span></a>
             </li>
             <li class="nav__item nav__item-3d nav__btn">
                 <a href="#">Карта<span class="nav__3d-text">3D</span></a>
             </li>
             <li class="nav__item nav__item-lang">
                 <ul class="lang-list">
-                    <li><a class="lang-item" href="#">Ukr</a></li>
-                    <li><a class="lang-item" href="#">Ru</a></li>
-                    <li><a class="lang-item" href="#">Eng</a></li>
+                    <li><a class="lang-item" href="#">Укр</a></li>
+                    <li><a class="lang-item" href="#">Рос</a></li>
+                    <li><a class="lang-item" href="#">Анг</a></li>
                 </ul>
                 <span class="nav__item-lang-icon"></span>
             </li>
             <li class="nav__item nav__item_menu">
-                <a href="#">Menu</a>
+                <a href="#">Меню</a>
                 <div class="menu__lines">
                     <div class="menu__line menu__line_1"></div>
                     <div class="menu__line menu__line_2"></div>
@@ -145,7 +145,7 @@
                 <a href="#">Замовити дзвінок</a>
             </li>
             <li class="nav__item nav__item-camera nav__item-camera_mobile nav__btn">
-                <a href="#">Камера</a>
+                <a href="#">Камера<span class="nav__item-camera_icon"></span></a>
             </li>
             <li class="nav__item nav__item-3d nav__item-3d_mobile nav__btn">
                 <a href="#">Карта<span class="nav__3d-text">3D</span></a>

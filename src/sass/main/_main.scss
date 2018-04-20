@@ -610,7 +610,14 @@
 }
 .advantages-slider_arrows {
     fill: #fff;
+    .slider_arrow {
+        transition: fill $transitionTime;
+        &:hover {
+            fill: $lightgreen;
+        }
+    }
 }
+
 .advantages {
     .slick-dots {
         position: absolute;
@@ -626,6 +633,10 @@
     margin-left: 12px;
     border-radius: 50%;
     background-color: #fff;
+    &:hover {
+        cursor: pointer;
+        background-color: $lightgreen;
+    }
 }
 .slick-dots {
     .slick-active {
@@ -713,6 +724,12 @@
 }
 .values-slider_arrows {
     fill: #fff;
+    .slider_arrow {
+        transition: fill $transitionTime;
+        &:hover {
+            fill: $lightgreen;
+        }
+    }
 }
 // values end
 
@@ -922,6 +939,12 @@
 }
 .projects-slider_arrows {
     fill: $lightgreen;
+    .slider_arrow {
+        transition: fill $transitionTime;
+        &:hover {
+            fill: $green;
+        }
+    }
 }
 // projects end
 
