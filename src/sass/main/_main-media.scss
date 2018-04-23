@@ -129,12 +129,6 @@
     .info__item-image_eco-farm {
         background-image: url('../img/main/info_eco-farm-mob.jpg');
     }
-    .infrastructure__heading {
-        top: 15px;
-        &::after {
-            content: none;
-        }
-    }
     .infrastructure__items {
         flex-direction: column;
     }
@@ -168,15 +162,6 @@
     }
     .btn__dayInO2 {
         margin-top: 20px;
-    }
-    .contacts__tabs {
-        flex-direction: column;
-    }
-    .contacts__tab {
-        width: 100%;
-    }
-    .contacts__heading {
-        margin-top: 100px;
     }
 }//mobile
 

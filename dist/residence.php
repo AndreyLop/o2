@@ -8,17 +8,14 @@
     <title>O2 - Residence</title>
 </head>
 <body>
-    
-<?php  include_once('includes/forms/callback_form.php'); ?> 
 
+<?php include_once('includes/header.php'); ?>
+<?php include_once('includes/forms/callback_form.php'); ?> 
+<div class="slideable-page-content">
     <section class="residences">
 
         <div class="page-hero">
             
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
             <div class="wrapper page-hero__wrapper">
 
                 <div class="page-hero_nav">
@@ -123,6 +120,8 @@
     </section>
 
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     <script src="js/common.min.js"></script>
 </body>
 </html>

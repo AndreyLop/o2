@@ -8,12 +8,10 @@
     <title>O2 - Day-In-O2</title>
 </head>
 <body>
-<?php  include_once('includes/forms/callback_form.php'); ?> 
-
-    <section class="day-in-o2">
-
-        <?php include_once('includes/header.php'); ?>
-
+<?php include_once('includes/header.php'); ?>
+<?php include_once('includes/forms/callback_form.php'); ?> 
+<div class="slideable-page-content">
+  <section class="day-in-o2">
     <div class="progress-bar__wrapper">
       <div class="progress-bar">
         <div class="day-in-o2__icon day-in-o2__icon_sun">
@@ -246,7 +244,7 @@
     </section>
 
     <?/* include_once('includes/footer.php'); */?>
-
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/day-in-o2.min.js"></script>

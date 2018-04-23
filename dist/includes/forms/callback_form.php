@@ -10,7 +10,7 @@
             <h3 class="callback-form__heading heading">Замовити телефонний дзвінок</h3>
         </div>
         <div>
-            <form>
+            <form id="callback-form">
                 <div class="callback-input callback-input_name">
                     <input class="input-field input-field_name" type="text" name="name" placeholder="Ваше ім’я:">
                 </div>

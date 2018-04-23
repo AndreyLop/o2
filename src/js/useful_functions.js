@@ -28,6 +28,12 @@ function showScrollBar() {
 //AJAX POST Form data function start
 function sendFormData(formId, url, callback) {
 	var body = 'test';
+	var callback = callback || function(res) {
+		console.log(res);
+	};
+	var url = url || 'test.php';
+	var form = document.getElementById(formId);
+	var inputs = form.querySelectorAll('input');
 	var xhr = new XMLHttpRequest();
 	xhr.open('POST', url, true);
 	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');

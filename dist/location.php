@@ -8,8 +8,10 @@
     <title>O2 - Location</title>
 </head>
 <body>
+    
+<?php include_once('includes/header.php'); ?>
 <?php  include_once('includes/forms/callback_form.php'); ?> 
-
+<div class="slideable-page-content">
     <section class="location">
 
         <div class="page-hero">
@@ -112,6 +114,8 @@
     </section>
 
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     <?php 
     /* 
     login: oTwoApiAcc@gmail.com

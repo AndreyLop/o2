@@ -79,7 +79,7 @@
         <div class="menu__nav menu__nav_3">
             <ul>
                 <li class="menu__nav-item_heading">Кватири</li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Обрати будинок</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="choose-apartment.php">Обрати будинок</a></li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">1-кімнатні</a></li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">2-кімнатні</a></li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">3-кімнатні</a></li>
@@ -91,13 +91,12 @@
         <div class="menu__nav menu__nav_4">
             <ul>
                 <li class="menu__nav-item_heading">Комерційні приміщення</li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Продаж</a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Аренда</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Кафе та ресторани</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Магазини</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Здоров’я та краса</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Освіта</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Сфера послуг</a></li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Підбір за параметрами</a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Офіси</a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Торгівля</a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Ресторани</a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Медицина</a></li>
             </ul>
         </div>
         <div class="menu__nav menu__nav_5">
@@ -111,11 +110,11 @@
         <div class="menu__nav menu__nav_6">
             <ul class="menu__nav-sub">
                 <li class="menu__nav-item_heading">Контакти</li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Розташування </a></li>
-                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="#">Будівництво</a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="location.php">Розташування </a></li>
+                <li class="menu__nav-item"><a class="menu__nav-link-hover" href="construction.php">Будівництво</a></li>
             </ul>
         </div>
-        <div class="menu__nav">
+        <!-- <div class="menu__nav">
             <ul class="menu__nav-sub">
                 <li class="menu__nav-item_heading">Test</li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="404.php">404</a></li>
@@ -133,7 +132,7 @@
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="residence.php">residence</a></li>
                 <li class="menu__nav-item"><a class="menu__nav-link-hover" href="values.php">values</a></li>
             </ul>
-        </div> 
+        </div>  -->
     </div>
     <div class="menu__bottom">
     <div class="menu__bottom-line"></div>

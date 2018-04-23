@@ -8,11 +8,11 @@
     <title>O2</title>
 </head>
 <body>
-    
-    <section class="hero main-page">
-
+<?php include_once('includes/header.php'); ?>
 <?php  include_once('includes/forms/callback_form.php'); ?> 
 
+<div class="slideable-page-content">
+    <section class="hero main-page">
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
             <div class="hero__slide hero__slide_2"></div>
@@ -23,7 +23,6 @@
             <div class="hero__slide hero__slide_7"></div>
             <div class="hero__slide hero__slide_8"></div>
         </div>
-        <?php include_once('includes/header.php'); ?>
 
         <div class="wrapper hero__wrapper">
 
@@ -437,10 +436,10 @@
     </section>
 
     <section class="infrastructure main-page animate-me">
-        <a href="#" class="wrapper main-page-hover-link">
+    <h2 class="heading infrastructure__heading">Інфраструктура</h2>
 
+        <a href="#" class="wrapper main-page-hover-link">
             <div class="infrastructure__wrapper">
-            <h2 class="heading infrastructure__heading">Інфраструктура</h2>
                 <div class="infrastructure__items">
                     <div class="infrastructure__item infrastructure__item_1">
                         <div class="infrastructure__item_text">
@@ -615,8 +614,10 @@
     </section>
 
     <?php include_once('includes/contacts.php'); ?>
-
     <?php include_once('includes/footer.php'); ?>
+
+</div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>

@@ -8,16 +8,11 @@
     <title>O2 - Advantages</title>
 </head>
 <body>
-<?php  include_once('includes/forms/callback_form.php'); ?> 
-
+<?php include_once('includes/forms/callback_form.php'); ?> 
+<?php include_once('includes/header.php'); ?>
+<div class="slideable-page-content">
     <section class="advantages">
-
         <div class="page-hero">
-            
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
             <div class="wrapper page-hero__wrapper">
 
                 <div class="page-hero_nav">
@@ -124,10 +119,10 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     <script src="js/common.min.js"></script>
 </body>
 </html>

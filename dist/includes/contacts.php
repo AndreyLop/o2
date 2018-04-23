@@ -16,11 +16,20 @@
             <h3 class="heading contacts__heading">
                 Замовити телефонний дзвінок
             </h3>
-            <div class="contacts__tab-content-2-form">
-                <form>
-                    <input type="text" name="name" placeholder="Ваше ім'я:">
-                    <input type="text" name="phone" placeholder="Ваш телефон:">
-                    <input type="text" name="question" placeholder="Ваше питання:">
+            <div class="contacts__tab-content-form">
+                <form id="contacts-form__callback-form">
+                    <div class="contacts-form__callback-input contacts-form__callback-input_name">
+                        <input type="text" name="name" placeholder="Ваше ім'я:">
+                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                    </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_phone">
+                        <input type="text" name="phone" placeholder="Ваш телефон:">
+                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                        <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
+                    </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_message">
+                        <input type="text" name="question" placeholder="Ваше питання:">
+                    </div>
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
             </div>
@@ -30,10 +39,10 @@
             <h3 class="heading contacts__heading">
                 Форма зворотного зв′язку
             </h3>
-            <div class="contacts__tab-content-2-form">
-                <form>
+            <div class="contacts__tab-content-form">
+                <form  id="contacts-form__email-form">
                     <input type="text" name="name" placeholder="Ваше ім'я:">
-                    <input type="text" name="phone" placeholder="Ваш e-mail:">
+                    <input type="text" name="email" placeholder="Ваш e-mail:">
                     <input type="text" name="question" placeholder="Ваше питання:">
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>

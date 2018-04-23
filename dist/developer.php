@@ -9,16 +9,13 @@
 </head>
 <body>
 
+<?php include_once('includes/header.php'); ?>
 <?php  include_once('includes/forms/callback_form.php'); ?> 
-
+<div class="slideable-page-content">
     <section class="developer">
-
+        
         <div class="page-hero">
-            
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
+        
             <div class="wrapper page-hero__wrapper">
 
                 <div class="page-hero_nav">
@@ -140,6 +137,8 @@
     <? include_once('includes/contacts.php'); ?>
 
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>

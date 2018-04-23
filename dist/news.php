@@ -8,17 +8,13 @@
     <title>O2 - News</title>
 </head>
 <body>
-
-<?php  include_once('includes/forms/callback_form.php'); ?> 
-
+    
+<?php include_once('includes/header.php'); ?>
+<?php include_once('includes/forms/callback_form.php'); ?> 
+<div class="slideable-page-content">
     <section class="news">
-
         <div class="page-hero">
             
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
             <div class="wrapper page-hero__wrapper">
 
                 <div class="page-hero_nav">
@@ -178,6 +174,8 @@
     </section>
 
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/news.min.js"></script>

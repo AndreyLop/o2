@@ -8,18 +8,12 @@
     <title>O2 - Choose Apartment</title>
 </head>
 <body>
+<?php include_once('includes/header.php'); ?>
 <?php  include_once('includes/forms/callback_form.php'); ?> 
-
+<div class="slideable-page-content">
     <section class="stub">
-
-        <div class="page-hero">
-            
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
+        <div class="page-hero">            
             <div class="wrapper">
-
                 <div class="stub-container">
                     <h1 class="page-hero__heading">
                         Обрати квартиру
@@ -35,14 +29,12 @@
                         <a class="stub-btn stbu-btn__back" href="#">Повернутися на попередню сторінку</a>
                     </div>
                 </div>
-                
             </div>
-
         </div>
-
     </section>
-
     <? include_once('includes/footer.php'); ?>
+</div>
+    
     <script src="js/common.min.js"></script>
 </body>
 </html>

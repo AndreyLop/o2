@@ -78,16 +78,19 @@ var dropDownMenu = (function() {
     var showMenuBtn = document.querySelector('.nav__item_menu');
     var hideMenuBtn = document.querySelector('.menu__close-btn');
     var menu = document.querySelector('.menu');
+    var allPageConent = document.querySelector('.slideable-page-content');
 
     function showMenu() {                
         if(menu.classList.contains('menu_closed')) {
             menu.classList.remove('menu_closed');
+            allPageConent.classList.add('slide-page-content');
         };
     };
 
     // this one hides menu by addng class and shows scrollbar
     function hideMenu(){
         menu.classList.add('menu_closed');
+        allPageConent.classList.remove('slide-page-content');
         //document.removeEventListener('click', outsideClickListener);
         showScrollBar();
     };
@@ -415,3 +418,72 @@ var showCallbackForm = (function() {
     
 })();
 // show callback form end
+
+// Basic input constructor start
+function Input(selector) {
+    this.state = {
+        valid: false,
+        touched: false
+    };
+    this.type = 'basic';
+    this.container = document.querySelector(selector)
+    this.input = this.container.querySelector('input');
+    this.requiredMessage = this.container.querySelector('.validation-error_required');
+
+    this.input.addEventListener('blur', (function() {
+        this.state.touched = true;
+        this.validateRequired();
+    }).bind(this));
+};
+
+Input.prototype.validateRequired = function() {
+    if(this.input.value === '') {
+        this.state.valid = false;
+        this.showRequiredMessage();
+    } else {
+        this.hideRequiredMessage();
+    }
+};
+
+Input.prototype.showRequiredMessage = function() {
+    this.requiredMessage.style.display = 'block';
+};
+
+Input.prototype.hideRequiredMessage = function() {
+    this.requiredMessage.style.display = 'none';
+};
+
+// Basic input constructor end
+
+// PhoneInput constructor start
+function PhoneInput(selector) {
+    Input.call(this, selector);
+    this.type = 'phone';
+    this.invalidPhoneMessage = this.container.querySelector('.validation-error_phone-format');
+};
+
+PhoneInput.prototype = Object.create(Input.prototype);
+PhoneInput.prototype.constructor = PhoneInput;
+// PhoneInput constructor end
+
+// Contacts form start
+
+var contactsForm = (function() {
+    function handleSubmit(formId) {
+
+        var nameInput = new Input('.contacts-form__callback-input_name');
+        var phoneInput = new PhoneInput('.contacts-form__callback-input_phone');
+        var form = document.getElementById(formId);
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('T_T');
+        });
+
+    };
+
+    //handleSubmit('contacts-form__callback-form');
+
+
+})();
+
+// Contacts form end

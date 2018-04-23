@@ -200,20 +200,23 @@
 .menu {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    margin: 0 auto;
     overflow: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url('../img/common/menu_bg.jpg');
     transform: none;
+    //visibility: visible;
     transition: all $transitionTime2;
     z-index: 4;
     &.menu_closed {
-        transform: scale(0);
-        transform-origin: right top;
-        opacity: 0;
+        //opacity: 0;
+        //transform: translate(10%, 10%);
+        transform: translateX(-100%);
+        //visibility: hidden;
         .menu__top-line {
             width: 0;
             transition: all 0.5s; 
@@ -243,6 +246,7 @@
         }
     }
 }
+
 .menu__top {
     max-width: 1160px;
     margin: 0 auto;

@@ -20,13 +20,19 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.45px;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: #fff;
 }
-
+.slideable-page-content {
+    transition: transform $transitionTime2;
+    &.slide-page-content {
+        transform: translateX(100%);
+    }
+}
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,6 +91,7 @@ a {
 }
 
 .body-overflow_hidden {
+    //overflow-y: -webkit-paged-y;
     overflow: hidden;
 }
 
@@ -184,7 +191,6 @@ a {
 }
 .page-hero__nav-links {
     display: inline-block;
-    vertical-align: super;
 }
 .page-hero__nav-link {
 

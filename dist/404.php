@@ -8,18 +8,14 @@
     <title>O2 - Page Not Found</title>
 </head>
 <body>
-<?php  include_once('includes/forms/callback_form.php'); ?> 
 
+<?php include_once('includes/header.php'); ?>
+<?php  include_once('includes/forms/callback_form.php'); ?>
+
+<div class="slideable-page-content">
     <section class="not-found">
-
         <div class="page-hero">
-            
-            <?/* include_once('includes/preloader.php'); */?> 
-
-            <?php include_once('includes/header.php'); ?>
-
             <div class="wrapper">
-
                 <div class="not-found-container">
                     <div class="not-found__image">
                         <img src="img/404/404.png" alt="House Image">
@@ -32,14 +28,12 @@
                         <a class="not-found-btn not-found-btn__back" href="#">Повернутися на попередню сторінку</a>
                     </div>
                 </div>
-                
             </div>
-
         </div>
-
     </section>
-
     <? include_once('includes/footer.php'); ?>
+</div>
+
     <script src="js/common.min.js"></script>
 </body>
 </html>
