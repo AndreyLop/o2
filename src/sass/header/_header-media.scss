@@ -1,18 +1,4 @@
-@media only screen and(max-width: 1200px) {
-    .menu {
-        padding: 0 10px
-    }
-}
 @media only screen and(max-width: 1024px) {
-    .menu__top-line {
-        width: 85%
-    }
-    .menu__main-nav {
-        justify-content: space-between;
-    }
-    .menu__nav {
-        width: 30%;
-    }
     .nav {
         min-width: auto;
     }
@@ -21,64 +7,16 @@
     .nav__item-lang {
         display: none;
     }
-    .nav__item-camera_mobile,
-    .nav__item-callback_mobile,
-    .nav__item-3d_mobile,
-    .nav__item-lang_mobile {
-        display: block;
-    }
-    .menu__bottom {
-        .nav__item {
-            margin: 0px;
-        }
-        >ul {
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-    }
 }
 @media only screen and (max-width: 768px) {
-    .menu__top-line {
-        width: 80%
-    }
     .nav__item-telephone {
         font-size: 1rem;
     }
     .nav__item-callback {
         display: none;
     }
-    .nav__item-callback-mobile {
-        display: block;
-    }
-    .nav__item-callback_bottom-mobile {
-        display: block;
-    }
-    .menu__bottom {
-        .nav__item {
-            margin-bottom: 10px;
-        }
-        .nav__item-callback {
-            a {
-                width :auto;
-            }
-        }
-    }
-    .nav__item-telephone_mobile,
-    .nav__item-callback_bottom-mobile {
-        width: 45%;
-    }
-    // .nav__item-3d_mobile,
-    // .nav__item-camera_mobile {
-    //     width: 30%;
-    // }
-    .menu__nav {
-        width: 50%;
-    }
-}//mobile
+}
 @media only screen and (max-width: 500px) {
-    .menu__top-line {
-        width: 65%
-    }
     .nav {
         width: 80%;
     }

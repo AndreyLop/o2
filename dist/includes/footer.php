@@ -9,7 +9,7 @@
                         <a href="#">Інфрастуктура</a>
                     </li>
                     <li>
-                        <a href="#">Будинки</a>
+                        <a href="choose-apartment.php">Будинки</a>
                     </li>
                     <li>
                         <a href="#">Розташування</a>
@@ -35,22 +35,22 @@
                 </h4>
                 <ul>
                     <li>
-                        <a href="#">Всі квартири</a>
+                        <a href="choose-apartment.php">Всі квартири</a>
                     </li>
                     <li>
-                        <a href="#">1-кімнатні</a>
+                        <a href="choose-apartment.php">1-кімнатні</a>
                     </li>
                     <li>
-                        <a href="#">2-кімнатні</a>
+                        <a href="choose-apartment.php">2-кімнатні</a>
                     </li>
                     <li>
-                        <a href="#">3-кімнатні</a>
+                        <a href="choose-apartment.php">3-кімнатні</a>
                     </li>
                     <li>
-                        <a href="#">4-кімнатні</a>
+                        <a href="choose-apartment.php">4-кімнатні</a>
                     </li>
                     <li>
-                        <a href="#">Розстрочка</a>
+                        <a href="choose-apartment.php">Розстрочка</a>
                     </li>
                     <li>
                         <a href="/commercial.php">Комерційна нерухомість</a>

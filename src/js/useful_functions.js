@@ -19,10 +19,12 @@ function debounce(func, wait, immediate) {
 // debouncing function stop
 
 function hideScrollBar() {
-    document.getElementsByTagName('body')[0].classList.add('body-overflow_hidden');
+	document.getElementsByTagName('body')[0].classList.add('body-overflow_hidden');
+	document.querySelector('.page-wrapper').classList.add('body-overflow_hidden');
 };
 function showScrollBar() {
-    document.getElementsByTagName('body')[0].classList.remove('body-overflow_hidden');
+	document.getElementsByTagName('body')[0].classList.remove('body-overflow_hidden');
+	document.querySelector('.page-wrapper').classList.remove('body-overflow_hidden');
 };
 
 //AJAX POST Form data function start

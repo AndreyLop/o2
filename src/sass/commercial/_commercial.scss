@@ -151,7 +151,6 @@
 .commercial__item-text-container_right {
     width: 455px;
     float: right;
-    //margin-right: 100px;
 }
 
 .commercial__list-heading {
@@ -189,10 +188,7 @@
 .commercial__about-2 {
     margin-bottom: 40px;
     .commercial__about-text {
-        display: inline-block;
-        float: none;
-        padding: 38px 0px 36px 45px;
-        max-width: 570px;
+        padding: 38px 20px 36px 45px;
     }
     .commercial__about-image {
         float: right;

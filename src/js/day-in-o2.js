@@ -8,9 +8,9 @@ var di2 = (function() {
     //video 
     var videos = $('.di2__slider-item_video');
 
-    setTimeout(function() {
-      videos[0].play();
-    }, 500);
+    // setTimeout(function() {
+    //   videos[0].play();
+    // }, 500);
     
     //video
     // var slidesCount = $('.di2__slider-item:last-child');
@@ -42,7 +42,7 @@ var di2 = (function() {
 
     $(sliderSelector).on('beforeChange', function(event, slick, currentSlide, nextSlide){
         fillActiveSlideBars(nextSlide);
-        // video
+        // video        
         videos[currentSlide].pause();
         videos[nextSlide].play();
         // video

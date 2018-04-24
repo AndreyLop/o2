@@ -8,10 +8,13 @@
     <title>O2</title>
 </head>
 <body>
-<?php include_once('includes/header.php'); ?>
+<div class="page-wrapper">
+<?php include_once('includes/menu.php'); ?>
 <?php  include_once('includes/forms/callback_form.php'); ?> 
 
 <div class="slideable-page-content">
+<?php include_once('includes/header.php'); ?>
+
     <section class="hero main-page">
         <div class="hero__slider">
             <div class="hero__slide hero__slide_1"></div>
@@ -184,8 +187,8 @@
         </a>
     </section>
 
-    <section class="construction-end main-page">
-        <div class="wrapper constructin-end__wrapper animate-me">
+    <section class="construction-end main-page wrapper">
+        <div class="constructin-end__wrapper animate-me">
             <div>
                 <ul class="construction-end__list">
                     <li class="construction-end_list-item construction-end_list-item-1">
@@ -539,28 +542,28 @@
             </h2>
             <div class="projects__slider-container">
                 <div class="projects__slider">
-                    <a class="projects__slider-item projects__slider-item_bristol" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_bristol" href="https://bristol.house/" target="_blank">
                         <img src="img/main/logos/bristol_logo.svg" alt="BRISTOL Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_chicago" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_chicago" href="https://chicago.kiev.ua/" target="_blank">
                         <img src="img/main/logos/chicago_logo.svg" alt="Chicago Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_einstein" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_einstein" href="https://einstein.house/" target="_blank">
                         <img src="img/main/logos/einstein_logo.svg" alt="EINSTEIN Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_kandinskiy" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_kandinskiy" href="http://kandinsky-residence.com.ua/" target="_blank">
                         <img src="img/main/logos/kandinsky_logo.svg" alt="Kandinsky Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_new-york" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_new-york" href="http://new-york.com.ua/" target="_blank">
                         <img src="img/main/logos/new_york_logo.svg" alt="New York Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_resident" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_resident" href="http://resident.house/" target="_blank">
                         <img src="img/main/logos/resident_logo.svg" alt="Resident House Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_rybalsky" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_rybalsky" href="https://rybalsky.com.ua/" target="_blank">
                         <img src="img/main/logos/rybalsky_logo.svg" alt="Rybalsky Logo">
                     </a>
-                    <a class="projects__slider-item projects__slider-item_san-francisco" href="" target="_blank">
+                    <a class="projects__slider-item projects__slider-item_san-francisco" href="http://san.smarto.com.ua/" target="_blank">
                         <img src="img/main/logos/san_francisco_logo.svg" alt="San Francisco Logo">
                     </a>
                 </div>
@@ -618,7 +621,7 @@
 
 </div>
 
-
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/common.min.js"></script>
     <script src="js/main.min.js"></script>

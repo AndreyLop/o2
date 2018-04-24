@@ -74,6 +74,15 @@
         width: 90%;
         margin: 0px auto 10px;
     }
+    .constructin-end__wrapper {
+        padding: 40px 10px 80px;
+    }
+    .construction-end_list-item {
+        width: 320px;
+        height: 100px;
+        padding-left: 90px;
+        margin: 0 auto;
+    }
     .info__item-text {
         padding: 15px 15px 70px 15px;
     }
@@ -86,10 +95,6 @@
     }
     .advantages__slide_1 {
         background-image: url('../img/main/slider_2/1-mob.jpg')
-    }
-    .construction-end_list-item {
-        width: 320px;
-        margin: 0 auto;
     }
     .info__wrapper {
         flex-direction: column;

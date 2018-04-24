@@ -434,6 +434,11 @@ function Input(selector) {
         this.state.touched = true;
         this.validateRequired();
     }).bind(this));
+
+    this.input.addEventListener('keyup', (function() {
+        this.validateRequired();
+    }).bind(this));
+
 };
 
 Input.prototype.validateRequired = function() {
@@ -460,6 +465,10 @@ function PhoneInput(selector) {
     Input.call(this, selector);
     this.type = 'phone';
     this.invalidPhoneMessage = this.container.querySelector('.validation-error_phone-format');
+
+    this.input.addEventListener('keyup', (function(e) {
+        //this.validatePhone();
+    }).bind(this));
 };
 
 PhoneInput.prototype = Object.create(Input.prototype);
@@ -467,8 +476,8 @@ PhoneInput.prototype.constructor = PhoneInput;
 // PhoneInput constructor end
 
 // Contacts form start
-
 var contactsForm = (function() {
+
     function handleSubmit(formId) {
 
         var nameInput = new Input('.contacts-form__callback-input_name');
@@ -476,14 +485,11 @@ var contactsForm = (function() {
         var form = document.getElementById(formId);
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            console.log('T_T');
         });
 
     };
 
     //handleSubmit('contacts-form__callback-form');
-
-
 })();
 
 // Contacts form end

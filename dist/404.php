@@ -8,32 +8,32 @@
     <title>O2 - Page Not Found</title>
 </head>
 <body>
-
-<?php include_once('includes/header.php'); ?>
-<?php  include_once('includes/forms/callback_form.php'); ?>
-
-<div class="slideable-page-content">
-    <section class="not-found">
-        <div class="page-hero">
-            <div class="wrapper">
-                <div class="not-found-container">
-                    <div class="not-found__image">
-                        <img src="img/404/404.png" alt="House Image">
-                    </div>
-                    <div class="not-found__msg">
-                        Вибачте, сторінку не знайдено
-                    </div>
-                    <div class="not-found__btns">
-                        <a class="not-found-btn not-found-btn__main" href="/">На головну</a>
-                        <a class="not-found-btn not-found-btn__back" href="#">Повернутися на попередню сторінку</a>
+<div class="page-wrapper">
+    <?php include_once('includes/menu.php'); ?>
+    <?php  include_once('includes/forms/callback_form.php'); ?>
+    <div class="slideable-page-content">
+    <?php include_once('includes/header.php'); ?>
+        <section class="not-found">
+            <div class="page-hero">
+                <div class="wrapper">
+                    <div class="not-found-container">
+                        <div class="not-found__image">
+                            <img src="img/404/404.png" alt="House Image">
+                        </div>
+                        <div class="not-found__msg">
+                            Вибачте, сторінку не знайдено
+                        </div>
+                        <div class="not-found__btns">
+                            <a class="not-found-btn not-found-btn__main" href="/">На головну</a>
+                            <a class="not-found-btn not-found-btn__back" href="#">Повернутися на попередню сторінку</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <? include_once('includes/footer.php'); ?>
+        </section>
+        <? include_once('includes/footer.php'); ?>
+    </div>
 </div>
-
-    <script src="js/common.min.js"></script>
+<script src="js/common.min.js"></script>
 </body>
 </html>

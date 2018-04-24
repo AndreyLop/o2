@@ -103,7 +103,10 @@
     width: 53%;
 }
 .location__infowindow {
-    color: #000;
+    background-color: $lightgreen;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 .address {
     width: 47%;
