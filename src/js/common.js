@@ -420,13 +420,13 @@ var showCallbackForm = (function() {
 // show callback form end
 
 // Basic input constructor start
-function Input(selector) {
+function Input(form, selector) {
     this.state = {
         valid: false,
         touched: false
     };
     this.type = 'basic';
-    this.container = document.querySelector(selector)
+    this.container = form.querySelector(selector);
     this.input = this.container.querySelector('input');
     this.requiredMessage = this.container.querySelector('.validation-error_required');
 
@@ -435,7 +435,7 @@ function Input(selector) {
         this.validateRequired();
     }).bind(this));
 
-    this.input.addEventListener('keyup', (function() {
+    this.input.addEventListener('keyup', (function() {        
         this.validateRequired();
     }).bind(this));
 
@@ -447,6 +447,10 @@ Input.prototype.validateRequired = function() {
         this.showRequiredMessage();
     } else {
         this.hideRequiredMessage();
+        if(this.type === 'basic') {
+            this.state.valid = true;
+        }
+        return true;
     }
 };
 
@@ -457,39 +461,96 @@ Input.prototype.showRequiredMessage = function() {
 Input.prototype.hideRequiredMessage = function() {
     this.requiredMessage.style.display = 'none';
 };
-
 // Basic input constructor end
 
 // PhoneInput constructor start
-function PhoneInput(selector) {
-    Input.call(this, selector);
+function PhoneInput(form, selector) {
+    Input.call(this,form, selector);
     this.type = 'phone';
     this.invalidPhoneMessage = this.container.querySelector('.validation-error_phone-format');
+    this.mask = new IMask(this.input, {
+        mask: '+38(000)000-00-00'
+    });
 
-    this.input.addEventListener('keyup', (function(e) {
-        //this.validatePhone();
+    this.mask.on('accept', (function() {
+        this.state.valid = false;
+        this.showInvalidPhoneMessage();
+    }).bind(this));
+
+    this.mask.on('complete', (function() {
+        if(this.validateRequired()) {
+            this.state.valid = true;
+            this.hideInvalidPhoneMessage();
+        }
     }).bind(this));
 };
 
 PhoneInput.prototype = Object.create(Input.prototype);
 PhoneInput.prototype.constructor = PhoneInput;
+PhoneInput.prototype.showInvalidPhoneMessage = function() {
+    this.invalidPhoneMessage.style.display = 'block';
+};
+PhoneInput.prototype.hideInvalidPhoneMessage = function() {
+    this.invalidPhoneMessage.style.display = 'none';
+}
 // PhoneInput constructor end
+
+// EmailInput constructor start
+function EmailInput(form, selector) {
+    Input.call(this, form, selector);
+    this.type = 'email';
+    this.invalidEmailMessage = this.container.querySelector('.validation-error_email-format');
+}
+EmailInput.prototype = Object.create(Input.prototype);
+EmailInput.prototype.constructor = EmailInput;
+EmailInput.prototype.showInvalidEmailMessage = function() {
+    this.invalidEmailMessage.style.display = 'block';
+};
+EmailInput.prototype.hideInvalidEmailMessage = function() {
+    this.invalidEmailMessage.style.display = 'none';
+};
+// EmailInput constructor end
+
 
 // Contacts form start
 var contactsForm = (function() {
 
     function handleSubmit(formId) {
 
-        var nameInput = new Input('.contacts-form__callback-input_name');
-        var phoneInput = new PhoneInput('.contacts-form__callback-input_phone');
         var form = document.getElementById(formId);
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-        });
+
+        if(form) {
+            var nameInput = form.querySelector('.js-input-name-container') ? new Input(form,'.js-input-name-container') : null;
+            var phoneInput = form.querySelector('.js-input-phone-container') ? new PhoneInput(form, '.js-input-phone-container') : null;
+            var emailInput = form.querySelector('.js-input-email-container') ? new EmailInput(form, '.js-input-email-container') : null;
+
+            function createValidatorArray() {
+                var arr = [];
+                if(nameInput) {
+                    arr.push(nameInput.state.valid);
+                }
+                if(phoneInput) {
+                    arr.push(phoneInput.state.valid);
+                }
+                if(emailInput) {
+                    arr.push(emailInput.state.valid);
+                }
+                return arr;
+            };
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var arr = createValidatorArray();
+                var validForm = arr.every(function(state) {return state});
+            });
+
+        };
 
     };
+    handleSubmit('callback-form');
+    handleSubmit('contacts-form__callback-form');
+    handleSubmit('contacts-form__email-form');
 
-    //handleSubmit('contacts-form__callback-form');
 })();
 
 // Contacts form end

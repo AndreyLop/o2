@@ -18,6 +18,7 @@ var gulp           = require('gulp'),
 gulp.task('common-js', function() {
 	return gulp.src([
 		'src/js/useful_functions.js',
+		'src/js/libs/imask.js',
 		'src/js/common.js',
 		])
 	.pipe(concat('common.min.js'))
@@ -30,6 +31,7 @@ gulp.task('all-js', function() {
 	return gulp.src([
 		'src/js/libs/slick.min.js',
 		'src/js/libs/magnific-popup.js',
+		'src/js/libs/imask.js',
 		'src/js/useful_functions.js',
 		'src/js/common.js',
 		'src/js/commercial.js',

@@ -29,9 +29,28 @@ a {
     color: #fff;
 }
 .slideable-page-content {
-    transition: transform $transitionTime2;
+    transition: transform 0.5s;
+    &::after {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 11;
+        visibility: hidden;
+        background-color: rgba(0,0,0,0.0);
+        transition: all 0.8s;
+    }
     &.slide-page-content {
-        transform: translateX(100%);
+        transform: translateX(70%);
+        transition: transform 0.8s;
+        &::after {
+            visibility: visible;
+            background-color: rgba(0,0,0,0.85);
+            transition: all 0.8s;
+        }
     }
 }
 .wrapper {

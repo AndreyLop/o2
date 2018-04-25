@@ -18,17 +18,17 @@
             </h3>
             <div class="contacts__tab-content-form">
                 <form id="contacts-form__callback-form">
-                    <div class="contacts-form__callback-input contacts-form__callback-input_name">
-                        <input type="text" name="name" placeholder="Ваше ім'я:">
+                    <div class="contacts-form__callback-input contacts-form__callback-input_name js-input-name-container">
+                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                     </div>
-                    <div class="contacts-form__callback-input contacts-form__callback-input_phone">
-                        <input type="text" name="phone" placeholder="Ваш телефон:">
+                    <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-phone-container">
+                        <input class="js-input-phone" type="tel" name="phone" placeholder="Ваш телефон:">
                         <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                         <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
                     </div>
                     <div class="contacts-form__callback-input contacts-form__callback-input_message">
-                        <input type="text" name="question" placeholder="Ваше питання:">
+                        <textarea class="js-input-message" name="question" placeholder="Ваше питання:"></textarea>
                     </div>
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
@@ -40,10 +40,19 @@
                 Форма зворотного зв′язку
             </h3>
             <div class="contacts__tab-content-form">
-                <form  id="contacts-form__email-form">
-                    <input type="text" name="name" placeholder="Ваше ім'я:">
-                    <input type="text" name="email" placeholder="Ваш e-mail:">
-                    <input type="text" name="question" placeholder="Ваше питання:">
+                <form id="contacts-form__email-form">
+                    <div class="contacts-form__callback-input contacts-form__callback-input_name js-input-name-container">
+                        <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:">
+                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                    </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_phone js-input-email-container">
+                        <input class="js-input-email" type="text" name="email" placeholder="Ваш e-mail:">
+                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                        <div class="validation-error validation-error_email-format" style="display: none">Невірний формат email</div>
+                    </div>
+                    <div class="contacts-form__callback-input contacts-form__callback-input_message">
+                        <textarea class="js-input-message" name="question" placeholder="Ваше питання:"></textarea>
+                    </div>
                     <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
                 </form>
             </div>

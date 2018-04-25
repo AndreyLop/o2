@@ -83,7 +83,7 @@
                                         <span class="location___input-requred0icon">*</span>
                                     </div><!--
                                     --><div class="location__form-input-container">
-                                        <input type="text" name="telephone" placeholder="Введіть ім’я:" required>
+                                        <input type="text" name="telephone" placeholder="Введіть телефон:" required>
                                         <span class="location___input-requred0icon">*</span>
                                     </div><!--
                                     --><div class="location__form-input-container">
