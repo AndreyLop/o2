@@ -75,19 +75,24 @@
                     </div>
                     <div class="location__form-outer-frame">
                         <div class="location__form-inner-frame">
-                            <form>
+                            <form id="location-page__contacts-page">
                                 <h4 class="location__form-heading">Зворотній дзвінок</h4>
                                 <div class="location__form-inputs">
-                                    <div class="location__form-input-container">
-                                        <input type="text" name="name" placeholder="Введіть ім’я:" required>
-                                        <span class="location___input-requred0icon">*</span>
+                                    <div class="location__form-input-container js-input-name-container">
+                                        <input type="text" name="name" placeholder="Введіть ім’я:" data-required="true">
+                                        <span class="location__input-required-icon">*</span>
+                                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
                                     </div><!--
-                                    --><div class="location__form-input-container">
-                                        <input type="text" name="telephone" placeholder="Введіть телефон:" required>
-                                        <span class="location___input-requred0icon">*</span>
+                                    --><div class="location__form-input-container js-input-phone-container">
+                                        <input type="text" name="telephone" placeholder="Введіть телефон:" data-required="true">
+                                        <span class="location__input-required-icon">*</span>
+                                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                                        <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
                                     </div><!--
-                                    --><div class="location__form-input-container">
-                                        <input type="email" name="email" placeholder="Введіть e-mail:">
+                                    --><div class="location__form-input-container js-input-email-container">
+                                        <input type="text" name="email" placeholder="Введіть e-mail:" data-required="false">
+                                        <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+                                        <div class="validation-error validation-error_email-format" style="display: none">Невірний формат email</div>
                                     </div><!--
                                     --><div class="location__form-input-container">
                                         <input type="submit" value="Надіслати">

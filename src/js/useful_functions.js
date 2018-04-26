@@ -27,19 +27,22 @@ function showScrollBar() {
 	document.querySelector('.page-wrapper').classList.remove('body-overflow_hidden');
 };
 
-//AJAX POST Form data function start
-function sendFormData(formId, url, callback) {
-	var body = 'test';
+//AJAX  function start
+function ajax(type, url, data, callback) {
+	var data = data || null;
+	var type = type || 'GET';
 	var callback = callback || function(res) {
 		console.log(res);
 	};
 	var url = url || 'test.php';
-	var form = document.getElementById(formId);
-	var inputs = form.querySelectorAll('input');
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', url, true);
-	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-	xhr.send(body);
+	xhr.open(type, url, true);
+	if(type === 'POST') {
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.send(data);
+	} else {
+		xhr.send();
+	}
 	xhr.onreadystatechange = function() {
 		if(xhr.readyState !== 4) {
 			return
@@ -51,4 +54,7 @@ function sendFormData(formId, url, callback) {
 		}
 	};
 };
-//AJAX POST Form data function end
+function PostFormData(url, data, callback) {
+	ajax('POST', url, data, callback);
+};
+//AJAX function end

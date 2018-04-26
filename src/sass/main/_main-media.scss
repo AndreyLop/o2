@@ -134,6 +134,10 @@
     .info__item-image_eco-farm {
         background-image: url('../img/main/info_eco-farm-mob.jpg');
     }
+    .infrastructure__wrapper {
+        max-width: 420px;
+        margin: 0 auto;
+    }
     .infrastructure__items {
         flex-direction: column;
     }

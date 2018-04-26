@@ -429,14 +429,21 @@ function Input(form, selector) {
     this.container = form.querySelector(selector);
     this.input = this.container.querySelector('input');
     this.requiredMessage = this.container.querySelector('.validation-error_required');
-
+    this.validateInput = JSON.parse(this.input.dataset.required.toLowerCase()) || false;
     this.input.addEventListener('blur', (function() {
         this.state.touched = true;
-        this.validateRequired();
+        if(this.validateInput) {
+            this.validateRequired();
+        }
+
     }).bind(this));
 
-    this.input.addEventListener('keyup', (function() {        
-        this.validateRequired();
+    this.input.addEventListener('keyup', (function() {
+
+        if(this.validateInput) {
+            this.validateRequired();
+        }
+
     }).bind(this));
 
 };
@@ -455,11 +462,26 @@ Input.prototype.validateRequired = function() {
 };
 
 Input.prototype.showRequiredMessage = function() {
+    this.addErrorClass();
     this.requiredMessage.style.display = 'block';
 };
-
 Input.prototype.hideRequiredMessage = function() {
+    this.removeErrorClass();
     this.requiredMessage.style.display = 'none';
+};
+Input.prototype.addErrorClass = function() {
+    this.input.classList.add('input__validation-error');
+};
+Input.prototype.removeErrorClass = function() {
+    this.input.classList.remove('input__validation-error');
+};
+
+Input.prototype.validate = function() {
+    if(this.validateInput) {
+        this.validateRequired();
+    } else {
+        this.state.valid = true;
+    }
 };
 // Basic input constructor end
 
@@ -474,7 +496,7 @@ function PhoneInput(form, selector) {
 
     this.mask.on('accept', (function() {
         this.state.valid = false;
-        this.showInvalidPhoneMessage();
+        //this.showInvalidPhoneMessage();
     }).bind(this));
 
     this.mask.on('complete', (function() {
@@ -488,11 +510,31 @@ function PhoneInput(form, selector) {
 PhoneInput.prototype = Object.create(Input.prototype);
 PhoneInput.prototype.constructor = PhoneInput;
 PhoneInput.prototype.showInvalidPhoneMessage = function() {
+    this.addErrorClass();
     this.invalidPhoneMessage.style.display = 'block';
 };
 PhoneInput.prototype.hideInvalidPhoneMessage = function() {
+    this.removeErrorClass();
     this.invalidPhoneMessage.style.display = 'none';
-}
+};
+PhoneInput.prototype.validatePhoneNumber = function() {
+    if(this.mask.mask.length !== this.mask.value.length) {
+        this.state.valid = false;
+        this.showInvalidPhoneMessage();
+    } else {
+        this.state.valid = true;
+        this.hideInvalidPhoneMessage();
+    }
+};
+PhoneInput.prototype.validate = function() {
+    if(this.validateInput) {
+        if(this.validateRequired()) {
+            this.validatePhoneNumber();
+        }
+    } else {
+        this.state.valid = true;
+    }
+};
 // PhoneInput constructor end
 
 // EmailInput constructor start
@@ -500,7 +542,7 @@ function EmailInput(form, selector) {
     Input.call(this, form, selector);
     this.type = 'email';
     this.invalidEmailMessage = this.container.querySelector('.validation-error_email-format');
-}
+};
 EmailInput.prototype = Object.create(Input.prototype);
 EmailInput.prototype.constructor = EmailInput;
 EmailInput.prototype.showInvalidEmailMessage = function() {
@@ -509,7 +551,84 @@ EmailInput.prototype.showInvalidEmailMessage = function() {
 EmailInput.prototype.hideInvalidEmailMessage = function() {
     this.invalidEmailMessage.style.display = 'none';
 };
+EmailInput.prototype.validateEmail = function() {
+    if(/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/.test(this.input.value)) {
+        this.state.valid = true;
+        this.removeErrorClass();
+        this.hideInvalidEmailMessage();
+    } else {
+        this.state.valid = false;
+        this.addErrorClass();
+        this.showInvalidEmailMessage();
+    }
+};
+EmailInput.prototype.validate = function() {
+    if(this.validateInput) {
+        if(this.validateRequired()) {
+            this.validateEmail();
+        }
+    } else {
+        this.state.valid = true;
+    }
+};
 // EmailInput constructor end
+// MessageInput constructor start
+function MessageInput(form, selector) {
+    this.validateInput = false;
+    this.state = {
+        valid: true
+    };
+    this.type = 'message';
+    this.container = form.querySelector(selector);
+    this.input = this.container.querySelector('textarea');
+}
+// MessageInput constructor start
+
+// Modal windows constructor start
+function Modal(selector, timed) {
+    this.container = document.querySelector(selector);
+    this.closeBtn = this.container.querySelector('.modal__close-btn');
+    this.timed = timed || false;
+    var timer;
+
+    // Bind closing function to object
+    var boundClickDocument = clickOnDocument.bind(this);
+
+    function clickOnDocument(e) {
+
+        if(!this.container.contains(e.target) || e.target.parentNode===this.closeBtn) {
+            this.hideModal();
+            if(this.timed) {
+                clearInterval(timer);
+            }
+            document.removeEventListener('click', boundClickDocument);
+        }
+
+    };
+
+    this.showModal = function() {
+        hideScrollBar();
+        this.container.classList.add('modal__visible');
+        if(this.timed) {
+            timer = setTimeout((function() {
+                this.hideModal();
+            }).bind(this), 3000);
+        }
+
+        document.addEventListener('click', boundClickDocument);
+
+    };
+
+    this.hideModal = function() {
+        if(!o2AppState.callbackOpen) {
+            showScrollBar();
+        }
+        this.container.classList.remove('modal__visible');
+    };
+};
+// Modal windows constructor end
+// True as second argument means it will auto close after 3 seconds
+var successModal = new Modal('.modal-success', false);
 
 
 // Contacts form start
@@ -520,28 +639,59 @@ var contactsForm = (function() {
         var form = document.getElementById(formId);
 
         if(form) {
+            // If forms has one of these it will instanciate instances of inputs
             var nameInput = form.querySelector('.js-input-name-container') ? new Input(form,'.js-input-name-container') : null;
             var phoneInput = form.querySelector('.js-input-phone-container') ? new PhoneInput(form, '.js-input-phone-container') : null;
             var emailInput = form.querySelector('.js-input-email-container') ? new EmailInput(form, '.js-input-email-container') : null;
+            var messageInput = form.querySelector('.js-input-message-container') ? new MessageInput(form, '.js-input-message-container'): null;
 
             function createValidatorArray() {
                 var arr = [];
                 if(nameInput) {
-                    arr.push(nameInput.state.valid);
+                    arr.push(nameInput);
                 }
                 if(phoneInput) {
-                    arr.push(phoneInput.state.valid);
+                    arr.push(phoneInput);
                 }
                 if(emailInput) {
-                    arr.push(emailInput.state.valid);
+                    arr.push(emailInput);
+                }
+                if(messageInput) {
+                    if(messageInput.input.value.length > 0) {
+                        arr.push(messageInput);
+                    }
                 }
                 return arr;
             };
 
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
-                var arr = createValidatorArray();
-                var validForm = arr.every(function(state) {return state});
+                var inputsArr = createValidatorArray();
+                var data='';
+                inputsArr.forEach(function(inputInstance, index) {
+                    if(index === 0) {
+                        data += '' + inputInstance.input.name + '=' + encodeURIComponent(inputInstance.input.value);
+                    } else {
+                        data += '&' + inputInstance.input.name + '=' + encodeURIComponent(inputInstance.input.value);
+                    }
+                    inputInstance.validate();
+                });
+
+                var validForm = inputsArr.every(function(inputInstance) {
+                    return inputInstance.state.valid;
+                });
+
+                if(validForm) {
+                    PostFormData('test.php', data, function(res) {
+                        //Call modal window which was instanciated before
+                        successModal.showModal();
+                        //Clear all filled inputs
+                        inputsArr.forEach(function(inputInstance) {
+                            inputInstance.input.value = '';
+                        });
+                    });
+                }
+
             });
 
         };
@@ -550,6 +700,7 @@ var contactsForm = (function() {
     handleSubmit('callback-form');
     handleSubmit('contacts-form__callback-form');
     handleSubmit('contacts-form__email-form');
+    handleSubmit('location-page__contacts-page');
 
 })();
 

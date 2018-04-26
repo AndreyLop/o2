@@ -251,3 +251,12 @@ a {
     vertical-align: middle;
     margin: 0 10px;
 }
+
+.validation-error {
+    margin-top: -10px;
+    color: $red;
+    font-size: 0.875rem;
+}
+.input__validation-error {
+    border-color: $red !important;
+}
