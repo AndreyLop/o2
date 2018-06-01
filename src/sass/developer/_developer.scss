@@ -100,6 +100,7 @@
 
 .developer__logo {
     width: 20%;
+    align-self: flex-start;
     position: relative;
     left: 0;
     transition: all $transitionTime3;
@@ -113,6 +114,48 @@
     position: relative;
     right: 0;
     transition: all $transitionTime3;
+}
+
+.developer__address {
+    color: #000;
+    margin-top: 30px;
+    a {
+        color: #000;
+    }
+}
+
+.developer__address_item {
+    margin: 20px 0px 0px 40px;
+    position: relative;
+    &::before {
+        content: '';
+        display: inline-block;
+        background-image: url('../img/developer/developer_spritesheet_2.png');
+        position: absolute;
+        top: 3px;
+        left: -40px;
+    }
+}
+.developer__address_item:nth-child(1) {
+    &::before {
+        width: 19px;
+        height: 27px;
+        background-position: -30px -2px;
+    }
+}
+.developer__address_item:nth-child(2) {
+    &::before {
+        width: 13px;
+        height: 27px;
+        background-position: 15px -2px;
+    }
+}
+.developer__address_item:nth-child(3) {
+    &::before {
+        width: 24px;
+        height: 19px;
+        background-position: -2px -2px;
+    }
 }
 
 .developer__advantages {

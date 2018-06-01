@@ -25,6 +25,10 @@
             <div class="hero__slide hero__slide_6"></div>
             <div class="hero__slide hero__slide_7"></div>
             <div class="hero__slide hero__slide_8"></div>
+            <div class="hero__slide hero__slide_9"></div>
+            <div class="hero__slide hero__slide_10"></div>
+            <div class="hero__slide hero__slide_11"></div>
+            <div class="hero__slide hero__slide_12"></div>
         </div>
 
         <div class="wrapper hero__wrapper">

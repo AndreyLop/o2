@@ -92,11 +92,11 @@
 }
 .what-to-grow {
     color: #000;
-    padding: 55px 0px 60px 70px;
+    padding: 100px 0px 0px 70px;
     position: relative;
     border: 1px solid #cbcbcb;
     border-top: none;
-    height: 400px;
+    height: 330px;
 }
 .what-to-grow-paragraph-1 {
     max-width: 400px;
@@ -107,8 +107,6 @@
     }
 }
 .what-to-grow-paragraph-2 {
-    max-width: 540px;
-    padding: 45px 0px 0px 80px;
     transform: none;
     transition: all $transitionTime3;
 }
@@ -135,6 +133,30 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 45px 15px 55px;
+}
+.eco-farm__eco-products {
+    padding: 25px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #cbcbcb;
+    transition: opacity $transitionTime3;
+    &.animate-me {
+        opacity: 0;
+    }
+}
+.eco-farm__eco-products-image {
+    width: 50%;
+    img {
+        width: 100%;
+    }
+}
+.eco-farm__eco-products-text {
+    width: 40%;
+    span {
+        font-weight: 600;
+    }
 }
 .how-this-works {
     display: flex;

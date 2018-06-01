@@ -74,8 +74,15 @@
                                 <span>Що саме вирощувати на власній еко-фермі визначатимуть 
                                 жителі</span> – за допомогою зручного онлайн-голосування.
                             </p>
-                            <p class="what-to-grow-paragraph-2 eco-farm-paragraph">
-                                Якщо забажаєте, ви зможете прийняти безпосередню участь у вирощуванні еко-продукції. 
+                        </div>
+                    </div>
+                    <div class="eco-farm__eco-products animate-me">
+                        <div class="eco-farm__eco-products-image">
+                            <img src="img/eco-farm/eco-farm-girl.jpg" alt="eco-farm-girl">
+                        </div>
+                        <div class="eco-farm__eco-products-text">
+                            <p class="eco-farm-paragraph">
+                                <span>Якщо забажаєте, ви зможете прийняти безпосередню участь</span> у вирощуванні еко-продукції. 
                                 Або ж цю справу можна доручити кваліфікованим садівникам, які доглядатимуть за фермою.
                             </p>
                         </div>
@@ -163,6 +170,7 @@
         <?php include_once('includes/footer.php'); ?>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/common.min.js"></script>
 </body>
 </html>

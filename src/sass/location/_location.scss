@@ -177,7 +177,10 @@
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
-
+.location__form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
 .location__form-input-container {
     display: inline-block;
     width: 50%;

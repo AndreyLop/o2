@@ -91,6 +91,15 @@
                             норм та вимог чинного законодавства України у галузі будівництва та на 
                             підставі всієї необхідної дозвільної документації
                         </p>
+                        <ul class="developer__address">
+                            <li class="developer__address_item">Київ, вулиця Льва Толстого, будинок 57</li>
+                            <li class="developer__address_item">
+                                <a href="#">+380 44 364 50 51</a>
+                            </li>
+                            <li class="developer__address_item">
+                                <a href="mailto:info@saga-development.com.ua">info@saga-development.com.ua</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="developer__advantages animate-me">

@@ -10,12 +10,17 @@ var langMenu=(function(){
 
     Array.prototype.forEach.call(navLangItems, function(item) {
         item.addEventListener("click",function(e){
-            e.preventDefault(),
+            //e.preventDefault(),
             this.classList.contains("nav__item-lang_opened") 
             ? this.classList.remove("nav__item-lang_opened")
             : this.classList.add("nav__item-lang_opened")
         });
     });
+
+    var root = $('.lang-list');
+    var liI = $("li.active ");
+    $("li.active ",$(root)).remove();
+    $(root).prepend( $(liI) );
     
     })();
 
@@ -582,6 +587,8 @@ function MessageInput(form, selector) {
     this.container = form.querySelector(selector);
     this.input = this.container.querySelector('textarea');
 }
+MessageInput.prototype = Object.create(Input.prototype);
+MessageInput.prototype.constructor = MessageInput;
 // MessageInput constructor start
 
 // Modal windows constructor start
@@ -668,6 +675,13 @@ var contactsForm = (function() {
                 e.preventDefault();
                 var inputsArr = createValidatorArray();
                 var data='';
+                var secretInputs = {
+                    type: form.querySelector('[name="typ"]'),
+                    webad: form.querySelector('[name="webad"]'),
+                    metka: form.querySelector('[name="metka"]'),
+                    inn: form.querySelector('[name="inn"]'),
+                    count: form.querySelector('[name="count"]')
+                };
                 inputsArr.forEach(function(inputInstance, index) {
                     if(index === 0) {
                         data += '' + inputInstance.input.name + '=' + encodeURIComponent(inputInstance.input.value);
@@ -677,12 +691,20 @@ var contactsForm = (function() {
                     inputInstance.validate();
                 });
 
+                for(var key in secretInputs) {
+                    data+= '&' + key + '=' + encodeURIComponent(secretInputs[key].value);
+                };
+
                 var validForm = inputsArr.every(function(inputInstance) {
                     return inputInstance.state.valid;
                 });
 
                 if(validForm) {
-                    PostFormData('test.php', data, function(res) {
+                    var nOV = "/wp-content/themes/o2/forms/application.php";
+                    var urObV = "http://"+window.location.hostname+nOV;
+
+                    PostFormData(urObV, data, function(res) {
+                        console.log(res);
                         //Call modal window which was instanciated before
                         successModal.showModal();
                         //Clear all filled inputs

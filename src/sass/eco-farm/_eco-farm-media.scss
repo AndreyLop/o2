@@ -100,6 +100,14 @@
       background-color: transparent;
     }
   }
+  .eco-farm__eco-products {
+    flex-direction: column;
+  }
+  .eco-farm__eco-products-image,
+  .eco-farm__eco-products-text {
+    width: 100%;
+    max-width: 500px;
+}
   .how-this-works-item {
     width: 100%;
     padding: 0 5px 0 0;
